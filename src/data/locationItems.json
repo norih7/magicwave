@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1,
+    "locationId": 1,
+    "locationName": "ロケーション1",
+    "itemsId": 1,
+    "itemName": "アップルグミ",
+    "remarks": "左上 民家 樽"
+  },
+  {
+    "id": 2,
+    "locationId": 1,
+    "locationName": "ロケーション1",
+    "itemsId": 1,
+    "itemName": "アップルグミ",
+    "remarks": "民家扉"
+  },
+  {
+    "id": 3,
+    "locationId": 1,
+    "locationName": "ロケーション1",
+    "itemsId": 1,
+    "itemName": "アップルグミ",
+    "remarks": "リッドの家 B1 蓋が空いている壷"
+  },
+  {
+    "id": 4,
+    "locationId": 1,
+    "locationName": "ロケーション1",
+    "itemsId": 2,
+    "itemName": "500ガルド",
+    "remarks": "村長の家 左下の棚"
+  },
+  {
+    "id": "",
+    "locationId": 1,
+    "locationName": "ロケーション1",
+    "itemsId": 3,
+    "itemName": "コレクターずかん",
+    "remarks": "村長の家 2F本棚"
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  }
+]

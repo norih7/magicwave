@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "locationId": 1,
+    "locationName": "ロケーション1",
+    "lensId": 1,
+    "remarks": "レンズの場所1"
+  }
+]

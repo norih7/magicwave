@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "locationId": 1,
+    "itemId": 1,
+    "remarks": "ラシュアンのアップルグミの場所1"
+  },
+  {
+    "id": 2,
+    "locationId": 1,
+    "itemId": 1,
+    "remarks": "ラシュアンのアップルグミの場所2"
+  },
+  {
+    "id": 3,
+    "locationId": 1,
+    "itemId": 2,
+    "remarks": "ラシュアンのオレンジグミの場所"
+  }
+]

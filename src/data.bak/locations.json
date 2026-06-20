@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "name": "チャート ラシュアン",
+    "items": [
+      { "itemId": 1, "remarks": "ラシュアンのアップルグミの場所1" },
+      { "itemId": 1, "remarks": "ラシュアンのアップルグミの場所2" },
+      { "itemId": 2, "remarks": "ラシュアンのオレンジグミの場所" }
+    ],
+    "recipes": [
+      { "recipeId": 1, "remarks": "料理の場所1" },
+      { "recipeId": 2, "remarks": "料理の場所2" }
+    ],
+    "lenses": [
+      { "lensId": 1, "remarks": "リッドの家" },
+      { "lensId": 2, "remarks": "リッドの家2" }
+    ]
+  }
+]

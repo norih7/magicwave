@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "type": "location",
+    "world": "inferior"
+  },
+  {
+    "id": 2,
+    "type": "map",
+    "world": "inferior"
+  }
+]

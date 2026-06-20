@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "locationId": 1,
+    "locationName": "ロケーション1",
+    "recipeId": 1,
+    "recipeName": "サンドイッチ",
+    "remarks": "料理の場所1"
+  }
+]

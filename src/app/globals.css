@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.advice {
+  margin: 0px 0 20px 0;
+}
+
+.advice h3 {
+  margin-bottom: 10px;
+}
+
+.advice nav {
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.advice .topic-block table {
+  float: none;
+}
+
+.advice .topic-block table th {
+  font-weight: normal;
+}
+
+.advice ul {
+  padding: 0 !important;
+  border: none !important;
+  background: transparent;
+  border-top: 1px solid #aaa !important;
+  overflow: hidden;
+}
+
+.advice ol:before {
+  content: "";
+  display: block;
+  height: 6px;
+  margin-bottom: 10px;
+  background: #666;
+}
+
+.advice .topic-block ol {
+  margin-bottom: 20px;
+}
+
+.advice ol li:first-child {
+  border-top: 1px solid #d2d2d2;
+  box-shadow:
+    0 1px 0 #fff inset,
+    0 1px 0 #fff;
+}
+
+.advice ol li {
+  padding: 7px 0;
+  border-bottom: 1px solid #d5d5d5;
+  box-shadow: 0 1px 0 #fff;
+  line-height: 1.8em;
+}
+
+.advice hr {
+  border: 1px solid #555;
+}
+
+.advice p {
+  clear: both;
+  margin-bottom: 15px;
+  line-height: 180%;
+}
+
+.advice ul {
+  margin: 0 0 20px 0;
+}
+
+.advice ul li {
+  padding: 7px 15px;
+  background: url(/web/20200918093226im_/http://magic.brush-clover.com/images/arrow_8.png)
+    no-repeat 0 50%;
+  background-size: 13px;
+  border-bottom: 1px dotted #aaa;
+}
+
+.advice > dl {
+  margin: 0 0 15px 0;
+  padding: 5px 0 0 0;
+}
+
+.advice > dl dt {
+  margin-bottom: 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 0 #fff;
+}
+
+.advice > dl dd {
+  border-bottom: 1px dotted #999;
+}
+
+.advice dd.active {
+  background: #eee;
+}
+
+.advice nav dt,
+.advice nav dd {
+  display: inline;
+}
+
+.advice nav dt {
+  margin-right: 5px;
+  padding: 2px 6px;
+  background: rgb(209, 109, 96);
+  border-radius: 3px;
+  color: #fff;
+}
+
+.advice nav dd {
+  margin-right: 10px;
+}
+
+.advice dl dd ul {
+  margin: 0 0 10px 15px;
+  padding: 5px 10px 10px 0;
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.advice dl dd ul li {
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 0 #fff;
+}
+
+.advice dl dd p {
+  margin: 0;
+  padding: 10px 0;
+  line-height: 180%;
+}
+
+table {
+  width: 100%;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  table-layout: fixed;
+}
+
+th {
+  background: #ddd;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ccc;
+  text-align: left;
+  padding: 11px 10px;
+  color: #444;
+}
+
+td {
+  vertical-align: top;
+}
+
+table td {
+  padding: 9px 0 9px 10px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  box-shadow: 0 1px 0 #fff inset;
+  line-height: 150%;
+  color: #444;
+}

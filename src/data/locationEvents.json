@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "locationId": 1,
+    "locationName": "ロケーション1",
+    "eventId": 1,
+    "eventName": "ピエールとカトリーヌ",
+    "eventUrl": "/path/to",
+    "remarks": ""
+  }
+]

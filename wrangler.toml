@@ -1,0 +1,20 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "magicwave"
+compatibility_date = "2026-06-10"
+
+# 💡 Next.jsが書き出したビルド成果物の場所を指定します
+pages_build_output_dir = ".vercel/output"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "magicwave"
+database_id = "local-db-id"
+migrations_dir = "drizzle"
+
+# wrangler.toml の末尾などに追記
+
+[build]
+command = "npm_config_legacy_peer_deps=true npx @cloudflare/next-on-pages"
+
+compatibility_date = "2026-05-01" # 💡 2026年の最新の挙動に合わせます
+compatibility_flags = [ "nodejs_compat" ] # 💡 これが画面に怒られた「魔法のフラグ」です！

@@ -1,0 +1,12 @@
+[
+  {
+    "locationId": 1,
+    "recipeName": "サンドイッチ",
+    "remarks": "料理の場所1"
+  },
+  {
+    "locationId": 1,
+    "recipeName": "ハンバーガー",
+    "remarks": "料理の場所2"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "shopId": 1,
+    "shopName": "ラシュアンのアイテム屋",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "buy": 100,
+    "sell": 50,
+    "remarks": ""
+  },
+  {
+    "id": 2,
+    "shopId": 1,
+    "shopName": "ラシュアンのアイテム屋",
+    "itemId": 2,
+    "itemName": "500ガルド",
+    "buy": 100,
+    "sell": 50,
+    "remarks": ""
+  }
+]

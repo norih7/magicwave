@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "アップルグミ",
+    "type": "useItem"
+  },
+  {
+    "id": 2,
+    "name": "500ガルド",
+    "type": "money"
+  },
+  {
+    "id": 3,
+    "name": "コレクターずかん",
+    "type": "useItem"
+  }
+]
