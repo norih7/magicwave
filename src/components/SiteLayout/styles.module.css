@@ -53,10 +53,10 @@
   padding: 2rem;
 }
 .main h2 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 10px solid #629bbb;
-  font-size: 1.2rem;
+  border-bottom: 8px solid #629bbb;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 .main h3 {

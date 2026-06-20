@@ -52,7 +52,6 @@ body {
   padding: 0 !important;
   border: none !important;
   background: transparent;
-  border-top: 1px solid #aaa !important;
   overflow: hidden;
 }
 
@@ -66,13 +65,6 @@ body {
 
 .advice .topic-block ol {
   margin-bottom: 20px;
-}
-
-.advice ol li:first-child {
-  border-top: 1px solid #d2d2d2;
-  box-shadow:
-    0 1px 0 #fff inset,
-    0 1px 0 #fff;
 }
 
 .advice ol li {
@@ -92,16 +84,13 @@ body {
   line-height: 180%;
 }
 
-.advice ul {
-  margin: 0 0 20px 0;
+.advice ul li::before {
+  content: "- ";
 }
 
 .advice ul li {
-  padding: 7px 15px;
-  background: url(/web/20200918093226im_/http://magic.brush-clover.com/images/arrow_8.png)
-    no-repeat 0 50%;
+  padding: 7px 0 7px 0px;
   background-size: 13px;
-  border-bottom: 1px dotted #aaa;
 }
 
 .advice > dl {

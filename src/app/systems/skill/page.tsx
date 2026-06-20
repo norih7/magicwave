@@ -1,5 +1,6 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -14,16 +15,14 @@ export default async function HomePage() {
     <article>
       <SetPageTitle title={title} />
 
-      <h2>習得についての詳細</h2>
+      <PageSummary>
+        <p>
+          技/術についての習得方法について説明します。エターニアではキャラクターのレベルアップでは特技や晶霊術を取得せず、キャラクタ毎に取得方法が異なります。
+        </p>
+      </PageSummary>
 
-      <div className="advice">
-        <h3 id="1">リッド/ファラの特技習得</h3>
-        <div className="condition">
-          <p>
-            <span className="small-info">取得条件</span>斬りレベルと突きレベル /
-            拳レベルと蹴レベル
-          </p>
-        </div>
+      <h2 id="1">リッド/ファラの特技習得</h2>
+      <div className="advice mb-10">
         <p>
           リッドとファラは以下のキャラクターの特性レベル（斬りレベル、突きレベル/拳レベル、蹴りレベル）を持っており、これらが一定レベルまで上がると特技や奥義を習得する。
         </p>
@@ -33,28 +32,19 @@ export default async function HomePage() {
         <p>
           なお、リッドとファラのこれらのレベルはステータス画面で確認できる。
         </p>
+        <h3>取得方法詳細</h3>
         <ul>
           <li>
-            <a href="/web/20210509173743/http://magic.brush-clover.com/eternia/skill-rid.php">
-              リッドの特技一覧へ
-            </a>
+            <a href="/skills/rid">リッドの特技一覧へ</a>
           </li>
           <li>
-            <a href="/web/20210509173743/http://magic.brush-clover.com/eternia/skill-farth.php">
-              ファラの特技一覧へ
-            </a>
+            <a href="/skills/farth">ファラの特技一覧へ</a>
           </li>
         </ul>
       </div>
 
-      <div className="advice">
-        <h3 id="2">キール/メルディの術習得</h3>
-        <div className="condition">
-          <p>
-            <span className="small-info">取得条件</span>
-            クレーメルケイジ(C.ケイジ)によるフリンジ
-          </p>
-        </div>
+      <h2 id="2">キール/メルディの術習得</h2>
+      <div className="advice mb-10">
         <p>
           キールとメルディは契約している大晶霊をC.ケイジのフリンジで組み合わせて晶霊術を習得できる。フリンジをするにはそれぞれの大晶霊の組み合わせとレベルが必要となる。
         </p>
@@ -62,33 +52,24 @@ export default async function HomePage() {
           大晶霊のレベルは戦闘勝利後に手に入る経験値がほぼそのまま加算されていく。ただし大晶霊は各々に経験値を蓄えており、契約後は0から蓄えていくことになる。
         </p>
         <p>各大晶霊の経験値はC.ケイジから確認することができる。</p>
+        <h3>取得方法詳細</h3>
         <ul>
           <li>
-            <a href="/web/20210509173743/http://magic.brush-clover.com/eternia/skill-magic.php">
-              晶霊術一覧へ
-            </a>
+            <a href="/skills/magic">晶霊術一覧へ</a>
           </li>
         </ul>
       </div>
 
+      <h2 id="3">チャット/フォッグの特技習得</h2>
       <div className="advice">
-        <h3 id="3">チャット/フォッグの特技習得</h3>
-        <div className="condition">
-          <p>
-            <span className="small-info">取得条件</span>サブイベント
-          </p>
-        </div>
         <p>チャットとフォッグはサブイベントにて特技を習得していく。</p>
+        <h3>取得方法詳細</h3>
         <ul>
           <li>
-            <a href="/web/20210509173743/http://magic.brush-clover.com/eternia/skill-chat.php">
-              チャットの特技一覧へ
-            </a>
+            <a href="/skills/chat">チャットの特技一覧へ</a>
           </li>
           <li>
-            <a href="/web/20210509173743/http://magic.brush-clover.com/eternia/skill-fog.php">
-              フォッグの特技一覧へ
-            </a>
+            <a href="/skills/fog">フォッグの特技一覧へ</a>
           </li>
         </ul>
       </div>

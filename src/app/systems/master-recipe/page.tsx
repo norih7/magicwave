@@ -1,5 +1,6 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -13,28 +14,24 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-      <h2>概要</h2>
-
-      <ol>
-        <li>
+      <PageSummary>
+        <p>
           一部の料理レシピは特定のレシピの熟練度をMAXすると習得できる。これらをマスター料理といい、料理実行後に条件を満たすと「新しい料理をマスターしました」と表示されてレシピを習得したことになる。
-        </li>
-        <li>
+        </p>
+        <p>
           マスター料理にはHP、TPを増加させるなどの特殊な効果を持つものがあるので是非習得しておきましょう。
-        </li>
-      </ol>
+        </p>
+      </PageSummary>
 
-      <h2>システムの詳細</h2>
-
+      <h2>マスター料理の習得について</h2>
       <div className="advice">
-        <h3>マスター料理の習得について</h3>
         <p>
           マスター料理は1人のキャラクターが特定の料理の熟練度をMAXにすることで習得できます。また習得したマスター料理は、習得した際のキャラクターだけではなくパーティ全員が実行可能となっています。
         </p>
       </div>
 
+      <h2>マスター料理一覧</h2>
       <div className="advice">
-        <h3>マスター料理一覧</h3>
         <table>
           <thead>
             <tr>
