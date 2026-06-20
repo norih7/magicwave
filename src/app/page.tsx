@@ -4,10 +4,12 @@ import SetPageTitle from "@/components/SetPageTitle";
 export const dynamic = "force-static";
 
 const title = "RE:MAGIC テイルズオブエターニア攻略";
-export const metadata = {
-  title,
-  description: "テイルズオブエターニア攻略サイト。PS版、PSP版、リマスター版に対応しています。",
-};
+export async function generateMetadata() {
+  return {
+    title,
+    description: "テイルズオブエターニア攻略サイト。PS版、PSP版、リマスター版に対応しています。",
+  };
+}
 
 export default async function HomePage() {
   const subTitle = "テイルズオブエターニア攻略";
