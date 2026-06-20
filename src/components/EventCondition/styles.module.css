@@ -1,12 +1,12 @@
 .condition {
-  margin-bottom: 20px;
-  color: #666;
+  margin-bottom: 16px;
+  color: #333;
 }
 
 .smallInfo {
   margin-right: 10px;
-  padding: 3px 15px;
-  background: #b1a88c;
+  padding: 3px 16px;
+  background: #a8711f;
   border-radius: 5px;
   color: #fff;
 }
