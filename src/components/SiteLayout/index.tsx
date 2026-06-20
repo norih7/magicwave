@@ -16,7 +16,7 @@ export default function SiteLayout({
 
   const Breadcrumb =
     category === "none" ? null : (
-      <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
+      <nav aria-label="Breadcrumb" className={`${styles.breadcrumb} mb-8`}>
         <ol>
           <li>
             <a href="/">テイルズオブエターニア攻略</a>
@@ -31,18 +31,18 @@ export default function SiteLayout({
 
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.headerInner}>
-          <div className="flex justify-between items-center">
-            <h1 className="text-xl font-bold tracking-tight">RE:MAGIC</h1>
+      <header className={`${styles.header}`}>
+        <div className={`${styles.headerInner} p-4`}>
+          <div className="flex justify-between items-center ">
+            <h1 className="text-lg font-bold tracking-tight">RE:MAGIC</h1>
             <MenuButton />
           </div>
         </div>
       </header>
 
       <div className={styles.pageTitleArea}>
-        <div className={styles.pageTitleInner}>
-          <h2 className="text-xl font-bold text-gray-800">{title}</h2>
+        <div className={`${styles.pageTitleInner} p-4`}>
+          <h2 className="text-lg font-bold text-gray-800">{title}</h2>
         </div>
       </div>
 
@@ -52,7 +52,7 @@ export default function SiteLayout({
           <Menu />
         </aside>
 
-        <main className={styles.main}>
+        <main className={`${styles.main} px-4 py-8`}>
           {Breadcrumb}
           {/* <div
             style={{

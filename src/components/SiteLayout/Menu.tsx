@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 export default function Menu() {
   return (
-    <nav className={styles.menu}>
+    <nav className={`${styles.menu} px-4 py-8`}>
       <p className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider">
         ストーリーガイド
       </p>

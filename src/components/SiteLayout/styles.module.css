@@ -13,22 +13,24 @@
 }
 
 .header {
-  background: #fff;
 }
 .headerInner,
 .pageTitleInner {
   max-width: 900px;
   margin: 0 auto;
-  padding: 1.5rem 0.5rem;
+  /* padding: 1.2rem 0.5rem; */
 }
 .footer {
   margin: 0 auto;
   padding: 1.5rem 0.5rem;
 }
 .headerInner {
+}
+.headerInner h1 {
   background: url(/eternia-dot.png) no-repeat 0 50%;
-  background-size: 50px;
-  padding-left: 60px;
+  background-size: 45px;
+  line-height: 45px;
+  padding-left: 50px;
 }
 .pageTitleArea {
   background: #f0ece3;
@@ -36,12 +38,9 @@
   border-bottom: 1px solid #e7e1d4;
 }
 .sidebar {
-  padding: 1rem 0;
   border-right: 1px solid #e5e7eb;
 }
 .menu {
-  padding: 10px;
-  border-radius: 6px;
 }
 .menu li {
   margin-bottom: 0;
@@ -50,26 +49,20 @@
   font-size: 0.9em;
 }
 .main {
-  padding: 2rem;
 }
 .main h2 {
   margin-bottom: 16px;
   padding-bottom: 8px;
   border-bottom: 8px solid #629bbb;
-  font-size: 1.1rem;
   font-weight: bold;
 }
 .main h3 {
-  font-size: 1.1rem;
   font-weight: bold;
 }
 .main ul {
   margin-bottom: 16px;
 }
 
-.main ol li {
-  padding: 16px 0;
-}
 .footer {
   text-align: center;
   color: #9ca3af;
@@ -78,7 +71,6 @@
 
 .breadcrumb {
   font-size: 0.85rem; /* 本文より少し小さく控えめに */
-  padding: 0px 0 16px 0;
   color: #666; /* 文字は真っ黒にせずグレーで視覚ノイズを減らす */
 }
 

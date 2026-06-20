@@ -7,7 +7,7 @@ const PageSummary = (props: Props) => {
   const { children } = props;
   return (
     <div className={`${styles.summary} mb-10`}>
-      <header>概要 / Overview</header>
+      <header className="mb-4">はじめに</header>
       <div className={styles.content}>{children}</div>
     </div>
   );
