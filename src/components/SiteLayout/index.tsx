@@ -4,8 +4,7 @@ import MenuButton from "./MenuButton";
 import Menu from "./Menu";
 import { useTitle } from "@/context/TitleContext";
 import { useCategory } from "@/hooks/useCategory";
-import { createParentPageName } from "@/utils";
-
+import Breadcrumb from "@/components/Breadcrumb";
 export default function SiteLayout({
   children,
 }: {
@@ -13,21 +12,6 @@ export default function SiteLayout({
 }) {
   const { title } = useTitle();
   const category = useCategory();
-
-  const Breadcrumb =
-    category === "none" ? null : (
-      <nav aria-label="Breadcrumb" className={`${styles.breadcrumb} mb-8`}>
-        <ol>
-          <li>
-            <a href="/">テイルズオブエターニア攻略</a>
-          </li>
-          <li>
-            <a href="/story">{createParentPageName(category)}</a>
-          </li>
-          <li aria-current="page">{title}</li>
-        </ol>
-      </nav>
-    );
 
   return (
     <>
@@ -53,7 +37,7 @@ export default function SiteLayout({
         </aside>
 
         <main className={`${styles.main} px-4 py-8`}>
-          {Breadcrumb}
+          <Breadcrumb category={category} pageTitle={title} />
           {/* <div
             style={{
               height: "200px",

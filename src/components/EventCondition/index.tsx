@@ -1,16 +1,22 @@
 import styles from "./styles.module.css";
 
+const list = {
+  skill: "習得条件",
+  period: "発生期間",
+};
 type Props = {
+  category: keyof typeof list;
   children: React.ReactNode;
 };
 const EventCondition = (props: Props) => {
-  const { children } = props;
+  const { category = "period", children } = props;
+  const title = list[category];
   return (
-    <div className={styles.condition}>
-      <p>
-        <span className={styles.smallInfo}>発生時期</span>
-        {children}
-      </p>
+    <div className={`${styles.condition} mb-4 font-bold`}>
+      <span className={`${styles.smallInfo} mr-1 text-xs font-bold`}>
+        {title}
+      </span>
+      {children}
     </div>
   );
 };
