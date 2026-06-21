@@ -1,5 +1,6 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -14,90 +15,66 @@ export default async function HomePage() {
     <article>
       <SetPageTitle title={title} />
 
-      <h2>概要</h2>
+      <PageSummary>
+        <p>
+          エターニアにはサブイベントにて契約できる大晶霊が存在します。強力な晶霊術のフリンジが可能となるので是非とも契約を目指しましょう。
+        </p>
+      </PageSummary>
 
-      <ol>
-        <li>
-          ストーリー上でセレスティアの海底にあるアイフリードのアジトを探索しますが、インフェリアにも同じようにアジトが存在します。ここではアジトの場所情報とそこで入手できるアイテムの情報を紹介します。
-        </li>
-      </ol>
-
-      <h2>インフェリアのアジト一覧</h2>
+      <h2>イベントの詳細</h2>
 
       <div className="advice">
-        <h3>インフェリア アジト1</h3>
+        <h3>闇の大晶霊 シャドウ</h3>
         <nav>
           <dl>
-            <dt>場所</dt>
-            <dd>GPS (76, 122)</dd>
+            <dt>発生時期</dt>
+            <dd>潜水艇が利用可能になった後〜</dd>
           </dl>
         </nav>
-        <h4>入手アイテム</h4>
-        <ul>
-          <li>12240ガルド</li>
-          <li>セボリー</li>
-          <li>みずいろのかけら</li>
-          <li>ダイヤブレス</li>
-          <li>むらさきのかけら</li>
-          <li>ホーリィクローク</li>
-        </ul>
+        <p>
+          セレスティアの海底にある「闇の洞窟」の奥にはシャドウがいて戦闘勝利後に契約することができます。
+        </p>
+        <p>
+          <a href="/web/20210509164134/http://magic.brush-clover.com/eternia/extra-dark-cave.php">
+            闇の洞窟の解説ページはこちら
+          </a>
+        </p>
       </div>
 
       <div className="advice">
-        <h3>インフェリア アジト2</h3>
+        <h3>元素の大晶霊 マスクウェル</h3>
         <nav>
           <dl>
-            <dt>場所</dt>
-            <dd>GPS (119, 233)</dd>
+            <dt>発生時期</dt>
+            <dd>遠征の橋でインフェリアに戻って来た後〜</dd>
           </dl>
         </nav>
-        <h4>入手アイテム</h4>
-        <ul>
-          <li>あかのかけら</li>
-          <li>ルーンボトル</li>
-          <li>アワーグラス</li>
-          <li>ルーンボトル</li>
-          <li>8415ガルド</li>
-          <li>セージ</li>
-        </ul>
+        <p>
+          ストーリーの後半からインフェリアの「セイファート教会」に行くと隠しダンジョンが出現し、奥にはマクスウェルの戦闘に勝利すると契約することができます。
+        </p>
+        <p>
+          <a href="/web/20210509164134/http://magic.brush-clover.com/eternia/extra-farosu-underground.php">
+            ファロース教会地下の解説ページはこちら
+          </a>
+        </p>
       </div>
 
       <div className="advice">
-        <h3>インフェリア アジト3</h3>
+        <h3>時の大晶霊 ゼクンドゥス</h3>
         <nav>
           <dl>
-            <dt>場所</dt>
-            <dd>GPS (142, 1)</dd>
+            <dt>発生時期</dt>
+            <dd>シゼル城に到着後〜</dd>
           </dl>
         </nav>
-        <h4>入手アイテム</h4>
-        <ul>
-          <li>にんとうちざくら</li>
-          <li>きいろのかけら</li>
-          <li>ルーンボトル</li>
-          <li>ラベンダー</li>
-          <li>ルーンボトル</li>
-          <li>10710ガルド</li>
-        </ul>
-      </div>
-
-      <div className="advice">
-        <h3>インフェリア アジト4</h3>
-        <nav>
-          <dl>
-            <dt>場所</dt>
-            <dd>GPS (226, 130)</dd>
-          </dl>
-        </nav>
-        <h4>入手アイテム</h4>
-        <ul>
-          <li>ルーンボトル</li>
-          <li>エリクシール</li>
-          <li>9945ガルド</li>
-          <li>あおのかけら</li>
-          <li>ベルベーヌ</li>
-          <li>みどりのかけら</li>
-        </ul>
+        <p>
+          シゼル城のダンジョン内に時の大晶霊ゼクンドゥスがいて、戦闘することなく契約することができます。
+        </p>
+        <p>
+          <a href="/web/20210509164134/http://magic.brush-clover.com/eternia/chart5.php">
+            ゼクンドゥスの場所のマップは攻略チャートをご覧ください
+          </a>
+        </p>
       </div>
     </article>
   );

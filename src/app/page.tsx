@@ -8,6 +8,11 @@ const featuredLinks = [
     path: "/systems/tp-reduce",
     desc: "戦闘でバンバン特技や晶霊術を利用できるようになるアクセサリを紹介",
   },
+  {
+    title: "チャットの特技習得",
+    path: "/subevents/skill-chat",
+    desc: "偶然辿り着くのが難しいチャットの特技習得場所をチェック",
+  },
 ];
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
@@ -28,8 +33,8 @@ export default async function HomePage() {
     <div style={{ padding: "0px" }}>
       <SetPageTitle title={subTitle} />
       <main className="space-y-12">
-        <h1 className="text-xl font-bold mb-4">RE:MAGICについて</h1>
-        <p className="text-slate-600">
+        <h1 className="text-lg font-bold mb-4">RE:MAGICについて</h1>
+        <p className="text-slate-1000">
           テイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています。リマスター版にも対応予定。シンプルでクリーンなサイトを目指しています。
         </p>
 
@@ -41,7 +46,7 @@ export default async function HomePage() {
               <Link
                 key={item.path}
                 href={item.path}
-                className="block p-6 border border-gray-300 rounded-lg hover:shadow-lg transition-shadow bg-white"
+                className="block p-4 border border-gray-300 rounded-lg hover:shadow-lg transition-shadow bg-white"
               >
                 <h3 className="mb-2">{item.title}</h3>
                 <p className="text-slate-500">{item.desc}</p>
@@ -51,7 +56,7 @@ export default async function HomePage() {
         </section>
 
         {/* 3. 更新履歴セクション */}
-        <section className="border-t pt-8">
+        <section className="">
           <h2 className="">最新更新履歴</h2>
           <ul className="space-y-2">
             <li className="flex gap-4">

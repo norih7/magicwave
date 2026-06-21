@@ -12,7 +12,7 @@ const Breadcrumb = (props: Props) => {
     <nav aria-label="Breadcrumb" className={`${styles.breadcrumb} mb-6`}>
       <ol>
         <li>
-          <a href="/">テイルズオブエターニア攻略</a>
+          <a href="/">トップ</a>
         </li>
         <li>
           <a href="/story">{createParentPageName(category)}</a>

@@ -1,5 +1,6 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -13,15 +14,12 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-      <h2>概要</h2>
-
-      <ol>
-        <li>
+      <PageSummary>
+        <p>
           チャットの特技は最初から習得している技以外はサブイベントにて取得します。サブイベントの種類にはフィールドマップの隠し場所へ行く、すごろくのクリアなどがあります。これらのサブイベントは
-          <span className="daiji">チャットを仲間に加入している状態</span>
-          でのみ発生します。
-        </li>
-      </ol>
+          チャットを仲間に加入している状態でのみ発生します。
+        </p>
+      </PageSummary>
 
       <h2>特技習得イベント一覧</h2>
 
@@ -83,9 +81,9 @@ export default async function HomePage() {
         <table>
           <thead>
             <tr>
-              <th>No</th>
+              <th className="w-15">No</th>
               <th>クイズの内容</th>
-              <th>正解</th>
+              <th className="w-15">正解</th>
             </tr>
           </thead>
           <tbody>
