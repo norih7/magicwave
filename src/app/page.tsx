@@ -28,9 +28,7 @@ export default async function HomePage() {
     <div style={{ padding: "0px" }}>
       <SetPageTitle title={subTitle} />
       <main className="space-y-12">
-        <h1 className="text-xl font-bold mb-4">
-          テイルズオブエターニア攻略情報サイト
-        </h1>
+        <h1 className="text-xl font-bold mb-4">RE:MAGICについて</h1>
         <p className="text-slate-600">
           テイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています。リマスター版にも対応予定。シンプルでクリーンなサイトを目指しています。
         </p>
