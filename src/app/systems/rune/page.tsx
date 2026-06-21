@@ -25,7 +25,7 @@ export default async function HomePage() {
       </p>
 
       <h2>ルーンボトルの購入方法</h2>
-      <EventCondition>ティンシア到着後以降</EventCondition>
+      <EventCondition category="period">ティンシア到着後以降</EventCondition>
       <p className="mb-10">
         基本的にダンジョン内で限られた数しか入手できないルーンボトルだが実はストーリー後半以降から購入することが可能となる。ティンシアの船具屋では「販売室」の改造(購入)が可能になる。改造後、バンエルティア号内の販売室に入ると中の自販機でルーンボトルを購入することができる。なお販売価格は「100000」ガルドとかなり高額。
       </p>

@@ -23,7 +23,7 @@ export default async function HomePage() {
       </PageSummary>
 
       <h2>「マニュアルのしょ」の入手</h2>
-      <EventCondition>いつでも</EventCondition>
+      <EventCondition category="period">いつでも</EventCondition>
       <p>
         レグルス道場の弟子に話かけ「マニュアル操作で激しく戦いたい」を選択すると入手できる。取得はいつでも可能だがストーリー的にレグルス道場に訪れたときにやっておくのがいいだろう。
       </p>
