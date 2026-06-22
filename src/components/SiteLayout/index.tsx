@@ -19,11 +19,11 @@ export default function SiteLayout({
         <div className={`${styles.headerInner} px-4 pb-4 pt-2`}>
           <div className="flex justify-between items-center ">
             <div>
-              <h1 className="text-lg font-bold tracking-tight mb-1">
+              <h1 className="text-lg font-bold tracking-tight">
                 <a href="/">RE:MAGIC</a>
               </h1>
               <p className="relative text-xs text-gray-700">
-                テイルズオブエターニア攻略情報をお届けします
+                テイルズオブエターニアの攻略情報をお届けします
               </p>
             </div>
             <MenuButton />

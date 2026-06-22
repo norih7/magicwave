@@ -33,9 +33,9 @@ export default async function HomePage() {
     <div style={{ padding: "0px" }}>
       <SetPageTitle title={subTitle} />
       <main className="space-y-12">
-        <h1 className="text-lg font-bold mb-4">RE:MAGICについて</h1>
+        <h1 className="text-lg font-bold mb-4">このサイトについて</h1>
         <p className="text-slate-1000">
-          テイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています。リマスター版にも対応予定。シンプルでクリーンなサイトを目指しています。
+          RE:MAGICではテイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています。リマスター版にも対応予定。シンプルでクリーンなサイトを目指しています。
         </p>
 
         {/* 2. 注目カテゴリセクション */}
@@ -48,7 +48,7 @@ export default async function HomePage() {
                 href={item.path}
                 className="block p-4 border border-gray-300 rounded-lg hover:shadow-lg transition-shadow bg-white"
               >
-                <h3 className="mb-2">{item.title}</h3>
+                <h3 className="mb-2 text-base">{item.title}</h3>
                 <p className="text-slate-500">{item.desc}</p>
               </Link>
             ))}
