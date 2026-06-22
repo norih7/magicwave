@@ -36,7 +36,7 @@ export default function Menu() {
             href="/stories/guide4"
             className="block p-1 hover:bg-gray-100 rounded"
           >
-            ペイルティ〜シゼル城
+            ペイルティ〜バリル城
           </a>
         </li>
         <li>

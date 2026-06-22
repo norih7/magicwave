@@ -18,7 +18,7 @@ export default function SiteLayout({
   return (
     <>
       <header className={`${styles.header}`}>
-        <div className={`${styles.headerInner} px-4 pb-4 pt-2`}>
+        <div className={`${styles.headerInner} px-4 pb-2 pt-1`}>
           <div className="flex justify-between items-center ">
             <h1 className="text-lg font-bold tracking-tight">
               <a href="/">
@@ -34,13 +34,20 @@ export default function SiteLayout({
           </div>
         </div>
       </header>
-
       <div className={styles.pageTitleArea}>
-        <div className={`${styles.pageTitleInner} p-4`}>
+        <div className={`${styles.pageTitleInner} px-4 py-3`}>
           <h2 className="text-lg font-bold text-gray-800">{title}</h2>
         </div>
       </div>
-
+      <div className={`${styles.shortcutMenu}`}>
+        <div>
+          <ul className="flex flex-nowrap">
+            <li className="py-2 pl-4 text-xs">
+              <a href="/stories">ストーリーガイド</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div className={styles.container}>
         {/* PCのみ表示されるサイドバー */}
         <aside className={`${styles.sidebar} hidden md:block`}>

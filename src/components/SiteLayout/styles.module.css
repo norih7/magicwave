@@ -15,10 +15,16 @@
 .header {
 }
 .headerInner,
-.pageTitleInner {
+.pageTitleInner,
+.shortcutMenu > div {
   max-width: 900px;
   margin: 0 auto;
 }
+
+.shortcutMenu {
+  border-bottom: 1px solid #ddd;
+}
+
 .footer {
   margin: 0 auto;
   padding: 1.5rem 0.5rem;
