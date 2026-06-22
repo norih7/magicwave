@@ -26,10 +26,6 @@
 .headerInner {
 }
 .headerInner h1 {
-  background: url(/eternia-dot.png) no-repeat 0 50%;
-  background-size: 43px;
-  line-height: 45px;
-  padding-left: 50px;
 }
 .pageTitleArea {
   background: #f0ece3;

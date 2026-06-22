@@ -5,8 +5,16 @@
 .summary header {
   display: inline-block;
   padding: 5px 0;
-  border-bottom: 8px solid #83a861;
-  font-weight: bold;
+  border-style: solid;
+  border-width: 0 0 8px 0;
+}
+
+.green {
+  border-color: #83a861;
+}
+
+.black {
+  border-color: #555;
 }
 
 .content {

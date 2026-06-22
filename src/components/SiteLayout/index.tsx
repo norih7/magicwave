@@ -5,6 +5,8 @@ import Menu from "./Menu";
 import { useTitle } from "@/context/TitleContext";
 import { useCategory } from "@/hooks/useCategory";
 import Breadcrumb from "@/components/Breadcrumb";
+import Image from "next/image";
+
 export default function SiteLayout({
   children,
 }: {
@@ -18,15 +20,17 @@ export default function SiteLayout({
       <header className={`${styles.header}`}>
         <div className={`${styles.headerInner} px-4 pb-4 pt-2`}>
           <div className="flex justify-between items-center ">
-            <div>
-              <h1 className="text-lg font-bold tracking-tight">
-                <a href="/">RE:MAGIC</a>
-              </h1>
-              <p className="relative text-xs text-gray-700">
-                テイルズオブエターニアの攻略情報をお届けします
-              </p>
-            </div>
+            <h1 className="text-lg font-bold tracking-tight">
+              <a href="/">
+                <Image src="/logo.png" alt="" width={145} height={45} />
+              </a>
+            </h1>
             <MenuButton />
+          </div>
+          <div className="">
+            <p className="relative text-xs text-gray-700">
+              テイルズオブエターニアの攻略情報をお届けします
+            </p>
           </div>
         </div>
       </header>
