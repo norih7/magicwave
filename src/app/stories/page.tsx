@@ -26,12 +26,13 @@ const featuredLinks = [
   {
     title: "ファロース〜チャットの小屋",
     path: "/stories/guide3",
-    image: "/link-header-stories-guide2.jpg",
+    image: "/link-header-stories-guide3.jpg",
     desc: "セレスティア突入後のストーリーガイド 難易度の高いチャットの小屋も解説",
   },
   {
     title: "ペイルティ〜バリル城",
     path: "/stories/guide4",
+    image: "/link-header-stories-guide4.jpg",
     desc: "雷晶霊の遺跡とバリル城など難易度の高いセレスティアのダンジョンを解説",
   },
   {
