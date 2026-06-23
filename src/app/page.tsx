@@ -1,5 +1,5 @@
 import SetPageTitle from "@/components/SetPageTitle";
-import Link from "next/link";
+import ContentLinks from "@/components/ContentLinks";
 
 // 攻略記事やカテゴリのダミーデータ
 const featuredLinks = [
@@ -41,18 +41,7 @@ export default async function HomePage() {
         {/* 2. 注目カテゴリセクション */}
         <section>
           <h2 className="">注目コンテンツ</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {featuredLinks.map((item) => (
-              <Link
-                key={item.path}
-                href={item.path}
-                className="block p-4 border border-gray-300 rounded-lg hover:shadow-lg transition-shadow bg-white"
-              >
-                <h3 className="mb-2 text-base">{item.title}</h3>
-                <p className="text-slate-500">{item.desc}</p>
-              </Link>
-            ))}
-          </div>
+          <ContentLinks list={featuredLinks} />
         </section>
 
         {/* 3. 更新履歴セクション */}

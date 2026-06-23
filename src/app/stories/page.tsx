@@ -1,7 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
-import Link from "next/link";
+import ContentLinks from "@/components/ContentLinks";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -26,6 +26,7 @@ const featuredLinks = [
   {
     title: "ファロース〜チャットの小屋",
     path: "/stories/guide3",
+    image: "/link-header-stories-guide2.jpg",
     desc: "セレスティア突入後のストーリーガイド 難易度の高いチャットの小屋も解説",
   },
   {
@@ -49,18 +50,7 @@ export default async function HomePage() {
         <p>テイルズオブエターニアのストーリー攻略情報です</p>
       </PageSummary>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {featuredLinks.map((item) => (
-          <Link
-            key={item.path}
-            href={item.path}
-            className="block p-4 border border-gray-300 rounded-lg hover:shadow-lg transition-shadow bg-white"
-          >
-            <h3 className="mb-2 text-base">{item.title}</h3>
-            <p className="text-slate-500">{item.desc}</p>
-          </Link>
-        ))}
-      </div>
+      <ContentLinks list={featuredLinks} />
     </article>
   );
 }
