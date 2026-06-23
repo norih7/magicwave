@@ -45,6 +45,15 @@ export default function SiteLayout({
             <li className="py-2 pl-4 text-xs">
               <a href="/stories">ストーリーガイド</a>
             </li>
+            <li className="py-2 pl-4 text-xs">
+              <a href="/skills">特技/晶霊術</a>
+            </li>
+            <li className="py-2 pl-4 text-xs">
+              <a href="/systems">システム解説</a>
+            </li>
+            <li className="py-2 pl-4 text-xs">
+              <a href="/subevents">サブイベント</a>
+            </li>
           </ul>
         </div>
       </div>
