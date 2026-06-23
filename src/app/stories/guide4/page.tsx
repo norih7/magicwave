@@ -6,6 +6,7 @@ import { getLocationItemsData } from "@/lib/db";
 import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
 import { createMetaTitle } from "@/utils";
+import Image from "next/image";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -56,6 +57,12 @@ export default async function HomePage() {
       <ol>
         <li>
           <h4>氷晶霊の山 全体マップ</h4>
+          <Image
+            src="/maps/hyousyourei_map.jpg"
+            alt=""
+            width={482}
+            height={600}
+          />
         </li>
         <li>
           このダンジョンでは氷が道を邪魔している箇所があるがそこはソーサラーリングを打つことで溶けて通れるようなる。
@@ -163,6 +170,7 @@ export default async function HomePage() {
       <ol>
         <li>
           <h4>雷晶霊の遺跡 全体マップ</h4>
+          <Image src="/maps/kaminari_map.jpg" alt="" width={650} height={666} />
         </li>
         <li>
           ボスのヴォルトのところまで辿り着くのに中々根気のいるダンジョン。ビリビリと電流が流れている箇所は触れるとHPにダメージを受けるので気をつけましょう。途中の障害物である水晶はフリーズリングを放てば破壊可能です。
@@ -187,6 +195,13 @@ export default async function HomePage() {
         </li>
         <li>
           電源装置を起動したあとの電流パズルの部屋は以下の順番通りに1、2、3と踏んでいけば正解に辿り着けます。
+          <br />
+          <Image
+            src="/maps/kaminari_map2.jpg"
+            alt=""
+            width={350}
+            height={203}
+          />
         </li>
         <li>
           奥の部屋まで辿り着くとボス「ヴォルト」と戦闘。勝利後にはヴォルトが暴走し、これを止めるにはスロットで「STOP!!」と揃えてやればいい。その後は光の大水霊レムが現れ、リッドの装備品「エクスカリバー」を入手する。ティンシアへ戻ろう。
@@ -244,6 +259,7 @@ export default async function HomePage() {
       <ol>
         <li>
           <h4>バリル城 全体マップ</h4>
+          <Image src="/maps/burrill_map.jpg" alt="" width={660} height={680} />
         </li>
         <li>
           マップが複雑なバリル城だが、基本的に3階構成になっていることを覚えておくと位置が分かりやすくなる。

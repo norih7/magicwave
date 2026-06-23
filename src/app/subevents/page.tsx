@@ -14,28 +14,53 @@ export const metadata = {
 
 const featuredLinks = [
   {
-    title: "マニュアルのしょ",
-    path: "/systems/manual",
+    title: "レンズ収集",
+    path: "/subevents/lens",
     desc: "",
   },
   {
-    title: "特技の習得",
-    path: "systems/skill",
+    title: "カトリーヌの恋愛",
+    path: "/subevents/catarine",
     desc: "",
   },
   {
-    title: "ルーンボトル",
-    path: "/systems/rune",
+    title: "クレーメルボール",
+    path: "/subevents/kremerball",
     desc: "",
   },
   {
-    title: "TPの減少効果",
-    path: "/systems/tp-reduce",
+    title: "シャンバルーン",
+    path: "/subevents/syanballoon",
     desc: "",
   },
   {
-    title: "マスターレシピ",
-    path: "/systems/master-recipe",
+    title: "チャット特技習得",
+    path: "/subevents/skill-chat",
+    desc: "",
+  },
+  {
+    title: "フォッグ特技習得",
+    path: "/subevents/skill-fog",
+    desc: "",
+  },
+  {
+    title: "画家リシテア",
+    path: "/subevents/lysithea",
+    desc: "",
+  },
+  {
+    title: "飛行艇の入手",
+    path: "/subevents/flying-boad",
+    desc: "",
+  },
+  {
+    title: "アイフリートアジト",
+    path: "/subevents/secret-base",
+    desc: "",
+  },
+  {
+    title: "隠し大晶霊",
+    path: "/subevents/secret-spirits",
     desc: "",
   },
 ];

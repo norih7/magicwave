@@ -6,6 +6,7 @@ import { getLocationItemsData } from "@/lib/db";
 import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
 import { createMetaTitle } from "@/utils";
+import Image from "next/image";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -39,6 +40,7 @@ export default async function HomePage() {
         <li>
           前半ダンジョンでは「破壊」「混沌」「秩序」「創造」といった4つの石像が置かれており、石像を調べることで向きを変更できる。この向きを逆しまにすればよく、「破壊と創造」「秩序と混沌」というように反対の意味になるように石像を向かい合わせる。石像の場所と向きは下記のマップを参照。
           <br />
+          <Image src="/maps/izanai_01.jpg" alt="" width={480} height={420} />
           謎解きに成功すると「ドンッ」と音がなり、川を渡ってキャンプイベントの場所まで移動できるようになる。
         </li>
         <li>

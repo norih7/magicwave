@@ -198,5 +198,5 @@ table td {
   border-right: 1px solid #ddd;
   box-shadow: 0 1px 0 #fff inset;
   line-height: 150%;
-  color: #444;
+  text-align: center;
 }

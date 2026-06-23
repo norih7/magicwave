@@ -5,6 +5,7 @@ export const categoryName = {
   stories: "ストーリーガイド",
   systems: "システム解説",
   subevents: "サブイベント",
+  extras: "隠しダンジョン",
 };
 
 export type CategoryKey = keyof typeof categoryName;

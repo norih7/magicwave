@@ -14,28 +14,28 @@ export const metadata = {
 
 const featuredLinks = [
   {
-    title: "マニュアルのしょ",
-    path: "/systems/manual",
+    title: "闇の洞窟",
+    path: "/extras/dark-cave",
     desc: "",
   },
   {
-    title: "特技の習得",
-    path: "systems/skill",
+    title: "沈没船",
+    path: "/extras/sunken-ship",
     desc: "",
   },
   {
-    title: "ルーンボトル",
-    path: "/systems/rune",
+    title: "アイフリードの墓",
+    path: "/extras/aifread",
     desc: "",
   },
   {
-    title: "TPの減少効果",
-    path: "/systems/tp-reduce",
+    title: "ファロース教会地下",
+    path: "/extras/farosu-underground",
     desc: "",
   },
   {
-    title: "マスターレシピ",
-    path: "/systems/master-recipe",
+    title: "きらめきの塔",
+    path: "/extras/valkyrie",
     desc: "",
   },
 ];

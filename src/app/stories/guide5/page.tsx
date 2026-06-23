@@ -6,6 +6,7 @@ import { getLocationItemsData } from "@/lib/db";
 import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
 import { createMetaTitle } from "@/utils";
+import Image from "next/image";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -310,6 +311,7 @@ export default async function HomePage() {
         </li>
         <li>
           <h4>シゼル城 概要マップ</h4>
+          <Image src="/maps/sizelu_map1.jpg" alt="" width={598} height={515} />
         </li>
         <li>
           シゼル城では「C」地点を目指すことになる。ここにある柱を調べ、その先にある合計6つの謎解きをクリアしてすべてに大晶霊の力を注ぐとワープゾーンが出現する。その奥ではボス「シゼル」とのラストバトルになる。
@@ -328,6 +330,8 @@ export default async function HomePage() {
         <li>
           <h4>氷晶霊の柱</h4>
           氷晶霊の謎解きをするためには石板をソーサラーリングで打つことが必要。石板に炎が灯るとそのフロアに色がついた穴ができ、炎が消えるまでの間に色の付いた氷柱を対応する色の穴に落とすと奥への通路が開く。炎を通してからそのままの状態で石を落とすのは時間的に難しいので、事前に石の配置を整えたうえで火を灯せば時間内に対応するのは難しくない。失敗したら、この仕掛けの部屋を出て再び入ればいい。
+          <br />
+          <Image src="/maps/sizelu_map2.jpg" alt="" width={600} height={470} />
         </li>
         <li>
           <h4>地晶霊の柱</h4>

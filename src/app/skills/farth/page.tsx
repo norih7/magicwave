@@ -1,5 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
+import EventCondition from "@/components/EventCondition";
+import Tag from "@/components/Tag";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -14,15 +16,17 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-
+      <h2>おすすめの特技</h2>
+      <div className="advice">
+        <p>準備中</p>
+      </div>
+      <h2>ファラの特技一覧</h2>
       <div className="advice">
         <h3>三散華 (さざんか)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv2/蹴Lv2</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv2</Tag>
+          <Tag>蹴Lv2</Tag>
+        </EventCondition>
         <p>
           脚の蹴り上げ下ろしによる3連撃。連撃の最後は的を奥に蹴飛ばす。連撃中はスキが多いので命中率が低い場合や硬い的には注意。
         </p>
@@ -42,16 +46,11 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
-
-      <div className="advice">
         <h3>連牙弾 (れんがだん)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv5/蹴Lv2</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv5</Tag>
+          <Tag>蹴Lv2</Tag>
+        </EventCondition>
         <p>連続した拳のパンチを繰り出す。パンチなので攻撃範囲はかなり狭い。</p>
         <table>
           <thead>
@@ -69,16 +68,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>飛燕連脚 (ひえんれんきゃく)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv4/蹴Lv5</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv4</Tag>
+          <Tag>蹴Lv5</Tag>
+        </EventCondition>
         <p>
           地上からジャンプし、空中で蹴りを繰り出す。非常に使いやすく、途中でキャンセルして空中からの技の連携も可能。
         </p>
@@ -98,16 +93,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>鷹爪蹴撃 (ようそうしゅうげき)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv3/蹴Lv8</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv3</Tag>
+          <Tag>蹴Lv8</Tag>
+        </EventCondition>
         <p>
           ジャンプ中の空中から垂直に蹴り下ろして落下する。動作が早いのでこちらも使いやすい。地上では出すことができない。
         </p>
@@ -127,16 +118,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>臥龍空破 (がりゅうくうは)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv8/蹴Lv4</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv8</Tag>
+          <Tag>蹴Lv4</Tag>
+        </EventCondition>
         <p>
           地上から拳のため攻撃を行い、敵を空中に突き上げる攻撃。ファラの突進などの動作があり、使いこなすのはコツが必要。空中コンボにつなげるのにはよい。
         </p>
@@ -156,16 +143,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>散華猛襲脚 (さんかもうしゅうきゃく)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv11/蹴Lv12</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv11</Tag>
+          <Tag>蹴Lv12</Tag>
+        </EventCondition>
         <p>
           空中でのみ発動できる技。空中から斜めに落下して三散華による蹴り上げ攻撃を行う。
         </p>
@@ -185,16 +168,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>双撞掌底破 (ようどうしょうていは)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv10/蹴Lv8</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv10</Tag>
+          <Tag>蹴Lv8</Tag>
+        </EventCondition>
         <p>--</p>
         <table>
           <thead>
@@ -212,16 +191,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>飛燕連天脚 (ひえんれんてんきゃく)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv9/蹴Lv18</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv9</Tag>
+          <Tag>蹴Lv18</Tag>
+        </EventCondition>
         <p>
           飛燕連脚の昇華技。最後にムーンサルトによる一蹴りが加わっている。習得には「飛燕連脚」の使用が150回以上必要。
         </p>
@@ -241,16 +216,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>八葉連牙 (はちようれんが)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv16/蹴Lv8</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv16</Tag>
+          <Tag>蹴Lv8</Tag>
+        </EventCondition>
         <p>習得には「連牙弾」の使用が150回以上必要。</p>
         <table>
           <thead>
@@ -268,16 +239,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>鷹爪落爆蹴 (ようそうらくばくしゅう)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv22/蹴Lv25</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv22</Tag>
+          <Tag>蹴Lv25</Tag>
+        </EventCondition>
         <p>
           習得には「散華猛襲脚」の使用が100回以上、「飛燕連天脚」の使用が100回以上必要。
         </p>
@@ -297,16 +264,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>獅子戦吼 (ししせんこう)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv22/蹴Lv14</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv22</Tag>
+          <Tag>蹴Lv14</Tag>
+        </EventCondition>
         <p>
           習得には「八葉連牙」の使用が100回以上、「双撞掌底破」の使用が160回以上必要。
         </p>
@@ -326,16 +289,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>殺劇舞荒拳 (さつげきぶこうけん)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>拳Lv30/蹴Lv30</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>拳Lv30</Tag>
+          <Tag>蹴Lv30</Tag>
+        </EventCondition>
         <p>
           習得には「獅子戦吼」の使用が120回以上、「鷹爪落爆蹴」の使用が120回以上必要。
         </p>
@@ -361,12 +320,9 @@ export default async function HomePage() {
 
       <div className="advice">
         <h3>治癒功 (ちゆこう)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>--</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>イベントで習得</Tag>
+        </EventCondition>
         <p>
           ストーリー進行で習得(レグルス道場でのイベント)。仲間一人のHPを回複する。
         </p>
@@ -386,16 +342,11 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>解毒功 (げどくこう)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>--</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>イベントで習得</Tag>
+        </EventCondition>
         <p>
           ストーリー上で習得(モルルでのイベント)。仲間一人の毒状態を回復する。
         </p>
@@ -415,16 +366,11 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>回生功 (かいせいこう)</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>--</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>イベントで習得</Tag>
+        </EventCondition>
         <p>
           ストーリー上で習得(ファロース教会でのイベント)。仲間一人の戦闘不能状態を回復する。
         </p>

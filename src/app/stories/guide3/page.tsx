@@ -6,6 +6,7 @@ import { getLocationItemsData } from "@/lib/db";
 import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
 import { createMetaTitle } from "@/utils";
+import Image from "next/image";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -110,6 +111,8 @@ export default async function HomePage() {
         </li>
         <li>
           図書館は給水タンクの斜め向かい側の通路から入っていける。場所が少し見えづらいため下記を参考にどうぞ。
+          <br />
+          <img src="/maps/imen_map.jpg" alt="" width={488} height={355} />
         </li>
         <li>
           図書館で2人と合流後、晶霊技師「ガレノス」に会うためにルイシカへ向かうことになる。
@@ -203,6 +206,8 @@ export default async function HomePage() {
         <li>
           <h4>地晶霊の廃坑 前半マップ</h4>
           「！」の部分はセレスティア七代秘宝の「コルレーンのつぼ」があり、スコップを持っていれば入手可能。
+          <br />
+          <Image src="/maps/mine_map.jpg" alt="" width={524} height={524} />
         </li>
         <li>
           このダンジョンは前半・後半(リフト起動後の下層)と別れており、前半は入口近くの休憩所にあるロッカーから道具を取り出しながら進んでいく必要がある。前半は下記のような手順で進めていく。

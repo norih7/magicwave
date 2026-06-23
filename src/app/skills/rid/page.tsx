@@ -40,8 +40,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">4</td>
-              <td className="text-right">1</td>
+              <td>4</td>
+              <td>1</td>
               <td>物理</td>
             </tr>
           </tbody>
@@ -63,8 +63,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">4</td>
-              <td className="text-right">2</td>
+              <td>4</td>
+              <td>2</td>
               <td>雷</td>
             </tr>
           </tbody>
@@ -86,8 +86,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">6</td>
-              <td className="text-right">2</td>
+              <td>6</td>
+              <td>2</td>
               <td>武器の属性</td>
             </tr>
           </tbody>
@@ -111,8 +111,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">7</td>
-              <td className="text-right">5</td>
+              <td>7</td>
+              <td>5</td>
               <td>武器の属性</td>
             </tr>
           </tbody>
@@ -136,8 +136,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">9</td>
-              <td className="text-right">5</td>
+              <td>9</td>
+              <td>5</td>
               <td>武器の属性</td>
             </tr>
           </tbody>
@@ -161,8 +161,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">8</td>
-              <td className="text-right">3</td>
+              <td>8</td>
+              <td>3</td>
               <td>風、雷</td>
             </tr>
           </tbody>
@@ -186,8 +186,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">8</td>
-              <td className="text-right">3</td>
+              <td>8</td>
+              <td>3</td>
               <td>物理</td>
             </tr>
           </tbody>
@@ -211,8 +211,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">10</td>
-              <td className="text-right">4</td>
+              <td>10</td>
+              <td>4</td>
               <td>武器の属性</td>
             </tr>
           </tbody>
@@ -236,8 +236,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">12</td>
-              <td className="text-right">11</td>
+              <td>12</td>
+              <td>11</td>
               <td>武器の属性</td>
             </tr>
           </tbody>
@@ -261,8 +261,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">4</td>
-              <td className="text-right">4</td>
+              <td>4</td>
+              <td>4</td>
               <td>雷、武器の属性</td>
             </tr>
           </tbody>
@@ -286,8 +286,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">10</td>
-              <td className="text-right">6</td>
+              <td>10</td>
+              <td>6</td>
               <td>武器の属性</td>
             </tr>
           </tbody>
@@ -311,8 +311,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">15</td>
-              <td className="text-right">4</td>
+              <td>15</td>
+              <td>4</td>
               <td>物理</td>
             </tr>
           </tbody>
@@ -336,8 +336,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">15</td>
-              <td className="text-right">2</td>
+              <td>15</td>
+              <td>2</td>
               <td>武器の属性</td>
             </tr>
           </tbody>
@@ -361,8 +361,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">10</td>
-              <td className="text-right">8</td>
+              <td>10</td>
+              <td>8</td>
               <td>光</td>
             </tr>
           </tbody>
@@ -386,8 +386,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">20</td>
-              <td className="text-right">8</td>
+              <td>20</td>
+              <td>8</td>
               <td>光、物理</td>
             </tr>
           </tbody>
@@ -411,8 +411,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">24</td>
-              <td className="text-right">19</td>
+              <td>24</td>
+              <td>19</td>
               <td>武器の属性</td>
             </tr>
           </tbody>
@@ -434,8 +434,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">14</td>
-              <td className="text-right">4</td>
+              <td>14</td>
+              <td>4</td>
               <td>光</td>
             </tr>
           </tbody>
@@ -459,8 +459,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">14</td>
-              <td className="text-right">5</td>
+              <td>14</td>
+              <td>5</td>
               <td>風</td>
             </tr>
           </tbody>
@@ -484,8 +484,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">40</td>
-              <td className="text-right">9</td>
+              <td>40</td>
+              <td>9</td>
               <td>火</td>
             </tr>
           </tbody>
@@ -509,8 +509,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">40</td>
-              <td className="text-right">8</td>
+              <td>40</td>
+              <td>8</td>
               <td>武器の属性</td>
             </tr>
           </tbody>
@@ -532,8 +532,8 @@ export default async function HomePage() {
           </thead>
           <tbody>
             <tr>
-              <td className="text-right">40</td>
-              <td className="text-right">2</td>
+              <td>40</td>
+              <td>2</td>
               <td>風</td>
             </tr>
           </tbody>

@@ -41,7 +41,7 @@ export default function SiteLayout({
       </div>
       <div className={`${styles.shortcutMenu}`}>
         <div>
-          <ul className="flex flex-nowrap">
+          <ul className="flex flex-wrap">
             <li className="py-2 pl-4 text-xs">
               <a href="/stories">ストーリーガイド</a>
             </li>
@@ -53,6 +53,9 @@ export default function SiteLayout({
             </li>
             <li className="py-2 pl-4 text-xs">
               <a href="/subevents">サブイベント</a>
+            </li>
+            <li className="py-2 pl-4 text-xs">
+              <a href="/extras">隠しダンジョン</a>
             </li>
           </ul>
         </div>

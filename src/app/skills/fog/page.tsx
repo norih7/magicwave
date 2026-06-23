@@ -1,5 +1,8 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
+import EventCondition from "@/components/EventCondition";
+import Tag from "@/components/Tag";
+import Link from "next/link";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -13,15 +16,14 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-
+      <h2>おすすめの特技</h2>
+      <div className="advice">
+        <p>準備中</p>
+      </div>
+      <h2>フォッグの特技一覧</h2>
       <div className="advice">
         <h3>バーニングフォース</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>初期習得</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">加入時に習得済み</EventCondition>
         <p>火属性の銃弾攻撃。キャンセルLv1。</p>
         <table>
           <thead>
@@ -43,12 +45,10 @@ export default async function HomePage() {
 
       <div className="advice">
         <h3>アクアスパイラル</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>サブイベントにて習得</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>サブイベント</Tag>{" "}
+          <Link href="/subevents/skill-fog">フォッグの特技習得</Link>
+        </EventCondition>
         <p>水属性の銃弾攻撃。キャンセルLv1。</p>
         <table>
           <thead>
@@ -66,16 +66,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>エアブレイド</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>サブイベントにて習得</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>サブイベント</Tag>{" "}
+          <Link href="/subevents/skill-chat">フォッグの特技習得</Link>
+        </EventCondition>
         <p>風属性の銃弾攻撃。キャンセルLv1。</p>
         <table>
           <thead>
@@ -93,16 +89,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>レイジレーザー</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>サブイベントにて習得</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>サブイベント</Tag>{" "}
+          <Link href="/subevents/skill-chat">フォッグの特技習得</Link>
+        </EventCondition>
         <p>光属性の銃弾攻撃。キャンセルLv2。</p>
         <table>
           <thead>
@@ -120,16 +112,12 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="advice">
         <h3>ダークレイザー</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>サブイベントにて習得</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>サブイベント</Tag>{" "}
+          <Link href="/subevents/skill-chat">フォッグの特技習得</Link>
+        </EventCondition>
         <p>闇属性の銃弾攻撃。キャンセルLv2。</p>
         <table>
           <thead>
@@ -151,12 +139,10 @@ export default async function HomePage() {
 
       <div className="advice">
         <h3>エレメンタルマスター</h3>
-        <nav>
-          <dl>
-            <dt>必要レベル</dt>
-            <dd>サブイベントにて習得</dd>
-          </dl>
-        </nav>
+        <EventCondition category="skill">
+          <Tag>サブイベント</Tag>{" "}
+          <Link href="/subevents/skill-chat">フォッグの特技習得</Link>
+        </EventCondition>
         <p>
           全属性の銃弾をそれぞれ放つ攻撃。キャンセルLv3。この技をそのまま出そうとするとかなり詠唱時間がかかりますが、キャンセラーによりLv1→Lv2とつなげていくと発動がかなり短縮できます。
         </p>

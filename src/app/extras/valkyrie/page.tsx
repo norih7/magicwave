@@ -1,5 +1,6 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
+import Image from "next/image";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -46,6 +47,13 @@ export default async function HomePage() {
           <h4>1階</h4>
           <p>
             星型の三角形のスイッチを特定の以下の順番に踏んでいけば2階へ行くためのワープが起動します。
+            <br />
+            <Image
+              src="/maps/valkyrie_01.jpg"
+              alt="きらめきの塔 1階のスイッチ"
+              width={230}
+              height={230}
+            />
           </p>
         </li>
         <li>
@@ -73,6 +81,13 @@ export default async function HomePage() {
           </p>
           <p>
             順番は以下の図を参照してください。なおソーサラリングを打つ際のキャラクター位置調整には「□ボタン」を押しながら方向キーを動かして調整してみください。
+            <br />
+            <Image
+              src="/maps/valkyrie_02.jpg"
+              alt="きらめきの塔 4階の水晶"
+              width={403}
+              height={396}
+            />
           </p>
         </li>
         <li>
@@ -94,6 +109,13 @@ export default async function HomePage() {
           </p>
           <p>
             最初のフロアの火柱を同じ色に統一した状態でワープ先にいくと、床がその統一した色と透明の2色になっている。この状態で以下の図の順番で進めば最上階へと行ける。
+            <br />
+            <Image
+              src="/maps/valkyrie_03.jpg"
+              alt="きらめきの塔 7階の順番"
+              width={203}
+              height={203}
+            />
           </p>
         </li>
         <li>
