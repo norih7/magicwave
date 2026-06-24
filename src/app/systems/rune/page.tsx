@@ -8,7 +8,7 @@ export const dynamic = "force-static";
 
 const title = " ルーンボトルの解説";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 export default async function HomePage() {

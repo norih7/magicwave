@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 
 const title = "放浪の画家リシテア";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 

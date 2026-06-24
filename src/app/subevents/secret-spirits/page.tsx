@@ -7,7 +7,7 @@ export const dynamic = "force-static";
 
 const title = " 隠し大晶霊";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 export default async function HomePage() {

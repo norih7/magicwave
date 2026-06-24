@@ -9,7 +9,7 @@ export const dynamic = "force-static";
 
 const title = "チャットの特技";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 

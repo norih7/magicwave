@@ -13,7 +13,7 @@ export const dynamic = "force-static";
 
 const title = "ルイシカ〜シゼル城";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 

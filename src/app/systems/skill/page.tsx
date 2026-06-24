@@ -7,7 +7,7 @@ export const dynamic = "force-static";
 
 const title = " 特技の習得について";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 export default async function HomePage() {

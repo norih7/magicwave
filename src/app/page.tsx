@@ -1,19 +1,20 @@
 import SetPageTitle from "@/components/SetPageTitle";
 import ContentLinks from "@/components/ContentLinks";
+import { storyLinks } from "@/constants";
+import { subeventLinks } from "@/constants";
+import { systemLinks } from "@/constants";
 
 // 攻略記事やカテゴリのダミーデータ
-const featuredLinks = [
-  {
-    title: "TPの減少効果アクセサリ",
-    path: "/systems/tp-reduce",
-    desc: "戦闘でバンバン特技や晶霊術を利用できるようになるアクセサリを紹介",
-  },
-  {
-    title: "チャットの特技習得",
-    path: "/subevents/skill-chat",
-    desc: "偶然辿り着くのが難しいチャットの特技習得場所をチェック",
-  },
-];
+type Link = {
+  title: string;
+  path: string;
+  desc: string;
+  image?: string;
+};
+const featuredLinks: Link[] = [];
+featuredLinks.push(storyLinks["guide4"]);
+featuredLinks.push(subeventLinks["skill-chat"]);
+featuredLinks.push(systemLinks["tp-reduce"]);
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";

@@ -8,7 +8,7 @@ export const dynamic = "force-static";
 
 const title = "晶霊術（メルディ＆キール）";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 

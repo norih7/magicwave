@@ -13,7 +13,7 @@ export const dynamic = "force-static";
 
 const title = "港町ペイルティ〜バリル城";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 

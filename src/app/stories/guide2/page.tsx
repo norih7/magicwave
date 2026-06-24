@@ -13,7 +13,7 @@ export const dynamic = "force-static";
 
 const title = "いざないの密林〜火晶霊の谷";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 

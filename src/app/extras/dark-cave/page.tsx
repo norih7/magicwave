@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 
 const title = "闇の洞窟";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 export default async function HomePage() {

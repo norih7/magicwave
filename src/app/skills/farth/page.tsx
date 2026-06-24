@@ -8,7 +8,7 @@ export const dynamic = "force-static";
 
 const title = "ファラの特技";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 

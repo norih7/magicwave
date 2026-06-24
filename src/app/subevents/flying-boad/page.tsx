@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 
 const title = "飛行艇の入手";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 

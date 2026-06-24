@@ -12,7 +12,7 @@ export const dynamic = "force-static";
 
 const title = "ラシュアン〜水晶霊の河";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 

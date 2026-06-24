@@ -13,7 +13,7 @@ export const dynamic = "force-static";
 
 const title = "霊峰ファロース〜チャットの小屋";
 export const metadata = {
-  title: createMetaTitle(title),
+  title,
   description: "",
 };
 
