@@ -13,5 +13,140 @@
     "id": 3,
     "name": "コレクターずかん",
     "type": "useItem"
+  },
+  {
+    "id": 4,
+    "name": "なべのふた",
+    "type": "armor"
+  },
+  {
+    "id": 5,
+    "name": "レザーヘルム",
+    "type": "armor"
+  },
+  {
+    "id": 6,
+    "name": "オレンジグミ",
+    "type": "useItem"
+  },
+  {
+    "id": 7,
+    "name": "サーベル",
+    "type": "weapon"
+  },
+  {
+    "id": 8,
+    "name": "ポールアクス",
+    "type": "weapon"
+  },
+  {
+    "id": 9,
+    "name": "600ガルド",
+    "type": "money"
+  },
+  {
+    "id": 10,
+    "name": "パナシーアボトル",
+    "type": "useItem"
+  },
+  {
+    "id": 11,
+    "name": "プロテクター",
+    "type": "armor"
+  },
+  {
+    "id": 12,
+    "name": "チェインアームズ",
+    "type": "armor"
+  },
+  {
+    "id": 13,
+    "name": "バトルアクス",
+    "type": "weapon"
+  },
+  {
+    "id": 14,
+    "name": "バックラー",
+    "type": "armor"
+  },
+  {
+    "id": 15,
+    "name": "ライフボトル",
+    "type": "useItem"
+  },
+  {
+    "id": 16,
+    "name": "サークレット",
+    "type": "accessory"
+  },
+  {
+    "id": 17,
+    "name": "レイピア",
+    "type": "weapon"
+  },
+  {
+    "id": 18,
+    "name": "ホーリィボトル",
+    "type": "useItem"
+  },
+  {
+    "id": 19,
+    "name": "インフェリマップ",
+    "type": "keyItem"
+  },
+  {
+    "id": 20,
+    "name": "モンスター図鑑",
+    "type": "keyItem"
+  },
+  {
+    "id": 21,
+    "name": "ナイツサーベル",
+    "type": "weapon"
+  },
+  {
+    "id": 22,
+    "name": "ピヨピヨW",
+    "type": "weapon"
+  },
+  {
+    "id": 23,
+    "name": "アイアンサレット",
+    "type": "accessory"
+  },
+  {
+    "id": 24,
+    "name": "ポイズンチェック",
+    "type": "accessory"
+  },
+  {
+    "id": 25,
+    "name": "シルククローク",
+    "type": "armor"
+  },
+  {
+    "id": 26,
+    "name": "フェザーローブ",
+    "type": "armor"
+  },
+  {
+    "id": 27,
+    "name": "アイアンリスト",
+    "type": "accessory"
+  },
+  {
+    "id": 28,
+    "name": "ミックスグミ",
+    "type": "useItem"
+  },
+  {
+    "id": 29,
+    "name": "アップルシールド",
+    "type": "armor"
+  },
+  {
+    "id": 30,
+    "name": "チンクエデア",
+    "type": "weapon"
   }
 ]

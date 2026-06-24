@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "ピエールとカトリーヌ",
+    "path": "/subevents/catarine"
+  },
+  {
+    "id": 2,
+    "name": "テイルズクイズ",
+    "path": "/path/to"
+  },
+  {
+    "id": 3,
+    "name": "クレーメルボール",
+    "path": "/subevents/kremerball"
+  }
+]

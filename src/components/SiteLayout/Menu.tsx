@@ -28,16 +28,18 @@ const List = (props: Props) => {
   return <ul className="space-y-1 mb-5">{list}</ul>;
 };
 
+const Category = ({ children }: { children: React.ReactNode }) => (
+  <h3 className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider">
+    {children}
+  </h3>
+);
+
 export default function Menu() {
   return (
     <nav className={`${styles.menu} px-4 py-8`}>
-      <p className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider">
-        ストーリーガイド
-      </p>
+      <Category>ストーリーガイド</Category>
       <List links={Object.values(storyLinks)} />
-      <p className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider">
-        特技/晶霊術
-      </p>
+      <Category>特技/晶霊術</Category>
       <List links={Object.values(skillLinks)} />
       {/* <p className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider">
         Data
@@ -54,20 +56,11 @@ export default function Menu() {
           </a>
         </li>
       </ul> */}
-
-      <p className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider">
-        システム
-      </p>
+      <Category>システム解説</Category>
       <List links={Object.values(systemLinks)} />
-
-      <p className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider">
-        サブイベント
-      </p>
+      <Category>サブイベント</Category>
       <List links={Object.values(subeventLinks)} />
-
-      <p className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider">
-        隠しダンジョン
-      </p>
+      <Category>隠しダンジョン</Category>
       <List links={Object.values(extraLinks)} />
     </nav>
   );

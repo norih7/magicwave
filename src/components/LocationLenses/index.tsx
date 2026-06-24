@@ -15,7 +15,7 @@ export default function LocationLenses(props: Props) {
   const filter = data.filter((item) => locationIds.includes(item.locationId));
   const Hoge = filter.map((recipe, index) => (
     <li key={index}>
-      <span>{recipe.remarks}</span>
+      {index + 1}つ目<span>{recipe.remarks}</span>
     </li>
   ));
   return (

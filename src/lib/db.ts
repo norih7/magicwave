@@ -2,6 +2,7 @@
 import locationItemsData from "../data/locationItems.json";
 import locationRecipesData from "../data/locationRecipes.json";
 import locationLensesData from "../data/locationLenses.json";
+import locationSubEventsData from "../data/locationSubEvents.json";
 
 export type Item = {
   name: string;
@@ -36,4 +37,15 @@ export type LocationLenses = {
 export async function getLocationLensesData(): Promise<LocationLenses[]> {
   // ここで compiledData を一度 unknown にしてから、Item[] にキャストします
   return locationLensesData as unknown as LocationLenses[];
+}
+
+export type locationSubEvents = {
+  locationId: number;
+  eventName: string;
+  eventPath: string;
+  remarks: string;
+};
+export async function getLocationSubEventsData(): Promise<locationSubEvents[]> {
+  // ここで compiledData を一度 unknown にしてから、Item[] にキャストします
+  return locationSubEventsData as unknown as locationSubEvents[];
 }

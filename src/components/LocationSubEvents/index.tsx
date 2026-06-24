@@ -1,23 +1,27 @@
 "use client";
+import Link from "next/link";
 import styles from "./styles.module.css";
 
-type Recipe = {
+type Subevent = {
   locationId: number;
-  recipeName: string;
+  eventName: string;
+  eventPath: string;
   remarks: string;
 };
 type Props = {
-  data: Recipe[];
+  data: Subevent[];
   locationIds: number[];
 };
 
-export default function LocationRecipes(props: Props) {
+export default function ChartList(props: Props) {
   const { data, locationIds } = props;
   const result = data.filter((item) => locationIds.includes(item.locationId));
-  const List = result.map((recipe, index) => (
+  const List = result.map((item, index) => (
     <li key={index}>
-      {recipe.recipeName}
-      <span>{recipe.remarks}</span>
+      <Link href={item.eventPath}>
+        {item.eventName}
+        <span>{item.remarks}</span>
+      </Link>
     </li>
   ));
   const Display =
@@ -28,7 +32,7 @@ export default function LocationRecipes(props: Props) {
     );
   return (
     <div className="mb-10">
-      <h3>レシピ</h3>
+      <h3>サブイベント</h3>
       {Display}
     </div>
   );

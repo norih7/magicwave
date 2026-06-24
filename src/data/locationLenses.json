@@ -2,8 +2,813 @@
   {
     "id": 1,
     "locationId": 1,
-    "locationName": "ロケーション1",
+    "locationName": "ラシュアン",
     "lensId": 1,
-    "remarks": "レンズの場所1"
+    "remarks": "リッドの家 B1 宝箱"
+  },
+  {
+    "id": 2,
+    "locationId": 1,
+    "locationName": "ラシュアン",
+    "lensId": 2,
+    "remarks": "村の入口左側にある風車の扉"
+  },
+  {
+    "id": 3,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "lensId": 3,
+    "remarks": "道場奥 右から2番目の部屋にある丸テーブル"
+  },
+  {
+    "id": 4,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "lensId": 4,
+    "remarks": "道場奥 1番右の部屋にあるピンクの箱"
+  },
+  {
+    "id": 5,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "lensId": 5,
+    "remarks": "ミンツの町 グラウンドに入る前の木影"
+  },
+  {
+    "id": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "lensId": 6,
+    "remarks": "ミンツ大学 水晶霊研究室のレバー"
+  },
+  {
+    "id": 7,
+    "locationId": 5,
+    "locationName": "ミンツの岩山",
+    "lensId": 7,
+    "remarks": "入口から少し進んだところにある階段を下りた先にある木箱"
+  },
+  {
+    "id": 8,
+    "locationId": 7,
+    "locationName": "望郷の洞窟",
+    "lensId": 8,
+    "remarks": "エッグベアの死骸ある場所の奥の部屋にある薪"
+  },
+  {
+    "id": 9,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "lensId": 9,
+    "remarks": "村の食品店 奥にあるかぼちゃ"
+  },
+  {
+    "id": 10,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "lensId": 10,
+    "remarks": "マゼットの家1Fにある暖炉"
+  },
+  {
+    "id": 11,
+    "locationId": 9,
+    "locationName": "水晶霊の河",
+    "lensId": 11,
+    "remarks": "入口マップの木の陰"
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "lensId": "",
+    "remarks": ""
   }
 ]
