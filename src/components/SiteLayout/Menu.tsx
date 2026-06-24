@@ -20,9 +20,9 @@ const List = (props: Props) => {
   const { links } = props;
   const list = links.map((item, index) => (
     <li key={index}>
-      <Link href={item.path} className="block p-1 hover:bg-gray-100 rounded">
+      <a href={item.path} className="block p-1 hover:bg-gray-100 rounded">
         {item.title}
-      </Link>
+      </a>
     </li>
   ));
   return <ul className="space-y-1 mb-5">{list}</ul>;
