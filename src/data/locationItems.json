@@ -1041,18 +1041,482 @@
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "itemsId": "",
-    "itemName": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 48,
+    "itemName": "エリクシール",
     "remarks": ""
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "itemsId": "",
-    "itemName": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 48,
+    "itemName": "エリクシール",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 93,
+    "itemName": "アクアマント",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 43,
+    "itemName": "ルーンボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 35,
+    "itemName": "リキュールボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 94,
+    "itemName": "フリーズチェック",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 95,
+    "itemName": "シルバークローク",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 58,
+    "itemName": "セージ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 96,
+    "itemName": "バトルピック",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 46,
+    "itemName": "ミラクルグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 35,
+    "itemName": "リキュールボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 76,
+    "itemName": "オールディバイト",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 60,
+    "itemName": "ラベンダー",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "itemsId": 77,
+    "itemName": "アワーグラス",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "itemsId": 43,
+    "itemName": "ルーンボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 97,
+    "itemName": "パラライチェック",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 36,
+    "itemName": "パイングミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 98,
+    "itemName": "ビッグバッグ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 99,
+    "itemName": "パイレーツハット",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 76,
+    "itemName": "オールディバイト",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 36,
+    "itemName": "パイングミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 100,
+    "itemName": "ボルテックソード",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 101,
+    "itemName": "ピヨハン",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 102,
+    "itemName": "サンダーマント",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 43,
+    "itemName": "ルーンボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 103,
+    "itemName": "レッドセージ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "itemsId": 104,
+    "itemName": "ホーリィスタッフ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "itemsId": 105,
+    "itemName": "プリティリボン",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "itemsId": 106,
+    "itemName": "ドラゴンベイン",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "itemsId": 107,
+    "itemName": "ドラグナーランス",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "itemsId": 108,
+    "itemName": "レアシールド",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "itemsId": 109,
+    "itemName": "スケールローブ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "itemsId": 110,
+    "itemName": "ラピスランス",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "itemsId": 95,
+    "itemName": "シルバークローク",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "itemsId": 48,
+    "itemName": "エリクシール",
+    "remarks": "フェイクを倒すと入手"
+  },
+  {
+    "id": "",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "itemsId": 111,
+    "itemName": "ミスリルアームズ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "itemsId": 112,
+    "itemName": "シルバープレート",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "itemsId": 113,
+    "itemName": "ブラックオニキス",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "itemsId": 115,
+    "itemName": "ミスリルプレート",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "itemsId": 48,
+    "itemName": "エリクシール",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "itemsId": 116,
+    "itemName": "ミスリルメッシュ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "itemsId": 117,
+    "itemName": "こくしょうせき",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "itemsId": 118,
+    "itemName": "ししょうせき",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "itemsId": 119,
+    "itemName": "ミスティシンボル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "itemsId": 120,
+    "itemName": "ミスリルブレス",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "itemsId": 121,
+    "itemName": "ダイヤナックル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "itemsId": 122,
+    "itemName": "せいりゅうとう",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "itemsId": 123,
+    "itemName": "デモンズシール",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "itemsId": 124,
+    "itemName": "マム・ベイン",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "itemsId": 125,
+    "itemName": "ラックバック",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "itemsId": 116,
+    "itemName": "ミスリルメッシュ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "itemsId": 126,
+    "itemName": "やみのたま",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "itemsId": 48,
+    "itemName": "エリクシール",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "itemsId": 127,
+    "itemName": "レッドベルベーヌ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "itemsId": 128,
+    "itemName": "レッドセボリー",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "itemsId": 129,
+    "itemName": "レッドラベンダー",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 31,
+    "locationName": "アイフリードの洞窟",
+    "itemsId": 114,
+    "itemName": "フレイムソード",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 31,
+    "locationName": "アイフリードの洞窟",
+    "itemsId": 77,
+    "itemName": "アワーグラス",
     "remarks": ""
   }
 ]

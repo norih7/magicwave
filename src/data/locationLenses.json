@@ -154,88 +154,88 @@
     "remarks": "ノームの集落 「ぽや〜ん」というノームの左上を調べる"
   },
   {
-    "id": "",
+    "id": 23,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "lensId": 23,
     "remarks": "地下4階 左側通路 奥の部屋にある木箱"
   },
   {
-    "id": "",
+    "id": 24,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "lensId": 24,
     "remarks": "地下1階 右側通路 奥の部屋にあるジャガイモ箱"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "id": 25,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "lensId": 24,
+    "remarks": "港にいるカニ"
+  },
+  {
+    "id": 26,
+    "locationId": 26,
+    "locationName": "アイメン（崩壊後）",
+    "lensId": 25,
+    "remarks": "武器屋の壊れたショーケース"
+  },
+  {
+    "id": 27,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "lensId": 26,
+    "remarks": "ノーム像"
+  },
+  {
+    "id": 28,
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "lensId": 27,
+    "remarks": "入ってすぐの石碑"
+  },
+  {
+    "id": 29,
+    "locationId": 29,
+    "locationName": "バリル城",
+    "lensId": 28,
+    "remarks": "ダンジョン内の宝箱"
+  },
+  {
+    "id": 30,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "lensId": 29,
+    "remarks": "フォッグのいる部屋にある宝箱を調べる"
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "locationId": 31,
+    "locationName": "アイフリードの洞窟",
+    "lensId": 30,
+    "remarks": "ドッグ入口に積んである木箱を調べる"
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "locationId": 31,
+    "locationName": "アイフリードの洞窟",
+    "lensId": 31,
+    "remarks": "アイフリードの胸像がある部屋に飾ってある碇を調べる"
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "locationId": 38,
+    "locationName": "アイフリードの台座",
+    "lensId": 32,
+    "remarks": "アイフリード台座にある機械を調べる"
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "locationId": 30,
+    "locationName": "セイファート神殿",
+    "lensId": 33,
+    "remarks": "入り口の前にある右下のレンズ球体を調べる"
   },
   {
     "id": "",

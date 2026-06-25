@@ -1,17 +1,19 @@
+import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
 import LocationItems from "@/components/LocationItems";
 import LocationRecipes from "@/components/LocationRecipes";
 import LocationLenses from "@/components/LocationLenses";
-import SetPageTitle from "@/components/SetPageTitle";
+import LocationSubEvents from "@/components/LocationSubEvents";
 import { getLocationItemsData } from "@/lib/db";
 import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
-import { createMetaTitle } from "@/utils";
+import { getLocationSubEventsData } from "@/lib/db";
 import Image from "next/image";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "ルイシカ〜シゼル城";
+const title = "セイファート神殿〜シゼル城";
 export const metadata = {
   title,
   description: "",
@@ -21,39 +23,12 @@ export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const recipesData = await getLocationRecipesData();
   const lensesData = await getLocationLensesData();
+  const subEventData = await getLocationSubEventsData();
 
   return (
     <article>
       <SetPageTitle title={title} />
-
-      <h2>1.&nbsp;ルイシカ〜ティンシア</h2>
-
-      <ol>
-        <li>
-          ルイシカでガレノスに会いにいき極光術の話を聞く。その後はティンシアへ向かおう。
-        </li>
-        <li>
-          ティンシアの町に入るとイベント。これ以降、アジトのフォッグに話かけることでフォッグを仲間にすることができる。また仲間から外したい場合はこの部屋に来るといい。
-        </li>
-        <li>
-          出航してバンエルティア号がフィールドに出るとイベントが発生。以降はセイファートキーが指し示す場所へ向かうこととなる。次はペイルティの南にあるセイファート神殿へ向かう。
-        </li>
-      </ol>
-
-      <h4>新規入手アイテム</h4>
-
-      <ul className="item-onecol">
-        <li>なし</li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>フォッグのいる部屋にある宝箱を調べる</li>
-      </ul>
-
-      <h2>2.&nbsp;セイファート神殿</h2>
-
+      <h2>1.&nbsp;セイファート神殿</h2>
       <ol>
         <li>
           以降はセイファートの試練を受けていくことになる。セイファート神殿ではイベントのみで、終了後にリッドが「極光壁」を習得する。
@@ -62,21 +37,13 @@ export default async function HomePage() {
           セイファーとキーが次の試練の場所を指したのはインフェリア。インフェリアへ向かうためのヒントを得るためにチャットの小屋へ向かう。
         </li>
       </ol>
-
-      <h4>入手アイテム</h4>
-
-      <ul className="item-onecol">
-        <li>なし</li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>入り口の前にある右下のレンズ球体を調べる</li>
-      </ul>
-
-      <h2>3.&nbsp;チャットの小屋</h2>
-
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[30]} />
+        <LocationRecipes data={recipesData} locationIds={[30]} />
+        <LocationLenses data={lensesData} locationIds={[30]} />
+        <LocationSubEvents data={subEventData} locationIds={[30]} />
+      </div>
+      <h2>2.&nbsp;チャットの小屋</h2>
       <ol>
         <li>
           小屋に入るとイベント。イベント後に「ジーピーエス(GPS)」を入手し、以降フィールドマップで緯度と経度が表示されるようになる。
@@ -85,15 +52,13 @@ export default async function HomePage() {
           イベント内であった(204,98)の指す場所までバンエルティア号で目指しましょう。
         </li>
       </ol>
-
-      <h4>新規入手アイテム</h4>
-
-      <ul>
-        <li>なし</li>
-      </ul>
-
-      <h2>4.&nbsp;アイフリードの洞窟</h2>
-
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[0]} />
+        <LocationRecipes data={recipesData} locationIds={[0]} />
+        <LocationLenses data={lensesData} locationIds={[0]} />
+        <LocationSubEvents data={subEventData} locationIds={[0]} />
+      </div>
+      <h2>3.&nbsp;アイフリードの洞窟</h2>
       <ol>
         <li>
           バンエルティア号で(204,98)の付近まで行くとフィールドが変化してアイフリードの台座への洞窟が開かれる。
@@ -107,23 +72,13 @@ export default async function HomePage() {
           スゴログ部屋の出口の奥で石像を調べると、さらに奥へと進める扉が開く。イベント後はバンエルティア号が改造されて、海中探索ができるようになるのでアジトを探索しよう。
         </li>
       </ol>
-
-      <h4>入手アイテム</h4>
-
-      <ul>
-        <li>フレイムソード</li>
-        <li>アワーグラス</li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>ドッグ入口に積んである木箱を調べる</li>
-        <li>アイフリードの胸像がある部屋に飾ってある碇を調べる</li>
-      </ul>
-
-      <h2>5.&nbsp;海底のアジト探し</h2>
-
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[31]} />
+        <LocationRecipes data={recipesData} locationIds={[31]} />
+        <LocationLenses data={lensesData} locationIds={[31]} />
+        <LocationSubEvents data={subEventData} locationIds={[31]} />
+      </div>
+      <h2>4.&nbsp;海底のアジト探し</h2>
       <ol>
         <li>
           海底での潜水艇での調査はアイフリードの台座(99,
@@ -174,36 +129,26 @@ export default async function HomePage() {
           初回時は遠征の橋が立ち上がるとイベントで自動的にインフェリアへと移動する。
         </li>
       </ol>
-
-      <h4>入手アイテム</h4>
-
-      <ul className="item-onecol">
-        <li>なし</li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>アイフリード台座にある機械を調べる</li>
-      </ul>
-
-      <h2>6.&nbsp;セイファート庭園</h2>
-
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[0]} />
+        <LocationRecipes data={recipesData} locationIds={[0]} />
+        <LocationLenses data={lensesData} locationIds={[38]} />
+        <LocationSubEvents data={subEventData} locationIds={[0]} />
+      </div>
+      <h2>5.&nbsp;セイファート庭園</h2>
       <ol>
         <li>インフェリアの海中にGPS情報(169, 18)が差す場所にある。</li>
         <li>
           庭園の奥では試練のイベント。イベント終了後にはリッドが「極光剣」を習得する。庭園を出るとイベントが発生して自動的にインフェリア城へ到着する。
         </li>
       </ol>
-
-      <h4>入手アイテム</h4>
-
-      <ul>
-        <li>なし</li>
-      </ul>
-
-      <h2>7.&nbsp;インフェリア城〜セイファートリング</h2>
-
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[33]} />
+        <LocationRecipes data={recipesData} locationIds={[33]} />
+        <LocationLenses data={lensesData} locationIds={[33]} />
+        <LocationSubEvents data={subEventData} locationIds={[33]} />
+      </div>
+      <h2>6.&nbsp;インフェリア城〜セイファートリング</h2>
       <ol>
         <li>
           インフェリア城では牢屋でのイベント後、インフェリア城を出てインフェリア港へ行こう。
@@ -218,15 +163,13 @@ export default async function HomePage() {
           試練のイベントを終了するとリッドが「極光波」を習得する。その後、観測所のイベントでセイファートリングが崩れたらフィールドに出てリングへと向かう。界面のフィールドからセイファートリングに突入するとイベントが発生して自動的にティンシアへと送られる。
         </li>
       </ol>
-
-      <h4>入手アイテム</h4>
-
-      <ul>
-        <li>なし</li>
-      </ul>
-
-      <h2>8.&nbsp;ティンシア〜バリル城</h2>
-
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[34]} />
+        <LocationRecipes data={recipesData} locationIds={[34]} />
+        <LocationLenses data={lensesData} locationIds={[34]} />
+        <LocationSubEvents data={subEventData} locationIds={[34]} />
+      </div>
+      <h2>7.&nbsp;ティンシア〜バリル城</h2>
       <ol>
         <li>
           ティンシアで行動できるようになると、アジトにいるフォッグに会いにいく。
@@ -240,22 +183,20 @@ export default async function HomePage() {
           ティンシアのイベントでは晶霊砲の強化のために必要なリヴァイウス鉱石を獲得するためにインフェリアの「レグルスの丘」へ行くことになる。遠征の橋を経由してインフェリアへと向かおう。
         </li>
       </ol>
-
-      <div className="boss-advice margin-bottom-small">
+      <div className="boss-advice margin-bottom-small mb-8">
         <h4>BOSS：『ヒアデス』HP：128000(NORML)</h4>
         <p>
           弱点なし。詠唱を始めたらすぐに攻撃をして食い止めよう。ファラなどの肉弾戦キャラクターとはさみ打ちにできれば比較的楽に倒すことができる。
         </p>
       </div>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[0]} />
+        <LocationRecipes data={recipesData} locationIds={[0]} />
+        <LocationLenses data={lensesData} locationIds={[0]} />
+        <LocationSubEvents data={subEventData} locationIds={[0]} />
+      </div>
 
-      <h4>新規入手アイテム</h4>
-
-      <ul>
-        <li>なし</li>
-      </ul>
-
-      <h2>9.&nbsp;レグルスの丘</h2>
-
+      <h2>8.&nbsp;レグルスの丘</h2>
       <ol>
         <li>
           難しい謎解きなどは無い。窪みがあり通れない場所は、別の通路から岩を落として経過するようにしていく。
@@ -264,27 +205,18 @@ export default async function HomePage() {
           奥地ではボス「レム」との戦闘になり、勝利すればレムと契約できる。その奥地ではイベントが発生し、リヴァリウス鉱石を入手する。バリル城にある晶霊砲まで持っていこう。
         </li>
       </ol>
-
-      <div className="boss-advice margin-bottom-small">
+      <div className="boss-advice margin-bottom-small mb-8">
         <h4>BOSS：『レム』HP：100000(NORML)</h4>
         <p>弱点は闇。弱点を付いた武器で攻撃していけば良い。</p>
       </div>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[35]} />
+        <LocationRecipes data={recipesData} locationIds={[35]} />
+        <LocationLenses data={lensesData} locationIds={[35]} />
+        <LocationSubEvents data={subEventData} locationIds={[35]} />
+      </div>
 
-      <h4>入手アイテム</h4>
-
-      <ul>
-        <li>ミスリルプレート</li>
-        <li>エリクシール</li>
-        <li>ミスリルメッシュ</li>
-        <li>こくしょうせき</li>
-        <li>ししょうせき</li>
-        <li>ミスティシンボル</li>
-        <li>ミスリルブレス</li>
-        <li>ダイヤナックル</li>
-      </ul>
-
-      <h2>10.&nbsp;バリル城〜セイファート観測所</h2>
-
+      <h2>9.&nbsp;バリル城〜セイファート観測所</h2>
       <ol>
         <li>
           バリル城の壊れた壁の奥にある晶霊砲まで行くとイベント。イベント後は遠征の橋から、セイファート観測所へ向かう。なお晶霊砲のところにいるゾシモスに話かけて鉱石を武器にする話を聞いておくとリッドの武器「ラストフェンサー」を入手するイベントのフラグが立つ。
@@ -296,15 +228,14 @@ export default async function HomePage() {
           セイファートリングへ突入するとイベントは発生して、内部にあるシゼル城が出現するので乗り込もう。次がラストダンジョンとなる。
         </li>
       </ol>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[36]} />
+        <LocationRecipes data={recipesData} locationIds={[36]} />
+        <LocationLenses data={lensesData} locationIds={[36]} />
+        <LocationSubEvents data={subEventData} locationIds={[36]} />
+      </div>
 
-      <h4>新規入手アイテム</h4>
-
-      <ul className="item-onecol">
-        <li>なし</li>
-      </ul>
-
-      <h2>11.&nbsp;シゼル城</h2>
-
+      <h2>10.&nbsp;シゼル城</h2>
       <ol>
         <li>
           ラストダンジョン。ダンジョンは広くないが謎解きが難しい。長期滞在になるのでアイテムを十分補給して挑みましょう。
@@ -354,8 +285,7 @@ export default async function HomePage() {
           大晶霊の力をすべて注ぐと「C」地点にワープゾーンが出現する。そこから奥に進むとイベントがあり、ボス「シゼル」との戦闘になる。一連の勝利後はエンディングとなる。
         </li>
       </ol>
-
-      <div className="boss-advice margin-bottom-small">
+      <div className="boss-advice margin-bottom-small mb-8">
         <h4>BOSS：『シゼル』HP：(NORML)</h4>
         <p className="margin-bottom-small">--</p>
         <h4>BOSS：『ネレイド』HP：400000(NORML)</h4>
@@ -363,22 +293,12 @@ export default async function HomePage() {
           エターナルファイナリティが発動されたら「◯、×、◽︎」ボタンを同時押しにした状態にしてリッドの極光波を出して防ごう。この戦闘ではリッドを操作していなくても極光波が発動する。
         </p>
       </div>
-
-      <h4>入手アイテム</h4>
-
-      <ul>
-        <li>せいりゅうとう</li>
-        <li>デモンズシール</li>
-        <li>マム・ベイン</li>
-        <li>ラックバック</li>
-        <li>ミスリルメッシュ</li>
-        <li>やみのたま</li>
-        <li>エリクシール</li>
-        <li>レッドベルベーヌ</li>
-        <li>レッドセージ</li>
-        <li>レッドセボリー</li>
-        <li>レッドラベンダー</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[37]} />
+        <LocationRecipes data={recipesData} locationIds={[37]} />
+        <LocationLenses data={lensesData} locationIds={[37]} />
+        <LocationSubEvents data={subEventData} locationIds={[37]} />
+      </div>
     </article>
   );
 }

@@ -120,28 +120,28 @@
     "remarks": "休憩室の時計"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 16,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "recipeId": 16,
+    "recipeName": "エビチリリリ",
+    "remarks": "食材店 カウンター前のタル"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 17,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "recipeId": 17,
+    "recipeName": "おこげサンド",
+    "remarks": "船具屋のミアキス像"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 18,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "recipeId": 18,
+    "recipeName": "スイートパフェ",
+    "remarks": "ホテルロビーのドラゴン像"
   },
   {
     "id": "",

@@ -1,11 +1,13 @@
+import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
 import LocationItems from "@/components/LocationItems";
 import LocationRecipes from "@/components/LocationRecipes";
 import LocationLenses from "@/components/LocationLenses";
-import SetPageTitle from "@/components/SetPageTitle";
+import LocationSubEvents from "@/components/LocationSubEvents";
 import { getLocationItemsData } from "@/lib/db";
 import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
-import { createMetaTitle } from "@/utils";
+import { getLocationSubEventsData } from "@/lib/db";
 import Image from "next/image";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
@@ -21,13 +23,13 @@ export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const recipesData = await getLocationRecipesData();
   const lensesData = await getLocationLensesData();
+  const subEventData = await getLocationSubEventsData();
 
   return (
     <article>
       <SetPageTitle title={title} />
 
       <h2>1.&nbsp;港町ペイルティ</h2>
-
       <ol>
         <li>氷晶霊の山に入るため防寒服を調達しに行くことになる。</li>
         <li>
@@ -37,23 +39,14 @@ export default async function HomePage() {
         </li>
         <li>支度が整ったならフィールドに出て氷晶霊の山に向かおう。</li>
       </ol>
-
-      <h4>レシピ</h4>
-
-      <ul className="item-onecol">
-        <li>
-          エビチリリリ <span className="daiji">食材店 カウンター前のタル</span>
-        </li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>港にいるカニ</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[24]} />
+        <LocationRecipes data={recipesData} locationIds={[24]} />
+        <LocationLenses data={lensesData} locationIds={[24]} />
+        <LocationSubEvents data={subEventData} locationIds={[24]} />
+      </div>
 
       <h2>2.&nbsp;氷晶霊の山</h2>
-
       <ol>
         <li>
           <h4>氷晶霊の山 全体マップ</h4>
@@ -76,40 +69,18 @@ export default async function HomePage() {
           勝利後はバンエルティア号でアイメンの町へ向かおう。
         </li>
       </ol>
-
-      <div className="boss-advice margin-bottom-small">
+      <div className="boss-advice margin-bottom-small mb-8">
         <h4>BOSS：『セルシウス』HP：33333(NORML)</h4>
         <p>弱点は火。</p>
       </div>
-
-      <h4>アイテム</h4>
-
-      <ul>
-        <li>エリクシール×2</li>
-        <li>アクアマント</li>
-        <li>ルーンボトル</li>
-        <li>リキュールボトル</li>
-        <li>
-          フリーズチェック
-          <br />
-        </li>
-        <li>リキュールボトル</li>
-        <li>シルバークローク</li>
-        <li>ライフボトル</li>
-        <li>セージ</li>
-        <li>
-          バトルピック
-          <br />
-        </li>
-        <li>ミラクルグミ</li>
-        <li>リキュールボトル</li>
-        <li>オールディバイド</li>
-        <li>ラベンダー</li>
-        <li>アワーグラス</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[25]} />
+        <LocationRecipes data={recipesData} locationIds={[25]} />
+        <LocationLenses data={lensesData} locationIds={[25]} />
+        <LocationSubEvents data={subEventData} locationIds={[25]} />
+      </div>
 
       <h2>3.&nbsp;アイメン(崩壊)</h2>
-
       <ol>
         <li>アイメンに入るとイベント。</li>
         <li>
@@ -119,54 +90,30 @@ export default async function HomePage() {
         </li>
       </ol>
 
-      <div className="boss-advice margin-bottom-small">
+      <div className="boss-advice margin-bottom-small mb-8">
         <h4>BOSS：『ヒアデス』HP：45000(NORML)</h4>
         <p>弱点は光。</p>
       </div>
-
-      <h4>アイテム</h4>
-
-      <ul>
-        <li>なし</li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul>
-        <li>武器屋の壊れたショーケース</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[26]} />
+        <LocationRecipes data={recipesData} locationIds={[26]} />
+        <LocationLenses data={lensesData} locationIds={[26]} />
+        <LocationSubEvents data={subEventData} locationIds={[26]} />
+      </div>
 
       <h2>4.&nbsp;ティンシア</h2>
-
       <ol>
         <li>バンエルティア号に乗って雷晶霊の遺跡へ向かおう。</li>
       </ol>
 
-      <h4>アイテム</h4>
-
-      <ul className="item-onecol">
-        <li>ルーンボトル</li>
-      </ul>
-
-      <h4>レシピ</h4>
-
-      <ul className="item-twocol">
-        <li>
-          おこげサンド <span className="daiji">船具屋のミアキス像</span>
-        </li>
-        <li>
-          スイートパフェ <span className="daiji">ホテルロビーのドラゴン像</span>
-        </li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>ノーム像</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[27]} />
+        <LocationRecipes data={recipesData} locationIds={[27]} />
+        <LocationLenses data={lensesData} locationIds={[27]} />
+        <LocationSubEvents data={subEventData} locationIds={[27]} />
+      </div>
 
       <h2>5.&nbsp;雷晶霊の遺跡</h2>
-
       <ol>
         <li>
           <h4>雷晶霊の遺跡 全体マップ</h4>
@@ -207,38 +154,18 @@ export default async function HomePage() {
           奥の部屋まで辿り着くとボス「ヴォルト」と戦闘。勝利後にはヴォルトが暴走し、これを止めるにはスロットで「STOP!!」と揃えてやればいい。その後は光の大水霊レムが現れ、リッドの装備品「エクスカリバー」を入手する。ティンシアへ戻ろう。
         </li>
       </ol>
-
-      <div className="boss-advice margin-bottom-small">
+      <div className="boss-advice margin-bottom-small mb-8">
         <h4>BOSS：『ヴォルト』HP：54321(NORML)</h4>
         <p>弱点は水。</p>
       </div>
-
-      <h4>アイテム</h4>
-
-      <ul>
-        <li>パラライチェック</li>
-        <li>パイン</li>
-        <li>ビッグバッグ</li>
-        <li>パイレーツハット</li>
-        <li>オールディバイト</li>
-        <li>パイン</li>
-        <li>パナシーアボトル</li>
-        <li>ボルテックソード</li>
-        <li>ピヨハン</li>
-        <li>サンダーマント</li>
-        <li>ルーンボトル</li>
-        <li>レッドセージ</li>
-        <li>ホーリィスタッフ</li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>入ってすぐの石碑</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[28]} />
+        <LocationRecipes data={recipesData} locationIds={[28]} />
+        <LocationLenses data={lensesData} locationIds={[28]} />
+        <LocationSubEvents data={subEventData} locationIds={[28]} />
+      </div>
 
       <h2>6.&nbsp;ティンシア〜バリル城への突入</h2>
-
       <ol>
         <li>
           船具屋のはしごを降り、ドッグへ行くとイベントが発生してキールが仲間に戻る。ホテルの宿泊券をもらったら、ホテルへ行きイベントを見よう。
@@ -247,15 +174,14 @@ export default async function HomePage() {
           宿泊後にドッグへ行くとバリル城へ出発できる。バリル城へ行く途中はミニゲームのイベントがある。
         </li>
       </ol>
-
-      <h4>新規入手アイテム</h4>
-
-      <ul>
-        <li>なし</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[0]} />
+        <LocationRecipes data={recipesData} locationIds={[0]} />
+        <LocationLenses data={lensesData} locationIds={[0]} />
+        <LocationSubEvents data={subEventData} locationIds={[0]} />
+      </div>
 
       <h2>7.&nbsp;バリル城</h2>
-
       <ol>
         <li>
           <h4>バリル城 全体マップ</h4>
@@ -283,37 +209,31 @@ export default async function HomePage() {
         </li>
       </ol>
 
-      <div className="boss-advice margin-bottom-small">
+      <div className="boss-advice margin-bottom-small mb-8">
         <h4>BOSS：『シゼル』HP：120000(NORML)</h4>
         <p>
           パーティのHPを1にするエターナルファイナリティを使用してくる。アイテムは惜しみなく使っておこう。
         </p>
       </div>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[29]} />
+        <LocationRecipes data={recipesData} locationIds={[29]} />
+        <LocationLenses data={lensesData} locationIds={[29]} />
+        <LocationSubEvents data={subEventData} locationIds={[29]} />
+      </div>
 
-      <h4>アイテム</h4>
-
-      <ul className="item-twocol">
-        <li>プリティリボン</li>
-        <li>ドラゴンベイン</li>
-        <li>ドラグナーランス</li>
-        <li>レアシールド</li>
-        <li>スケールローブ</li>
-        <li>ラピスランス</li>
-        <li>ミスリルアームズ</li>
-        <li>シルバークローク</li>
+      <h2>バリル城後の進行</h2>
+      <ol>
         <li>
-          エリクシール <span className="daiji">フェイクを倒すと入手</span>
+          ルイシカでガレノスに会いにいき極光術の話を聞く。その後はティンシアへ向かおう。
         </li>
-        <li>シルバープレート</li>
-        <li>ブラックオニキス</li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>バンエルティア号のタル</li>
-        <li>ダンジョン内の宝箱</li>
-      </ul>
+        <li>
+          ティンシアの町に入るとイベント。これ以降、アジトのフォッグに話かけることでフォッグを仲間にすることができる。また仲間から外したい場合はこの部屋に来るといい。
+        </li>
+        <li>
+          出航してバンエルティア号がフィールドに出るとイベントが発生。以降はセイファートキーが指し示す場所へ向かうこととなる。次はペイルティの南にあるセイファート神殿へ向かう。
+        </li>
+      </ol>
     </article>
   );
 }

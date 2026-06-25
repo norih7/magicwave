@@ -34,7 +34,7 @@ export const storyLinks = {
     desc: "雷晶霊の遺跡とバリル城など難易度の高いセレスティアのダンジョンを解説",
   },
   guide5: {
-    title: "ペイルティ〜シゼル城",
+    title: "セイファート神殿〜シゼル城",
     path: "/stories/guide5",
     desc: "エンディングまでガイド シゼル城のダンジョン情報やラストバトルを解説",
   },

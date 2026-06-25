@@ -448,5 +448,190 @@
     "id": 92,
     "name": "4000ガルド",
     "type": "money"
+  },
+  {
+    "id": 93,
+    "name": "アクアマント",
+    "type": "accessory"
+  },
+  {
+    "id": 94,
+    "name": "フリーズチェック",
+    "type": "accessory"
+  },
+  {
+    "id": 95,
+    "name": "シルバークローク",
+    "type": "armor"
+  },
+  {
+    "id": 96,
+    "name": "バトルピック",
+    "type": "weapon"
+  },
+  {
+    "id": 97,
+    "name": "パラライチェック",
+    "type": "accessory"
+  },
+  {
+    "id": 98,
+    "name": "ビッグバッグ",
+    "type": "weapon"
+  },
+  {
+    "id": 99,
+    "name": "パイレーツハット",
+    "type": "armor"
+  },
+  {
+    "id": 100,
+    "name": "ボルテックソード",
+    "type": "weapon"
+  },
+  {
+    "id": 101,
+    "name": "ピヨハン",
+    "type": "accessory"
+  },
+  {
+    "id": 102,
+    "name": "サンダーマント",
+    "type": "accessory"
+  },
+  {
+    "id": 103,
+    "name": "レッドセージ",
+    "type": "useItem"
+  },
+  {
+    "id": 104,
+    "name": "ホーリィスタッフ",
+    "type": "weapon"
+  },
+  {
+    "id": 105,
+    "name": "プリティリボン",
+    "type": "accessory"
+  },
+  {
+    "id": 106,
+    "name": "ドラゴンベイン",
+    "type": "weapon"
+  },
+  {
+    "id": 107,
+    "name": "ドラグナーランス",
+    "type": "weapon"
+  },
+  {
+    "id": 108,
+    "name": "レアシールド",
+    "type": "armor"
+  },
+  {
+    "id": 109,
+    "name": "スケールローブ",
+    "type": "armor"
+  },
+  {
+    "id": 110,
+    "name": "ラピスランス",
+    "type": "armor"
+  },
+  {
+    "id": 111,
+    "name": "ミスリルアームズ",
+    "type": "armor"
+  },
+  {
+    "id": 112,
+    "name": "シルバープレート",
+    "type": "armor"
+  },
+  {
+    "id": 113,
+    "name": "ブラックオニキス",
+    "type": "accessory"
+  },
+  {
+    "id": 114,
+    "name": "フレイムソード",
+    "type": "weapon"
+  },
+  {
+    "id": 115,
+    "name": "ミスリルプレート",
+    "type": "weapon"
+  },
+  {
+    "id": 116,
+    "name": "ミスリルメッシュ",
+    "type": "weapon"
+  },
+  {
+    "id": 117,
+    "name": "こくしょうせき",
+    "type": "useItem"
+  },
+  {
+    "id": 118,
+    "name": "ししょうせき",
+    "type": "useItem"
+  },
+  {
+    "id": 119,
+    "name": "ミスティシンボル",
+    "type": "accessory"
+  },
+  {
+    "id": 120,
+    "name": "ミスリルブレス",
+    "type": "accessory"
+  },
+  {
+    "id": 121,
+    "name": "ダイヤナックル",
+    "type": "weapon"
+  },
+  {
+    "id": 122,
+    "name": "せいりゅうとう",
+    "type": "weapon"
+  },
+  {
+    "id": 123,
+    "name": "デモンズシール",
+    "type": "accessory"
+  },
+  {
+    "id": 124,
+    "name": "マム・ベイン",
+    "type": "armor"
+  },
+  {
+    "id": 125,
+    "name": "ラックバック",
+    "type": "weapon"
+  },
+  {
+    "id": 126,
+    "name": "やみのたま",
+    "type": "keyItem"
+  },
+  {
+    "id": 127,
+    "name": "レッドベルベーヌ",
+    "type": "weapon"
+  },
+  {
+    "id": 128,
+    "name": "レッドセボリー",
+    "type": "weapon"
+  },
+  {
+    "id": 129,
+    "name": "レッドラベンダー",
+    "type": "weapon"
   }
 ]

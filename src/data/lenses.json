@@ -133,5 +133,65 @@
     "id": 27,
     "type": "location",
     "world": "sele"
+  },
+  {
+    "id": 28,
+    "type": "location",
+    "world": "sele"
+  },
+  {
+    "id": 29,
+    "type": "location",
+    "world": "sele"
+  },
+  {
+    "id": 30,
+    "type": "location",
+    "world": "sele"
+  },
+  {
+    "id": 31,
+    "type": "location",
+    "world": "sele"
+  },
+  {
+    "id": 32,
+    "type": "location",
+    "world": "sele"
+  },
+  {
+    "id": 33,
+    "type": "location",
+    "world": "sele"
+  },
+  {
+    "id": 34,
+    "type": "location",
+    "world": "sele"
+  },
+  {
+    "id": 35,
+    "type": "location",
+    "world": "sele"
+  },
+  {
+    "id": 36,
+    "type": "location",
+    "world": "sele"
+  },
+  {
+    "id": 37,
+    "type": "location",
+    "world": "sele"
+  },
+  {
+    "id": 38,
+    "type": "location",
+    "world": "sele"
+  },
+  {
+    "id": 39,
+    "type": "location",
+    "world": "sele"
   }
 ]
