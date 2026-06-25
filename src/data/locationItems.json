@@ -323,7 +323,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 32,
+    "itemsId": 27,
     "itemName": "アイアンリスト",
     "remarks": ""
   },
@@ -339,7 +339,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 34,
+    "itemsId": 25,
     "itemName": "シルククローク",
     "remarks": ""
   },
@@ -713,10 +713,330 @@
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "itemsId": "",
-    "itemName": "",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "itemsId": 66,
+    "itemName": "クリスタルローブ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "itemsId": 67,
+    "itemName": "デュエルヘルム",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "itemsId": 68,
+    "itemName": "アンクシールド",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "itemsId": 69,
+    "itemName": "フレアボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "itemsId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "itemsId": 70,
+    "itemName": "エメラルドリング",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "itemsId": 62,
+    "itemName": "フィートシンボル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "itemsId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "itemsId": 71,
+    "itemName": "トライデント",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "itemsId": 72,
+    "itemName": "2600ガルド",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "itemsId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "itemsId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": "錬金術工房の向かい側にある壷"
+  },
+  {
+    "id": "",
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "itemsId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": "食品を売る人の隣にある壷"
+  },
+  {
+    "id": "",
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "itemsId": 73,
+    "itemName": "ストライプリボン",
+    "remarks": "メルディの家2F 取り付け棚"
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 74,
+    "itemName": "ゴールドブレス",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 75,
+    "itemName": "セボリー",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 76,
+    "itemName": "オールディバイト",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 77,
+    "itemName": "アワーグラス",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 78,
+    "itemName": "ルビーワンド",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 46,
+    "itemName": "ミラクルグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 79,
+    "itemName": "ベルベーヌ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 43,
+    "itemName": "ルーンボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 48,
+    "itemName": "エリクシール",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 36,
+    "itemName": "パイングミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 80,
+    "itemName": "Rラインシールド",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 38,
+    "itemName": "レモングミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 81,
+    "itemName": "ノームピック",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 82,
+    "itemName": "ベアクロー",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 83,
+    "itemName": "オーガランス",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 84,
+    "itemName": "ミスリルクレスト",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "itemsId": 85,
+    "itemName": "ラビットシンボル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "itemsId": 36,
+    "itemName": "パイングミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "itemsId": 86,
+    "itemName": "ゴーストシェル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "itemsId": 87,
+    "itemName": "ミスリルヘルム",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "itemsId": 88,
+    "itemName": "ソウルイーター",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "itemsId": 89,
+    "itemName": "ブラッディローブ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "itemsId": 36,
+    "itemName": "パイングミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "itemsId": 90,
+    "itemName": "ブルータリスマン",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "itemsId": 91,
+    "itemName": "みずくも",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "itemsId": 70,
+    "itemName": "エメラルドリング",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "itemsId": 92,
+    "itemName": "4000ガルド",
     "remarks": ""
   },
   {

@@ -1,11 +1,13 @@
+import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
 import LocationItems from "@/components/LocationItems";
 import LocationRecipes from "@/components/LocationRecipes";
 import LocationLenses from "@/components/LocationLenses";
-import SetPageTitle from "@/components/SetPageTitle";
+import LocationSubEvents from "@/components/LocationSubEvents";
 import { getLocationItemsData } from "@/lib/db";
 import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
-import { createMetaTitle } from "@/utils";
+import { getLocationSubEventsData } from "@/lib/db";
 import Image from "next/image";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
@@ -21,6 +23,7 @@ export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const recipesData = await getLocationRecipesData();
   const lensesData = await getLocationLensesData();
+  const subEventData = await getLocationSubEventsData();
 
   return (
     <article>
@@ -66,43 +69,18 @@ export default async function HomePage() {
           セレスティアのアイメンの岬に着いている。フィールドに出てアイメンの町へ向かおう。
         </li>
       </ol>
-
-      <div className="boss-advice margin-bottom-small">
+      <div className="boss-advice margin-bottom-small mb-8">
         <h4>BOSS：『レイシス』HP：4000(NORML)</h4>
         <p>HPは低いが防御は高い。</p>
       </div>
-
-      <h4>入手アイテム</h4>
-
-      <ul>
-        <li>クリスタルローブ</li>
-        <li>デュエルヘルム</li>
-        <li>アンクシールド</li>
-        <li>フレアボトル</li>
-        <li>
-          アップルグミ
-          <br />
-        </li>
-        <li>エメラルドリング</li>
-        <li>フィートシンボル</li>
-        <li>オレンジグミ</li>
-        <li>レモングミ</li>
-        <li>
-          トライデント
-          <br />
-        </li>
-        <li>2600ガルド</li>
-        <li>ライフボトル</li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>休憩できるベッドがある部屋の左側にあるタンスを調べる</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[18]} />
+        <LocationRecipes data={recipesData} locationIds={[18]} />
+        <LocationLenses data={lensesData} locationIds={[18]} />
+        <LocationSubEvents data={subEventData} locationIds={[18]} />
+      </div>
 
       <h2>2.&nbsp;アイメンの町〜アイメン駅</h2>
-
       <ol>
         <li>
           アイメンの町に入るとイベント。
@@ -131,44 +109,14 @@ export default async function HomePage() {
         </li>
         <li>ルイシカ駅をおりたら、ルイシカの町へ向かおう。</li>
       </ol>
-
-      <h4>入手アイテム</h4>
-
-      <ul className="item-twocol">
-        <li>
-          オレンジグミ{" "}
-          <span className="daiji">錬金術工房の向かい側にある壷</span>
-        </li>
-        <li>
-          ミックスグミ <span className="daiji">食品を売る人の隣にある壷</span>
-          <br />
-        </li>
-        <li>
-          ストライプリボン{" "}
-          <span className="daiji">メルディの家2F 取り付け棚</span>
-        </li>
-      </ul>
-
-      <h4>レシピ</h4>
-
-      <ul className="item-twocol">
-        <li>
-          ザラメライス
-          <span className="daiji">メルディの家1Fにあるロボット</span>
-        </li>
-        <li>
-          あまにんどうふ<span className="daiji">図書館に広げてある本</span>
-        </li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>メルディの家1Fにあるガラステーブル</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[19, 20]} />
+        <LocationRecipes data={recipesData} locationIds={[19, 20]} />
+        <LocationLenses data={lensesData} locationIds={[19, 20]} />
+        <LocationSubEvents data={subEventData} locationIds={[19, 20]} />
+      </div>
 
       <h2>3.&nbsp;ルイシカ〜廃坑駅</h2>
-
       <ol>
         <li>
           ルイシカでは奥の研究室(ガレノスの家)の地下へ行くとイベント。
@@ -190,18 +138,14 @@ export default async function HomePage() {
         </li>
         <li>廃坑駅に到着後は、先にある廃坑ダンジョンをクリアしよう。</li>
       </ol>
-
-      <h4>レシピ</h4>
-
-      <ul className="item-onecol">
-        <li>
-          にがりマーボ{" "}
-          <span className="daiji">カレノスの家2F 階段手前にある置物</span>
-        </li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[21]} />
+        <LocationRecipes data={recipesData} locationIds={[21]} />
+        <LocationLenses data={lensesData} locationIds={[21]} />
+        <LocationSubEvents data={subEventData} locationIds={[21]} />
+      </div>
 
       <h2>4.&nbsp;地晶霊の廃坑</h2>
-
       <ol>
         <li>
           <h4>地晶霊の廃坑 前半マップ</h4>
@@ -239,49 +183,20 @@ export default async function HomePage() {
         </li>
       </ol>
 
-      <div className="boss-advice margin-bottom-small">
+      <div className="boss-advice margin-bottom-small mb-8">
         <h4>BOSS：『ノーム』HP：16160(NORML) 耐性:地 弱点:風</h4>
         <p>
           風属性が弱点なので、リッドには風属性の武器(アークウイング、アサルトダガーなど)を装備させよう。攻撃力は落ちるが詠唱を邪魔できる。
         </p>
       </div>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[22]} />
+        <LocationRecipes data={recipesData} locationIds={[22]} />
+        <LocationLenses data={lensesData} locationIds={[22]} />
+        <LocationSubEvents data={subEventData} locationIds={[22]} />
+      </div>
 
-      <h4>アイテム</h4>
-
-      <ul>
-        <li>ゴールドブレス</li>
-        <li>セボリー</li>
-        <li>オールディバイト</li>
-        <li>アワーグラス</li>
-        <li>
-          ルビーワンド
-          <br />
-        </li>
-        <li>ミラクルグミ</li>
-        <li>ベルベーヌ</li>
-        <li>ルーンボトル</li>
-        <li>エリクシール</li>
-        <li>パイングミ</li>
-        <li>
-          Rラインシールド
-          <br />
-        </li>
-        <li>レモングミ</li>
-        <li>ノームピック</li>
-        <li>ベアクロー</li>
-        <li>オーガランス</li>
-        <li>ミスリルクレスト</li>
-        <li>ラビットシンボル</li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>ノームの集落 「ぽや〜ん」というノームの左上を調べる</li>
-      </ul>
-
-      <h2>5.&nbsp;小屋(チャットの小屋)</h2>
-
+      <h2>5.&nbsp;チャットの小屋</h2>
       <ol>
         <li>
           小屋の中にあるリビングに行くとイベントが発生し、ダンジョンへと移動する。
@@ -554,45 +469,17 @@ export default async function HomePage() {
           これ以降から海賊船「バンエルティア号」を扱えるようになる。氷晶霊の手がかりを得るために、北西にあるペイルティへ向かおう。
         </li>
       </ol>
-
       <div className="boss-advice margin-bottom-small">
         <h4>
           BOSS：『ガーディアント』HP：30000(NORML) 耐性:雷 弱点:水、火、氷
         </h4>
       </div>
-
-      <h4>アイテム</h4>
-
-      <ul>
-        <li>パイングミ</li>
-        <li>ゴーストシェル</li>
-        <li>ミスリルヘルム</li>
-        <li>ソウルイーター</li>
-        <li>
-          ブラッディローブ
-          <br />
-        </li>
-        <li>パイングミ</li>
-        <li>ブルータリスマン</li>
-        <li>みずくも</li>
-        <li>エメラルドリング</li>
-        <li>4000ガルド</li>
-      </ul>
-
-      <h4>レシピ</h4>
-
-      <ul className="item-onecol">
-        <li>
-          ミツラーメン <span className="daiji">休憩室の時計</span>
-        </li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>地下4階 左側通路 奥の部屋にある木箱</li>
-        <li>地下1階 右側通路 奥の部屋にあるジャガイモ箱</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[23]} />
+        <LocationRecipes data={recipesData} locationIds={[23]} />
+        <LocationLenses data={lensesData} locationIds={[23]} />
+        <LocationSubEvents data={subEventData} locationIds={[23]} />
+      </div>
     </article>
   );
 }

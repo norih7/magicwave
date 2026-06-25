@@ -88,36 +88,36 @@
     "remarks": "宿屋 右奥にあるベッド"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 12,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "recipeId": 12,
+    "recipeName": "ザラメライス",
+    "remarks": "メルディの家1Fにあるロボット"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 13,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "recipeId": 13,
+    "recipeName": "あまにんどうふ",
+    "remarks": "図書館に広げてある本"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 14,
+    "locationId": 21,
+    "locationName": "ルイシカ",
+    "recipeId": 14,
+    "recipeName": "にがりマーボ",
+    "remarks": "カレノスの家2F 階段手前にある置物"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 15,
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "recipeId": 15,
+    "recipeName": "ミツラーメン",
+    "remarks": "休憩室の時計"
   },
   {
     "id": "",

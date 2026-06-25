@@ -133,39 +133,39 @@
     "remarks": "ソーサラーリングで入る部屋"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "id": 20,
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "lensId": 20,
+    "remarks": "休憩できるベッドがある部屋の左側にあるタンスを調べる"
+  },
+  {
+    "id": 21,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "lensId": 21,
+    "remarks": "メルディの家1Fにあるガラステーブル"
+  },
+  {
+    "id": 22,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "lensId": 22,
+    "remarks": "ノームの集落 「ぽや〜ん」というノームの左上を調べる"
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "lensId": 23,
+    "remarks": "地下4階 左側通路 奥の部屋にある木箱"
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "lensId": 24,
+    "remarks": "地下1階 右側通路 奥の部屋にあるジャガイモ箱"
   },
   {
     "id": "",

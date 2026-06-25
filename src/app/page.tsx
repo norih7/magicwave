@@ -12,6 +12,7 @@ type Link = {
   image?: string;
 };
 const featuredLinks: Link[] = [];
+featuredLinks.push(storyLinks["guide3"]);
 featuredLinks.push(storyLinks["guide4"]);
 featuredLinks.push(subeventLinks["skill-chat"]);
 featuredLinks.push(systemLinks["tp-reduce"]);

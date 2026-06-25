@@ -155,18 +155,8 @@
     "type": "armor"
   },
   {
-    "id": 32,
-    "name": "アイアンリスト",
-    "type": "armor"
-  },
-  {
     "id": 33,
     "name": "ミスティローブ",
-    "type": "armor"
-  },
-  {
-    "id": 34,
-    "name": "シルククローク",
     "type": "armor"
   },
   {
@@ -323,5 +313,140 @@
     "id": 65,
     "name": "あかのかけら",
     "type": "useItem"
+  },
+  {
+    "id": 66,
+    "name": "クリスタルローブ",
+    "type": "armor"
+  },
+  {
+    "id": 67,
+    "name": "デュエルヘルム",
+    "type": "armor"
+  },
+  {
+    "id": 68,
+    "name": "アンクシールド",
+    "type": "armor"
+  },
+  {
+    "id": 69,
+    "name": "フレアボトル",
+    "type": "useItem"
+  },
+  {
+    "id": 70,
+    "name": "エメラルドリング",
+    "type": "accessory"
+  },
+  {
+    "id": 71,
+    "name": "トライデント",
+    "type": "useItem"
+  },
+  {
+    "id": 72,
+    "name": "2600ガルド",
+    "type": "money"
+  },
+  {
+    "id": 73,
+    "name": "ストライプリボン",
+    "type": "money"
+  },
+  {
+    "id": 74,
+    "name": "ゴールドブレス",
+    "type": "accessory"
+  },
+  {
+    "id": 75,
+    "name": "セボリー",
+    "type": "useItem"
+  },
+  {
+    "id": 76,
+    "name": "オールディバイト",
+    "type": "useItem"
+  },
+  {
+    "id": 77,
+    "name": "アワーグラス",
+    "type": "useItem"
+  },
+  {
+    "id": 78,
+    "name": "ルビーワンド",
+    "type": "weapon"
+  },
+  {
+    "id": 79,
+    "name": "ベルベーヌ",
+    "type": "useItem"
+  },
+  {
+    "id": 80,
+    "name": "Rラインシールド",
+    "type": "armor"
+  },
+  {
+    "id": 81,
+    "name": "ノームピック",
+    "type": "weapon"
+  },
+  {
+    "id": 82,
+    "name": "ベアクロー",
+    "type": "weapon"
+  },
+  {
+    "id": 83,
+    "name": "オーガランス",
+    "type": "weapon"
+  },
+  {
+    "id": 84,
+    "name": "ミスリルクレスト",
+    "type": "weapon"
+  },
+  {
+    "id": 85,
+    "name": "ラビットシンボル",
+    "type": "accessory"
+  },
+  {
+    "id": 86,
+    "name": "ゴーストシェル",
+    "type": "accessory"
+  },
+  {
+    "id": 87,
+    "name": "ミスリルヘルム",
+    "type": "armor"
+  },
+  {
+    "id": 88,
+    "name": "ソウルイーター",
+    "type": "weapon"
+  },
+  {
+    "id": 89,
+    "name": "ブラッディローブ",
+    "type": "armor"
+  },
+  {
+    "id": 90,
+    "name": "ブルータリスマン",
+    "type": "accessory"
+  },
+  {
+    "id": 91,
+    "name": "みずくも",
+    "type": "weapon"
+  },
+  {
+    "id": 92,
+    "name": "4000ガルド",
+    "type": "money"
   }
 ]
