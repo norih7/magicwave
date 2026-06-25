@@ -48,44 +48,44 @@
     "remarks": "モルル 食材屋にあるかぼちゃ"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 7,
+    "locationId": 12,
+    "locationName": "インフェリア港",
+    "recipeId": 7,
+    "recipeName": "さかななべ",
+    "remarks": "船具屋にあるいかり"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 8,
+    "locationId": 13,
+    "locationName": "バロール港",
+    "recipeId": 8,
+    "recipeName": "いかリング",
+    "remarks": "(バロール港) 船着き場階段下りた先の木箱"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 9,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "recipeId": 9,
+    "recipeName": "ステーキ",
+    "remarks": "(町)酒屋の2Fテラスにいる酔っぱらい"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 10,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "recipeId": 10,
+    "recipeName": "グラタン",
+    "remarks": "(町)宿屋の寝室にあるクローゼット"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 11,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "recipeId": 11,
+    "recipeName": "カルボナーラ",
+    "remarks": "宿屋 右奥にあるベッド"
   },
   {
     "id": "",

@@ -305,6 +305,430 @@
   },
   {
     "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 31,
+    "itemName": "アイアンアームズ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 32,
+    "itemName": "アイアンリスト",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 33,
+    "itemName": "ミスティローブ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 34,
+    "itemName": "シルククローク",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 35,
+    "itemName": "リキュールボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 36,
+    "itemName": "パイングミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 37,
+    "itemName": "リバースドール",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 38,
+    "itemName": "レモングミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 39,
+    "itemName": "すいしょうせき",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 41,
+    "itemName": "765ガルド",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 42,
+    "itemName": "りょくしょうせき",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 43,
+    "itemName": "ルーンボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 44,
+    "itemName": "バスタードソード",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 45,
+    "itemName": "チャームボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 46,
+    "itemName": "ミラクルグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemsId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "itemsId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": "食料屋にある蓋がしてある壷"
+  },
+  {
+    "id": "",
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "itemsId": 47,
+    "itemName": "シャムシール",
+    "remarks": "武器屋 左奥にある先の宝箱"
+  },
+  {
+    "id": "",
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "itemsId": 48,
+    "itemName": "エリクシール",
+    "remarks": "武器屋 左奥にある先にいる女の人に話しかける"
+  },
+  {
+    "id": "",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "itemsId": 49,
+    "itemName": "ストームシールド",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "itemsId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "itemsId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "itemsId": 50,
+    "itemName": "1800ガルド",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "itemsId": 51,
+    "itemName": "アサルトダガー",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "itemsId": 52,
+    "itemName": "メンタルリング",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "itemsId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "itemsId": 38,
+    "itemName": "レモングミ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "itemsId": 53,
+    "itemName": "ニードルグローブ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "itemsId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "itemsId": 54,
+    "itemName": "アークウイング",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "itemsId": 55,
+    "itemName": "100G",
+    "remarks": "宿屋 テーブルの花瓶"
+  },
+  {
+    "id": "",
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "itemsId": 43,
+    "itemName": "ルーンボトル",
+    "remarks": "アイテム屋にある壷"
+  },
+  {
+    "id": "",
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "itemsId": 56,
+    "itemName": "エルヴンブーツ",
+    "remarks": "砂浜にある宝箱"
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 57,
+    "itemName": "ヴェノム",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 58,
+    "itemName": "セージ",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 59,
+    "itemName": "フレアマント",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 60,
+    "itemName": "ラベンダー",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 61,
+    "itemName": "クロスヘルム",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 62,
+    "itemName": "フィートシンボル",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 63,
+    "itemName": "ブレスレット",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 64,
+    "itemName": "ブルーリボン",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 54,
+    "itemName": "アークウイング",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 43,
+    "itemName": "ルーンボトル",
+    "remarks": "ソーサラーリングで入る部屋"
+  },
+  {
+    "id": "",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "itemsId": 65,
+    "itemName": "あかのかけら",
+    "remarks": "ソーサラーリングで入る部屋"
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemsId": "",
+    "itemName": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
     "locationId": "",
     "locationName": "",
     "itemsId": "",

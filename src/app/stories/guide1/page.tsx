@@ -1,13 +1,13 @@
+import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
 import LocationItems from "@/components/LocationItems";
 import LocationRecipes from "@/components/LocationRecipes";
 import LocationLenses from "@/components/LocationLenses";
 import LocationSubEvents from "@/components/LocationSubEvents";
-import SetPageTitle from "@/components/SetPageTitle";
 import { getLocationItemsData } from "@/lib/db";
 import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
 import { getLocationSubEventsData } from "@/lib/db";
-import PageSummary from "@/components/PageSummary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";

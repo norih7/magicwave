@@ -148,5 +148,180 @@
     "id": 30,
     "name": "チンクエデア",
     "type": "weapon"
+  },
+  {
+    "id": 31,
+    "name": "アイアンアームズ",
+    "type": "armor"
+  },
+  {
+    "id": 32,
+    "name": "アイアンリスト",
+    "type": "armor"
+  },
+  {
+    "id": 33,
+    "name": "ミスティローブ",
+    "type": "armor"
+  },
+  {
+    "id": 34,
+    "name": "シルククローク",
+    "type": "armor"
+  },
+  {
+    "id": 35,
+    "name": "リキュールボトル",
+    "type": "useItem"
+  },
+  {
+    "id": 36,
+    "name": "パイングミ",
+    "type": "useItem"
+  },
+  {
+    "id": 37,
+    "name": "リバースドール",
+    "type": "useItem"
+  },
+  {
+    "id": 38,
+    "name": "レモングミ",
+    "type": "useItem"
+  },
+  {
+    "id": 39,
+    "name": "すいしょうせき",
+    "type": "useItem"
+  },
+  {
+    "id": 40,
+    "name": "スペクタクルス",
+    "type": "useItem"
+  },
+  {
+    "id": 41,
+    "name": "765ガルド",
+    "type": "money"
+  },
+  {
+    "id": 42,
+    "name": "りょくしょうせき",
+    "type": "useItem"
+  },
+  {
+    "id": 43,
+    "name": "ルーンボトル",
+    "type": "useItem"
+  },
+  {
+    "id": 44,
+    "name": "バスタードソード",
+    "type": "weapon"
+  },
+  {
+    "id": 45,
+    "name": "チャームボトル",
+    "type": "useItem"
+  },
+  {
+    "id": 46,
+    "name": "ミラクルグミ",
+    "type": "useItem"
+  },
+  {
+    "id": 47,
+    "name": "シャムシール",
+    "type": "weapon"
+  },
+  {
+    "id": 48,
+    "name": "エリクシール",
+    "type": "useItem"
+  },
+  {
+    "id": 49,
+    "name": "ストームシールド",
+    "type": "armor"
+  },
+  {
+    "id": 50,
+    "name": "1800ガルド",
+    "type": "money"
+  },
+  {
+    "id": 51,
+    "name": "アサルトダガー",
+    "type": "weapon"
+  },
+  {
+    "id": 52,
+    "name": "メンタルリング",
+    "type": "accessory"
+  },
+  {
+    "id": 53,
+    "name": "ニードルグローブ",
+    "type": "armor"
+  },
+  {
+    "id": 54,
+    "name": "アークウイング",
+    "type": "weapon"
+  },
+  {
+    "id": 55,
+    "name": "100G",
+    "type": "money"
+  },
+  {
+    "id": 56,
+    "name": "エルヴンブーツ",
+    "type": "armor"
+  },
+  {
+    "id": 57,
+    "name": "ヴェノム",
+    "type": "weapon"
+  },
+  {
+    "id": 58,
+    "name": "セージ",
+    "type": "useItem"
+  },
+  {
+    "id": 59,
+    "name": "フレアマント",
+    "type": "accessory"
+  },
+  {
+    "id": 60,
+    "name": "ラベンダー",
+    "type": "useItem"
+  },
+  {
+    "id": 61,
+    "name": "クロスヘルム",
+    "type": "armor"
+  },
+  {
+    "id": 62,
+    "name": "フィートシンボル",
+    "type": "accessory"
+  },
+  {
+    "id": 63,
+    "name": "ブレスレット",
+    "type": "accessory"
+  },
+  {
+    "id": 64,
+    "name": "ブルーリボン",
+    "type": "accessory"
+  },
+  {
+    "id": 65,
+    "name": "あかのかけら",
+    "type": "useItem"
   }
 ]

@@ -77,60 +77,60 @@
     "remarks": "入口マップの木の陰"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "id": 12,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "lensId": 12,
+    "remarks": "インフェリア城 リッド達が泊まった部屋のタンス"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "id": 13,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "lensId": 13,
+    "remarks": "じょうせんパス入手後、天文台「気安く触るなよ...」という男の隣にある木棚"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "id": 14,
+    "locationId": 12,
+    "locationName": "インフェリア港",
+    "lensId": 14,
+    "remarks": "バロール行き乗船場にあるタル"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "id": 15,
+    "locationId": 13,
+    "locationName": "バロール港",
+    "lensId": 15,
+    "remarks": "バロール港 船着き場階段下りた先の木箱"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "id": 16,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "lensId": 16,
+    "remarks": "宝飾店 アナガチにある金の壷"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "id": 17,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "lensId": 17,
+    "remarks": "広場にある噴水"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "id": 18,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "lensId": 18,
+    "remarks": "ビストロシャンバール 2階にある観覧席 右側の椅子"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
+    "id": 19,
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "lensId": 19,
+    "remarks": "ソーサラーリングで入る部屋"
   },
   {
     "id": "",

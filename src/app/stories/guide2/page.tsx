@@ -1,11 +1,13 @@
+import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
 import LocationItems from "@/components/LocationItems";
 import LocationRecipes from "@/components/LocationRecipes";
 import LocationLenses from "@/components/LocationLenses";
-import SetPageTitle from "@/components/SetPageTitle";
+import LocationSubEvents from "@/components/LocationSubEvents";
 import { getLocationItemsData } from "@/lib/db";
 import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
-import { createMetaTitle } from "@/utils";
+import { getLocationSubEventsData } from "@/lib/db";
 import Image from "next/image";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
@@ -21,6 +23,7 @@ export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const recipesData = await getLocationRecipesData();
   const lensesData = await getLocationLensesData();
+  const subEventData = await getLocationSubEventsData();
 
   return (
     <article>
@@ -60,48 +63,10 @@ export default async function HomePage() {
           <a href="./eternia/system-rune.php#1">セフィラの入手</a>
         </li>
       </ul>
-
-      <h4>入手アイテム</h4>
-
-      <ul>
-        <li>アイアンアームズ</li>
-        <li>ミックスグミ</li>
-        <li>アイアンリスト</li>
-        <li>ミスティローブ</li>
-        <li>
-          シルククローク
-          <br />
-        </li>
-        <li>ライフボトル</li>
-        <li>ライフボトル</li>
-        <li>ホーリィボトル</li>
-        <li>リキュールボトル</li>
-        <li>
-          パイングミ
-          <br />
-        </li>
-        <li>リバースドール</li>
-        <li>レモングミ</li>
-        <li>すいしょうせき</li>
-        <li>パイングミ</li>
-        <li>
-          スペクタクルス
-          <br />
-        </li>
-        <li>765ガルド</li>
-        <li>りょくしょうせき</li>
-        <li>オレンジグミ</li>
-        <li>ルーンボトル</li>
-        <li>
-          バスタードソード
-          <br />
-        </li>
-        <li>チャームボトル</li>
-        <li>オレンジグミ</li>
-        <li>アップルグミ</li>
-        <li>ミラクルグミ</li>
-        <li>パナシーアボトル</li>
-      </ul>
+      <LocationItems data={itemsData} locationIds={[10]} />
+      <LocationRecipes data={recipesData} locationIds={[10]} />
+      <LocationLenses data={lensesData} locationIds={[10]} />
+      <LocationSubEvents data={subEventData} locationIds={[10]} />
 
       <h2>2.&nbsp;王都インフェリア</h2>
 
@@ -126,23 +91,10 @@ export default async function HomePage() {
           そのため北東にあるインフェリア港へ向かう。
         </li>
       </ol>
-
-      <h4>サブイベント</h4>
-
-      <ul>
-        <li>
-          <a href="./eternia/subevent-etc.php#2">インフェリアのホテル</a>
-        </li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>(インフェリア城)リッド達が泊まった部屋のタンス</li>
-        <li>
-          じょうせんパス入手後、天文台「気安く触るなよ...」という男の隣にある木棚
-        </li>
-      </ul>
+      <LocationItems data={itemsData} locationIds={[11]} />
+      <LocationRecipes data={recipesData} locationIds={[11]} />
+      <LocationLenses data={lensesData} locationIds={[11]} />
+      <LocationSubEvents data={subEventData} locationIds={[11]} />
 
       <h2>3.&nbsp;インフェリア港</h2>
 
