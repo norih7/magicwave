@@ -25,7 +25,7 @@ export default function LocationLenses(props: Props) {
   const Display = List.length === 0 ? <p>なし</p> : List;
   return (
     <div
-      className={`${styles.container} mb-4 border border-gray-300 rounded-lg md:p-3 bg-white`}
+      className={`${styles.container} mb-4 border border-gray-300 rounded-lg p-3 md:p-3 bg-white`}
     >
       <h3 className="pb-1 flex items-center">
         <LuCircle size={15} className="mr-1" />

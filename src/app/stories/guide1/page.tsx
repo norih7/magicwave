@@ -46,10 +46,12 @@ export default async function HomePage() {
           フィールドにでたら村から南にあるラシュアン河の桟橋へと向かいます。川沿いにそって進んでいけばたどり着きます。
         </li>
       </ol>
-      <LocationItems data={itemsData} locationIds={[1]} />
-      <LocationRecipes data={recipesData} locationIds={[1]} />
-      <LocationLenses data={lensesData} locationIds={[1]} />
-      <LocationSubEvents data={subEventData} locationIds={[1]} />
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[1]} />
+        <LocationRecipes data={recipesData} locationIds={[1]} />
+        <LocationLenses data={lensesData} locationIds={[1]} />
+        <LocationSubEvents data={subEventData} locationIds={[1]} />
+      </div>
 
       <h2>2. ラシュアン河の桟橋〜レグルス道場</h2>
       <ol className="mb-5">
@@ -64,10 +66,12 @@ export default async function HomePage() {
           戦闘終了後、道場の奥の部屋にいるパウロから水晶霊の力を使って水流の流れを弱めることを聞きます。
         </li>
       </ol>
-      <LocationItems data={itemsData} locationIds={[2, 3]} />
-      <LocationRecipes data={recipesData} locationIds={[2, 3]} />
-      <LocationLenses data={lensesData} locationIds={[2, 3]} />
-      <LocationSubEvents data={subEventData} locationIds={[2, 3]} />
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[2, 3]} />
+        <LocationRecipes data={recipesData} locationIds={[2, 3]} />
+        <LocationLenses data={lensesData} locationIds={[2, 3]} />
+        <LocationSubEvents data={subEventData} locationIds={[2, 3]} />
+      </div>
 
       <h2>3.&nbsp;ラシュアン河の桟橋(2回目)〜学問の町ミンツ</h2>
 
@@ -84,10 +88,12 @@ export default async function HomePage() {
         </li>
         <li>次はキールに会うために南西にある岩山の観測所へ向かいます。</li>
       </ol>
-      <LocationItems data={itemsData} locationIds={[4]} />
-      <LocationRecipes data={recipesData} locationIds={[4]} />
-      <LocationLenses data={lensesData} locationIds={[4]} />
-      <LocationSubEvents data={subEventData} locationIds={[4]} />
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[4]} />
+        <LocationRecipes data={recipesData} locationIds={[4]} />
+        <LocationLenses data={lensesData} locationIds={[4]} />
+        <LocationSubEvents data={subEventData} locationIds={[4]} />
+      </div>
 
       <h2>4.&nbsp;ミンツの岩山〜岩山の観測所</h2>
       <ol>
@@ -110,13 +116,14 @@ export default async function HomePage() {
           次はメルディの言葉をさらに理解するため、モルルにいるマゼット博士に会いにいく。モルルは隣の大陸にあり、ミンツから東にある忘郷の洞窟を経由していく。
         </li>
       </ol>
-      <LocationItems data={itemsData} locationIds={[5]} />
-      <LocationRecipes data={recipesData} locationIds={[5]} />
-      <LocationLenses data={lensesData} locationIds={[5]} />
-      <LocationSubEvents data={subEventData} locationIds={[5]} />
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[5]} />
+        <LocationRecipes data={recipesData} locationIds={[5]} />
+        <LocationLenses data={lensesData} locationIds={[5]} />
+        <LocationSubEvents data={subEventData} locationIds={[5]} />
+      </div>
 
       <h2>5.&nbsp;望郷の洞窟</h2>
-
       <ol>
         <li>
           洞窟内では潮の満ち引きがあり、具合によってマップや入手できるアイテムが変化する。潮の満ち引きは時間と共に変化していき、一度ダンジョンから出るとリセットされる。
@@ -126,10 +133,12 @@ export default async function HomePage() {
         </li>
         <li>フィルードマップを進んでモルルへ行く。</li>
       </ol>
-      <LocationItems data={itemsData} locationIds={[7]} />
-      <LocationRecipes data={recipesData} locationIds={[7]} />
-      <LocationLenses data={lensesData} locationIds={[7]} />
-      <LocationSubEvents data={subEventData} locationIds={[7]} />
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[7]} />
+        <LocationRecipes data={recipesData} locationIds={[7]} />
+        <LocationLenses data={lensesData} locationIds={[7]} />
+        <LocationSubEvents data={subEventData} locationIds={[7]} />
+      </div>
 
       <h2>6.&nbsp;木陰の村モルル</h2>
       <ol>
@@ -152,10 +161,12 @@ export default async function HomePage() {
           次は水の大晶霊ウンディーネに会うため北東にある水晶霊の河へ行く。
         </li>
       </ol>
-      <LocationItems data={itemsData} locationIds={[8]} />
-      <LocationRecipes data={recipesData} locationIds={[8]} />
-      <LocationLenses data={lensesData} locationIds={[8]} />
-      <LocationSubEvents data={subEventData} locationIds={[8]} />
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[8]} />
+        <LocationRecipes data={recipesData} locationIds={[8]} />
+        <LocationLenses data={lensesData} locationIds={[8]} />
+        <LocationSubEvents data={subEventData} locationIds={[8]} />
+      </div>
 
       <h2>7.&nbsp;水晶霊の河</h2>
       <ol>
@@ -182,10 +193,12 @@ export default async function HomePage() {
           HPが半分以下になると貫通の飛び攻撃を行ってくる。先頭に立ちガードして防ぐか、ジャンプして後ろに回り込むなどの対策が有効。
         </p>
       </div>
-      <LocationItems data={itemsData} locationIds={[9]} />
-      <LocationRecipes data={recipesData} locationIds={[9]} />
-      <LocationLenses data={lensesData} locationIds={[9]} />
-      <LocationSubEvents data={subEventData} locationIds={[9]} />
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[9]} />
+        <LocationRecipes data={recipesData} locationIds={[9]} />
+        <LocationLenses data={lensesData} locationIds={[9]} />
+        <LocationSubEvents data={subEventData} locationIds={[9]} />
+      </div>
     </article>
   );
 }

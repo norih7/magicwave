@@ -57,19 +57,19 @@ export default async function HomePage() {
       </ol>
 
       <h4>お得な情報</h4>
-
-      <ul>
+      <ul className="mb-8">
         <li>
-          <a href="./eternia/system-rune.php#1">セフィラの入手</a>
+          <a href="/systems/rune">セフィラの入手</a>
         </li>
       </ul>
-      <LocationItems data={itemsData} locationIds={[10]} />
-      <LocationRecipes data={recipesData} locationIds={[10]} />
-      <LocationLenses data={lensesData} locationIds={[10]} />
-      <LocationSubEvents data={subEventData} locationIds={[10]} />
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[10]} />
+        <LocationRecipes data={recipesData} locationIds={[10]} />
+        <LocationLenses data={lensesData} locationIds={[10]} />
+        <LocationSubEvents data={subEventData} locationIds={[10]} />
+      </div>
 
       <h2>2.&nbsp;王都インフェリア</h2>
-
       <ol>
         <li>
           この時点で町のホテルに泊まると「キールがナンパされるイベント」「ドジッ娘メイド」のイベントを見ることができる。
@@ -91,13 +91,14 @@ export default async function HomePage() {
           そのため北東にあるインフェリア港へ向かう。
         </li>
       </ol>
-      <LocationItems data={itemsData} locationIds={[11]} />
-      <LocationRecipes data={recipesData} locationIds={[11]} />
-      <LocationLenses data={lensesData} locationIds={[11]} />
-      <LocationSubEvents data={subEventData} locationIds={[11]} />
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[11]} />
+        <LocationRecipes data={recipesData} locationIds={[11]} />
+        <LocationLenses data={lensesData} locationIds={[11]} />
+        <LocationSubEvents data={subEventData} locationIds={[11]} />
+      </div>
 
       <h2>3.&nbsp;インフェリア港</h2>
-
       <ol>
         <li>
           船に乗り込もうとするとキールと別れることになる。
@@ -106,31 +107,14 @@ export default async function HomePage() {
         </li>
         <li>その後は船に乗り込んでバロールへ向かう。</li>
       </ol>
-
-      <h4>サブイベント</h4>
-
-      <ul>
-        <li>
-          <a href="./eternia/subevent-etc.php#3">リッドとキールの思い出1</a>
-        </li>
-      </ul>
-
-      <h4>レシピ</h4>
-
-      <ul className="item-twocol">
-        <li>
-          さかななべ <span className="daiji">船具屋にあるいかり</span>
-        </li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>バロール行き乗船場にあるタル</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[12]} />
+        <LocationRecipes data={recipesData} locationIds={[12]} />
+        <LocationLenses data={lensesData} locationIds={[12]} />
+        <LocationSubEvents data={subEventData} locationIds={[12]} />
+      </div>
 
       <h2>4.&nbsp;バロール港〜商業の町バロール</h2>
-
       <ol>
         <li>
           船から下りるとバロール港に着く。フィールドに出てバロールの町へ向かおう。
@@ -145,78 +129,14 @@ export default async function HomePage() {
         </li>
         <li>風の大晶霊に会いに行くために南西にある風晶霊の空洞へ向かう。</li>
       </ol>
-
-      <h4>サブイベント</h4>
-
-      <ul>
-        <li>
-          <a href="./eternia/subevent-balor1.php">バロールの泥棒少年</a>
-        </li>
-        <li>
-          <a href="./eternia/subevent-balor2.php">いしとりめいじん</a>
-        </li>
-        <li>
-          <a href="./eternia/subevent-catarine.php">カトリーヌの恋愛</a>
-        </li>
-        <li>
-          <a href="./eternia/subevent-etc.php#3">ねだるファラ</a>
-        </li>
-      </ul>
-
-      <h4>レシピ</h4>
-
-      <ul className="item-onecol">
-        <li>
-          いかリング{" "}
-          <span className="daiji">(バロール港)船着き場階段下りた先の木箱</span>
-        </li>
-        <li>
-          ステーキ{" "}
-          <span className="daiji">(町)酒屋の2Fテラスにいる酔っぱらい</span>
-          <br />
-        </li>
-        <li>
-          グラタン{" "}
-          <span className="daiji">(町)宿屋の寝室にあるクローゼット</span>
-        </li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>宝飾店 アナガチにある金の壷</li>
-        <li>バロール港 船着き場階段下りた先の木箱</li>
-      </ul>
-
-      <h4>アイテム(バロール港)</h4>
-
-      <ul className="item-onecol">
-        <li>
-          みずいろのかけら<span className="daiji">食料屋にある調理台</span>
-        </li>
-      </ul>
-
-      <h4>アイテム(バロールの町)</h4>
-
-      <ul className="item-onecol">
-        <li>
-          ホーリィボトル
-          <span className="daiji">食料屋にある蓋がしてある壷</span>
-        </li>
-        <li>
-          シャムシール<span className="daiji">武器屋 左奥にある先の宝箱</span>
-          <br />
-        </li>
-        <li>
-          エリクシール
-          <span className="daiji">
-            武器屋 左奥にある先にいる女の人に話しかける
-          </span>
-        </li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[13, 14]} />
+        <LocationRecipes data={recipesData} locationIds={[13, 14]} />
+        <LocationLenses data={lensesData} locationIds={[13, 14]} />
+        <LocationSubEvents data={subEventData} locationIds={[13, 14]} />
+      </div>
 
       <h2>5.&nbsp;風晶霊の空洞</h2>
-
       <ol>
         <li>
           ダンジョンには謎解きは特にないが、吹き上げてくる風に乗って進むことが必要な場所が多くある。
@@ -237,36 +157,20 @@ export default async function HomePage() {
         </li>
       </ol>
 
-      <div className="boss-advice margin-bottom-small">
+      <div className="boss-advice margin-bottom-small mb-8">
         <h4>BOSS：『シルフ』HP：6400(NORML)、『ラフィール×2』HP:4500</h4>
         <p>
           シルフはHPが少なくなると弓攻撃を連発してくるので、その前にラフィールを優先して倒していくのがいい。ただしシルフは強力な晶霊術を使ってくるので、詠唱を始めるとダッシュ攻撃をして止めさせよう。
         </p>
       </div>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[15]} />
+        <LocationRecipes data={recipesData} locationIds={[15]} />
+        <LocationLenses data={lensesData} locationIds={[15]} />
+        <LocationSubEvents data={subEventData} locationIds={[15]} />
+      </div>
 
-      <h4>アイテム</h4>
-
-      <ul>
-        <li>ストームシールド</li>
-        <li>ミックスグミ</li>
-        <li>ミックスグミ</li>
-        <li>1800ガルド</li>
-        <li>
-          アサルトダガー
-          <br />
-        </li>
-        <li>メンタルリング</li>
-        <li>オレンジグミ</li>
-        <li>レモングミ</li>
-        <li>ニードルグローブ</li>
-        <li>
-          ライフボトル
-          <br />
-        </li>
-        <li>アークウイング</li>
-      </ul>
       <h2>6.&nbsp;熱砂の町 シャンバール</h2>
-
       <ol>
         <li>
           砂漠の真ん中にある。火の大晶霊のいる「火晶霊の谷」をクリアするためにこの町で休憩をしたり、アイテムの補充をするようにしよう。
@@ -278,49 +182,14 @@ export default async function HomePage() {
           火の大晶霊の手がかりを求めてエアリアルボードを使い、東大陸にあるシャンバールへ向かおう。
         </li>
       </ol>
-
-      <h4>サブイベント</h4>
-
-      <ul>
-        <li>
-          <a href="./eternia/subevent-lens.php">レンズ収集</a>
-        </li>
-        <li>
-          <a href="./eternia/subevent-syanballoon.php">レンズ収集</a>
-        </li>
-      </ul>
-
-      <h4>アイテム</h4>
-
-      <ul className="item-twocol">
-        <li>
-          100G<span className="daiji">宿屋 テーブルの花瓶</span>
-        </li>
-        <li>
-          ルーンボトル<span className="daiji">アイテム屋にある壷</span>
-        </li>
-        <li>
-          エルヴンブーツ<span className="daiji">砂浜にある宝箱</span>
-        </li>
-      </ul>
-
-      <h4>レシピ</h4>
-
-      <ul className="item-onecol">
-        <li>
-          カルボナーラ<span className="daiji">宿屋 右奥にあるベッド</span>
-        </li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>広場にある噴水</li>
-        <li>ビストロシャンバール 2階にある観覧席 右側の椅子</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[16]} />
+        <LocationRecipes data={recipesData} locationIds={[16]} />
+        <LocationLenses data={lensesData} locationIds={[16]} />
+        <LocationSubEvents data={subEventData} locationIds={[16]} />
+      </div>
 
       <h2>7.&nbsp;火晶霊の谷</h2>
-
       <ol>
         <li>
           ダンジョン内では灼熱のためウンディーネのサポートを受けて進んでいく。ウンディーネのHPが0になるとサポートがなくなり、常時灼熱のダメージう受けることになる。一度ダンジョンから出れば戻るので危なくなったら引き返そう。
@@ -345,40 +214,12 @@ export default async function HomePage() {
           ジャンプ攻撃や虎牙連斬などが有効。リッドにはハルバードなど、リーチが長い武器を装備させて挑もう。
         </p>
       </div>
-
-      <h4>アイテム</h4>
-
-      <ul className="item-twocol">
-        <li>ヴェノム</li>
-        <li>セージ</li>
-        <li>レモングミ</li>
-        <li>フレアマント</li>
-        <li>ライフボトル</li>
-        <li>
-          ラベンダー
-          <br />
-        </li>
-        <li>クロスヘルム</li>
-        <li>フィートシンボル</li>
-        <li>ブレスレット</li>
-        <li>ブルーリボン</li>
-        <li>
-          アークウイング
-          <br />
-        </li>
-        <li>
-          ルーンボトル<span className="daiji">ソーサラーリングで入る部屋</span>
-        </li>
-        <li>
-          あかのかけら<span className="daiji">ソーサラーリングで入る部屋</span>
-        </li>
-      </ul>
-
-      <h4>レンズ</h4>
-
-      <ul className="item-onecol">
-        <li>ソーサラーリングで入る部屋</li>
-      </ul>
+      <div className="mb-16">
+        <LocationItems data={itemsData} locationIds={[17]} />
+        <LocationRecipes data={recipesData} locationIds={[17]} />
+        <LocationLenses data={lensesData} locationIds={[17]} />
+        <LocationSubEvents data={subEventData} locationIds={[17]} />
+      </div>
     </article>
   );
 }
