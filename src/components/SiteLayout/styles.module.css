@@ -58,7 +58,9 @@
   font-weight: bold;
 }
 .main h3 {
+  padding-bottom: 8px;
   font-weight: bold;
+  border-bottom: 1px solid #ccc;
 }
 .main h4 {
   font-weight: bold;

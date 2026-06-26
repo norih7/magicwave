@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
 import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
+import SectionTitle from "@/components/SectionTitle";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -16,11 +17,14 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-      <h2>おすすめの特技/奥義</h2>
-      <div className="advice">
-        <p>準備中</p>
-      </div>
-      <h2>リッドの特技一覧</h2>
+      <section className="mb-12">
+        <SectionTitle type="data">おすすめの特技/奥義</SectionTitle>
+        <div className="advice">
+          <p>準備中</p>
+        </div>
+      </section>
+
+      <SectionTitle type="skill">リッドの特技一覧</SectionTitle>
       <div className="advice">
         <h3>魔神剣 (まじんけん)</h3>
         <EventCondition category="skill">
