@@ -19,7 +19,7 @@ const Breadcrumb = (props: Props) => {
       </li>
     );
   return category === "none" ? null : (
-    <nav aria-label="Breadcrumb" className={`${styles.breadcrumb} mb-8`}>
+    <nav aria-label="Breadcrumb" className={`${styles.breadcrumb} mb-7`}>
       <ol>
         <li>
           <a href="/">トップ</a>
