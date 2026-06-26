@@ -17,7 +17,7 @@ export const storyLinks = {
     desc: "ストーリー開始から大晶霊ウンディーネのいる水晶霊の河までをガイド",
   },
   guide2: {
-    title: "いざないの密林〜霊峰ファロース",
+    title: "いざないの密林〜ファロース",
     path: "/stories/guide2",
     desc: "序盤の難所いざないの密林の攻略情報をチェック",
   },

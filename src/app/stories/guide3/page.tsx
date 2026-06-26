@@ -29,7 +29,11 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-
+      <PageSummary>
+        <p>
+          セレスティアに突入後のストーリーを攻略！地晶霊の廃坑からチャットの小屋と連続で難易度の高いダンジョンが続くので攻略情報とマップを参照してください。
+        </p>
+      </PageSummary>
       <section className="mb-12">
         <SectionTitle type="flag">1.アイメンの町〜アイメン駅</SectionTitle>
         <ol>

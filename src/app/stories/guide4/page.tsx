@@ -9,6 +9,7 @@ import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
 import { getLocationSubEventsData } from "@/lib/db";
 import Image from "next/image";
+import SectionTitle from "@/components/SectionTitle";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -29,211 +30,227 @@ export default async function HomePage() {
     <article>
       <SetPageTitle title={title} />
 
-      <h2>1.&nbsp;港町ペイルティ</h2>
-      <ol>
-        <li>氷晶霊の山に入るため防寒服を調達しに行くことになる。</li>
-        <li>
-          リッドがメンバーの服を選ぶことになり、次の組み合わせを選ぶまで続くこととなる。
-          <br />
-          メルディ：ケープ、ファラ：ポンチョ、キール：オーバーマント
-        </li>
-        <li>支度が整ったならフィールドに出て氷晶霊の山に向かおう。</li>
-      </ol>
-      <div className="mb-16">
+      <PageSummary>
+        <p>
+          大晶霊セルシウスのイベントからストーリー後半へと繋がるバリル城までを攻略！難易度の高い「雷晶霊の遺跡」「バリル城」はダンジョンマップも掲載。
+        </p>
+      </PageSummary>
+
+      <section className="mb-12">
+        <SectionTitle type="flag">1.港町ペイルティ</SectionTitle>
+        <ol>
+          <li>氷晶霊の山に入るため防寒服を調達しに行くことになる。</li>
+          <li>
+            リッドがメンバーの服を選ぶことになり、次の組み合わせを選ぶまで続くこととなる。
+            <br />
+            メルディ：ケープ、ファラ：ポンチョ、キール：オーバーマント
+          </li>
+          <li>支度が整ったならフィールドに出て氷晶霊の山に向かおう。</li>
+        </ol>
         <LocationItems data={itemsData} locationIds={[24]} />
         <LocationRecipes data={recipesData} locationIds={[24]} />
         <LocationLenses data={lensesData} locationIds={[24]} />
         <LocationSubEvents data={subEventData} locationIds={[24]} />
-      </div>
+      </section>
 
-      <h2>2.&nbsp;氷晶霊の山</h2>
-      <ol>
-        <li>
-          <h4>氷晶霊の山 全体マップ</h4>
-          <Image
-            src="/maps/hyousyourei_map.jpg"
-            alt=""
-            width={482}
-            height={600}
-          />
-        </li>
-        <li>
-          このダンジョンでは氷が道を邪魔している箇所があるがそこはソーサラーリングを打つことで溶けて通れるようなる。
-        </li>
-        <li>奥へと進んでいき、木箱から「トトのアブラ」を入手する。</li>
-        <li>
-          トトのアブラを持っている状態で赤い氷の柱を調べることで、氷が溶けて通れるようになる。
-          <br />
-          奥へ進んでいくとボス「セルシウス」と戦闘となる。
-          <br />
-          勝利後はバンエルティア号でアイメンの町へ向かおう。
-        </li>
-      </ol>
-      <div className="boss-advice margin-bottom-small mb-8">
-        <h4>BOSS：『セルシウス』HP：33333(NORML)</h4>
-        <p>弱点は火。</p>
-      </div>
-      <div className="mb-16">
+      <section className="mb-12">
+        <SectionTitle type="flag">2.氷晶霊の山</SectionTitle>
+        <ol>
+          <li>
+            <h4>氷晶霊の山 全体マップ</h4>
+            <Image
+              src="/maps/hyousyourei_map.jpg"
+              alt=""
+              width={482}
+              height={600}
+            />
+          </li>
+          <li>
+            このダンジョンでは氷が道を邪魔している箇所があるがそこはソーサラーリングを打つことで溶けて通れるようなる。
+          </li>
+          <li>奥へと進んでいき、木箱から「トトのアブラ」を入手する。</li>
+          <li>
+            トトのアブラを持っている状態で赤い氷の柱を調べることで、氷が溶けて通れるようになる。
+            <br />
+            奥へ進んでいくとボス「セルシウス」と戦闘となる。
+            <br />
+            勝利後はバンエルティア号でアイメンの町へ向かおう。
+          </li>
+        </ol>
+        <div className="boss-advice margin-bottom-small mb-8">
+          <h4>BOSS：『セルシウス』HP：33333(NORML)</h4>
+          <p>弱点は火。</p>
+        </div>
         <LocationItems data={itemsData} locationIds={[25]} />
         <LocationRecipes data={recipesData} locationIds={[25]} />
         <LocationLenses data={lensesData} locationIds={[25]} />
         <LocationSubEvents data={subEventData} locationIds={[25]} />
-      </div>
+      </section>
 
-      <h2>3.&nbsp;アイメン(崩壊)</h2>
-      <ol>
-        <li>アイメンに入るとイベント。</li>
-        <li>
-          図書館に行くとボス「ヒアデス」との戦闘。
-          <br />
-          勝利後はバンエルティア号でティンシアへ向かおう。
-        </li>
-      </ol>
+      <section className="mb-12">
+        <SectionTitle type="flag">3.アイメン(崩壊)</SectionTitle>
+        <ol>
+          <li>アイメンに入るとイベント。</li>
+          <li>
+            図書館に行くとボス「ヒアデス」との戦闘。
+            <br />
+            勝利後はバンエルティア号でティンシアへ向かおう。
+          </li>
+        </ol>
 
-      <div className="boss-advice margin-bottom-small mb-8">
-        <h4>BOSS：『ヒアデス』HP：45000(NORML)</h4>
-        <p>弱点は光。</p>
-      </div>
-      <div className="mb-16">
+        <div className="boss-advice margin-bottom-small mb-8">
+          <h4>BOSS：『ヒアデス』HP：45000(NORML)</h4>
+          <p>弱点は光。</p>
+        </div>
         <LocationItems data={itemsData} locationIds={[26]} />
         <LocationRecipes data={recipesData} locationIds={[26]} />
         <LocationLenses data={lensesData} locationIds={[26]} />
         <LocationSubEvents data={subEventData} locationIds={[26]} />
-      </div>
+      </section>
 
-      <h2>4.&nbsp;ティンシア</h2>
-      <ol>
-        <li>バンエルティア号に乗って雷晶霊の遺跡へ向かおう。</li>
-      </ol>
-
-      <div className="mb-16">
+      <section className="mb-12">
+        <SectionTitle type="flag">4.ティンシア</SectionTitle>
+        <ol>
+          <li>バンエルティア号に乗って雷晶霊の遺跡へ向かおう。</li>
+        </ol>
         <LocationItems data={itemsData} locationIds={[27]} />
         <LocationRecipes data={recipesData} locationIds={[27]} />
         <LocationLenses data={lensesData} locationIds={[27]} />
         <LocationSubEvents data={subEventData} locationIds={[27]} />
-      </div>
+      </section>
 
-      <h2>5.&nbsp;雷晶霊の遺跡</h2>
-      <ol>
-        <li>
-          <h4>雷晶霊の遺跡 全体マップ</h4>
-          <Image src="/maps/kaminari_map.jpg" alt="" width={650} height={666} />
-        </li>
-        <li>
-          ボスのヴォルトのところまで辿り着くのに中々根気のいるダンジョン。ビリビリと電流が流れている箇所は触れるとHPにダメージを受けるので気をつけましょう。途中の障害物である水晶はフリーズリングを放てば破壊可能です。
-        </li>
-        <li>
-          マップの「！」のところは石盤に書かれていた「3つの星つかまば彩られしひとすじの光とならん」という箇所。これは3つのスイッチを踏んで特定の数に揃えれば扉が開くという仕掛け。
-        </li>
-        <li>
-          ダンジョンを攻略するためにまずは「ヒューズ」が必要となるので、仕掛けの部屋では「青の扉」へと進みヒューズを入手しましょう。途中にあるスイッチ(マップで青色で表示)は踏んでおかないとソケットのある部屋がロックされていて入れない。
-        </li>
-        <li>
-          ヒューズを手に入れたら「白の扉」へと進み、ヒューズを窪みにセットしましょう。これで動く床の部屋の仕掛けが動作を始めます。
-        </li>
-        <li>
-          仕掛けが動作している状態で「赤の扉」に入ると奥へ進めるようになる。この部屋では敵とのエンカウントは無いがHPが1になっていることがあるので注意。
-        </li>
-        <li>
-          キャンプより先は「電気パズル」を進むとヴォルトがいるが、最初では電源装置が起動していないため動作しない。そのため電源装置を調べ、必要な「制御玉」を入手する必要がある。
-        </li>
-        <li>
-          制御玉を入手するには色の付いた石を踏み、床のスイッチを動作させる必要がある。これは扉と反転するものであるのでうまく考えながら切り替えよう。
-        </li>
-        <li>
-          電源装置を起動したあとの電流パズルの部屋は以下の順番通りに1、2、3と踏んでいけば正解に辿り着けます。
-          <br />
-          <Image
-            src="/maps/kaminari_map2.jpg"
-            alt=""
-            width={350}
-            height={203}
-          />
-        </li>
-        <li>
-          奥の部屋まで辿り着くとボス「ヴォルト」と戦闘。勝利後にはヴォルトが暴走し、これを止めるにはスロットで「STOP!!」と揃えてやればいい。その後は光の大水霊レムが現れ、リッドの装備品「エクスカリバー」を入手する。ティンシアへ戻ろう。
-        </li>
-      </ol>
-      <div className="boss-advice margin-bottom-small mb-8">
-        <h4>BOSS：『ヴォルト』HP：54321(NORML)</h4>
-        <p>弱点は水。</p>
-      </div>
-      <div className="mb-16">
+      <section className="mb-12">
+        <SectionTitle type="flag">5.雷晶霊の遺跡</SectionTitle>
+        <ol>
+          <li>
+            <h4>雷晶霊の遺跡 全体マップ</h4>
+            <Image
+              src="/maps/kaminari_map.jpg"
+              alt=""
+              width={650}
+              height={666}
+            />
+          </li>
+          <li>
+            ボスのヴォルトのところまで辿り着くのに中々根気のいるダンジョン。ビリビリと電流が流れている箇所は触れるとHPにダメージを受けるので気をつけましょう。途中の障害物である水晶はフリーズリングを放てば破壊可能です。
+          </li>
+          <li>
+            マップの「！」のところは石盤に書かれていた「3つの星つかまば彩られしひとすじの光とならん」という箇所。これは3つのスイッチを踏んで特定の数に揃えれば扉が開くという仕掛け。
+          </li>
+          <li>
+            ダンジョンを攻略するためにまずは「ヒューズ」が必要となるので、仕掛けの部屋では「青の扉」へと進みヒューズを入手しましょう。途中にあるスイッチ(マップで青色で表示)は踏んでおかないとソケットのある部屋がロックされていて入れない。
+          </li>
+          <li>
+            ヒューズを手に入れたら「白の扉」へと進み、ヒューズを窪みにセットしましょう。これで動く床の部屋の仕掛けが動作を始めます。
+          </li>
+          <li>
+            仕掛けが動作している状態で「赤の扉」に入ると奥へ進めるようになる。この部屋では敵とのエンカウントは無いがHPが1になっていることがあるので注意。
+          </li>
+          <li>
+            キャンプより先は「電気パズル」を進むとヴォルトがいるが、最初では電源装置が起動していないため動作しない。そのため電源装置を調べ、必要な「制御玉」を入手する必要がある。
+          </li>
+          <li>
+            制御玉を入手するには色の付いた石を踏み、床のスイッチを動作させる必要がある。これは扉と反転するものであるのでうまく考えながら切り替えよう。
+          </li>
+          <li>
+            電源装置を起動したあとの電流パズルの部屋は以下の順番通りに1、2、3と踏んでいけば正解に辿り着けます。
+            <br />
+            <Image
+              src="/maps/kaminari_map2.jpg"
+              alt=""
+              width={350}
+              height={203}
+            />
+          </li>
+          <li>
+            奥の部屋まで辿り着くとボス「ヴォルト」と戦闘。勝利後にはヴォルトが暴走し、これを止めるにはスロットで「STOP!!」と揃えてやればいい。その後は光の大水霊レムが現れ、リッドの装備品「エクスカリバー」を入手する。ティンシアへ戻ろう。
+          </li>
+        </ol>
+        <div className="boss-advice margin-bottom-small mb-8">
+          <h4>BOSS：『ヴォルト』HP：54321(NORML)</h4>
+          <p>弱点は水。</p>
+        </div>
         <LocationItems data={itemsData} locationIds={[28]} />
         <LocationRecipes data={recipesData} locationIds={[28]} />
         <LocationLenses data={lensesData} locationIds={[28]} />
         <LocationSubEvents data={subEventData} locationIds={[28]} />
-      </div>
+      </section>
 
-      <h2>6.&nbsp;ティンシア〜バリル城への突入</h2>
-      <ol>
-        <li>
-          船具屋のはしごを降り、ドッグへ行くとイベントが発生してキールが仲間に戻る。ホテルの宿泊券をもらったら、ホテルへ行きイベントを見よう。
-        </li>
-        <li>
-          宿泊後にドッグへ行くとバリル城へ出発できる。バリル城へ行く途中はミニゲームのイベントがある。
-        </li>
-      </ol>
-      <div className="mb-16">
+      <section className="mb-12">
+        <SectionTitle type="flag">6.ティンシア〜バリル城への突入</SectionTitle>
+        <ol>
+          <li>
+            船具屋のはしごを降り、ドッグへ行くとイベントが発生してキールが仲間に戻る。ホテルの宿泊券をもらったら、ホテルへ行きイベントを見よう。
+          </li>
+          <li>
+            宿泊後にドッグへ行くとバリル城へ出発できる。バリル城へ行く途中はミニゲームのイベントがある。
+          </li>
+        </ol>
         <LocationItems data={itemsData} locationIds={[0]} />
         <LocationRecipes data={recipesData} locationIds={[0]} />
         <LocationLenses data={lensesData} locationIds={[0]} />
         <LocationSubEvents data={subEventData} locationIds={[0]} />
-      </div>
+      </section>
 
-      <h2>7.&nbsp;バリル城</h2>
-      <ol>
-        <li>
-          <h4>バリル城 全体マップ</h4>
-          <Image src="/maps/burrill_map.jpg" alt="" width={660} height={680} />
-        </li>
-        <li>
-          マップが複雑なバリル城だが、基本的に3階構成になっていることを覚えておくと位置が分かりやすくなる。
-        </li>
-        <li>
-          クリアのためにはまずは「カード」を入手しよう。カードを入手するためには入口から左へと進み、3階を経由して行く必要がある。マップの水色の箇所はフリーズリングを放つことで動作する仕掛けを表しています。
-        </li>
-        <li>
-          入手したカードは1階の演説台のあるところにてセットすると暗号が表示される。この暗号は左右にある制御室にて入力するものだ。（イベントを発生させれば記憶しなくてもよい）
-          <br />
-          カードを入手した部屋は一方通行であるため、この部屋にあるワープ装置を使って3階まで戻りましょう。マップで言うと「A」間を移動する。
-        </li>
-        <li>
-          暗号のイベントを発生させたあとは左右の制御室に向かって入力させよう。それぞれの制御室は隠し部屋となっており、マップの赤い箇所をソーサラーリングで打てば扉が開くような仕掛けになっている。
-        </li>
-        <li>
-          左右の制御室で暗号を入力すると「！」の扉が開くようになる。この奥ではボス「シゼル」との戦闘となる。ある程度HPを削っていくとイベントが発生。
-        </li>
-        <li>
-          バリル城をクリア後は極光術についてガレノスに聞くためにルイシカに向かおう。
-        </li>
-      </ol>
-
-      <div className="boss-advice margin-bottom-small mb-8">
-        <h4>BOSS：『シゼル』HP：120000(NORML)</h4>
-        <p>
-          パーティのHPを1にするエターナルファイナリティを使用してくる。アイテムは惜しみなく使っておこう。
-        </p>
-      </div>
-      <div className="mb-16">
+      <section className="mb-12">
+        <SectionTitle type="flag">7.バリル城</SectionTitle>
+        <ol>
+          <li>
+            <h4>バリル城 全体マップ</h4>
+            <Image
+              src="/maps/burrill_map.jpg"
+              alt=""
+              width={660}
+              height={680}
+            />
+          </li>
+          <li>
+            マップが複雑なバリル城だが、基本的に3階構成になっていることを覚えておくと位置が分かりやすくなる。
+          </li>
+          <li>
+            クリアのためにはまずは「カード」を入手しよう。カードを入手するためには入口から左へと進み、3階を経由して行く必要がある。マップの水色の箇所はフリーズリングを放つことで動作する仕掛けを表しています。
+          </li>
+          <li>
+            入手したカードは1階の演説台のあるところにてセットすると暗号が表示される。この暗号は左右にある制御室にて入力するものだ。（イベントを発生させれば記憶しなくてもよい）
+            <br />
+            カードを入手した部屋は一方通行であるため、この部屋にあるワープ装置を使って3階まで戻りましょう。マップで言うと「A」間を移動する。
+          </li>
+          <li>
+            暗号のイベントを発生させたあとは左右の制御室に向かって入力させよう。それぞれの制御室は隠し部屋となっており、マップの赤い箇所をソーサラーリングで打てば扉が開くような仕掛けになっている。
+          </li>
+          <li>
+            左右の制御室で暗号を入力すると「！」の扉が開くようになる。この奥ではボス「シゼル」との戦闘となる。ある程度HPを削っていくとイベントが発生。
+          </li>
+          <li>
+            バリル城をクリア後は極光術についてガレノスに聞くためにルイシカに向かおう。
+          </li>
+        </ol>
+        <div className="boss-advice margin-bottom-small mb-8">
+          <h4>BOSS：『シゼル』HP：120000(NORML)</h4>
+          <p>
+            パーティのHPを1にするエターナルファイナリティを使用してくる。アイテムは惜しみなく使っておこう。
+          </p>
+        </div>
         <LocationItems data={itemsData} locationIds={[29]} />
         <LocationRecipes data={recipesData} locationIds={[29]} />
         <LocationLenses data={lensesData} locationIds={[29]} />
         <LocationSubEvents data={subEventData} locationIds={[29]} />
-      </div>
+      </section>
 
-      <h2>バリル城後の進行</h2>
-      <ol>
-        <li>
-          ルイシカでガレノスに会いにいき極光術の話を聞く。その後はティンシアへ向かおう。
-        </li>
-        <li>
-          ティンシアの町に入るとイベント。これ以降、アジトのフォッグに話かけることでフォッグを仲間にすることができる。また仲間から外したい場合はこの部屋に来るといい。
-        </li>
-        <li>
-          出航してバンエルティア号がフィールドに出るとイベントが発生。以降はセイファートキーが指し示す場所へ向かうこととなる。次はペイルティの南にあるセイファート神殿へ向かう。
-        </li>
-      </ol>
+      <section className="mb-12">
+        <SectionTitle type="flag">バリル城後の進行</SectionTitle>
+        <ol>
+          <li>
+            ルイシカでガレノスに会いにいき極光術の話を聞く。その後はティンシアへ向かおう。
+          </li>
+          <li>
+            ティンシアの町に入るとイベント。これ以降、アジトのフォッグに話かけることでフォッグを仲間にすることができる。また仲間から外したい場合はこの部屋に来るといい。
+          </li>
+          <li>
+            出航してバンエルティア号がフィールドに出るとイベントが発生。以降はセイファートキーが指し示す場所へ向かうこととなる。次はペイルティの南にあるセイファート神殿へ向かう。
+          </li>
+        </ol>
+      </section>
     </article>
   );
 }
