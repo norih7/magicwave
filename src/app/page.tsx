@@ -3,7 +3,7 @@ import ContentLinks from "@/components/ContentLinks";
 import { storyLinks } from "@/constants";
 import { subeventLinks } from "@/constants";
 import { systemLinks } from "@/constants";
-import { LuBookText, LuHistory } from "react-icons/lu";
+import SectionTitle from "@/components/SectionTitle";
 
 // 攻略記事やカテゴリのダミーデータ
 type Link = {
@@ -43,18 +43,13 @@ export default async function HomePage() {
 
         {/* 2. 注目カテゴリセクション */}
         <section>
-          <h2 className="flex items-center">
-            <LuBookText className="mr-1" />
-            注目コンテンツ
-          </h2>
+          <SectionTitle>注目コンテンツ</SectionTitle>
           <ContentLinks list={featuredLinks} />
         </section>
 
         {/* 3. 更新履歴セクション */}
         <section className="">
-          <h2 className="flex items-center">
-            <LuHistory className="mr-1" /> 最新更新履歴
-          </h2>
+          <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
             <li className="flex gap-4">
               <span className="text-slate-400">2026/06/20</span>
