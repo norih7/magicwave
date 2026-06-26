@@ -9,7 +9,7 @@ type Props = {
 const PageSummary = (props: Props) => {
   const { children, title = "概要", color = "green" } = props;
   return (
-    <div className={`${styles.summary} mb-16 pb-3`}>
+    <div className={`${styles.summary} mb-10 pb-3`}>
       <header
         className={`${styles[color]} font-bold mb-3 inline-flex items-center`}
       >

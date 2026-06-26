@@ -34,7 +34,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-16">
+      <section className="mb-12">
         <SectionTitle type="flag">1.ラシュアン</SectionTitle>
         <ol className="mb-5">
           <li>ストーリーが始まります。</li>
@@ -55,7 +55,7 @@ export default async function HomePage() {
         <LocationSubEvents data={subEventData} locationIds={[1]} />
       </section>
 
-      <section className="mb-16">
+      <section className="mb-12">
         <SectionTitle type="flag">
           2.ラシュアン河の桟橋〜レグルス道場
         </SectionTitle>
@@ -77,7 +77,7 @@ export default async function HomePage() {
         <LocationSubEvents data={subEventData} locationIds={[2, 3]} />
       </section>
 
-      <section className="mb-16">
+      <section className="mb-12">
         <SectionTitle type="flag">
           3.ラシュアン河の桟橋(2回目)〜学問の町ミンツ
         </SectionTitle>
@@ -100,7 +100,7 @@ export default async function HomePage() {
         <LocationSubEvents data={subEventData} locationIds={[4]} />
       </section>
 
-      <section className="mb-16">
+      <section className="mb-12">
         <SectionTitle type="flag">4.ミンツの岩山〜岩山の観測所</SectionTitle>
         <ol>
           <li>
@@ -128,7 +128,7 @@ export default async function HomePage() {
         <LocationSubEvents data={subEventData} locationIds={[5]} />
       </section>
 
-      <section className="mb-16">
+      <section className="mb-12">
         <SectionTitle type="flag">5.望郷の洞窟</SectionTitle>
         <ol>
           <li>
@@ -145,7 +145,7 @@ export default async function HomePage() {
         <LocationSubEvents data={subEventData} locationIds={[7]} />
       </section>
 
-      <section className="mb-16">
+      <section className="mb-12">
         <SectionTitle type="flag">6.木陰の村モルル</SectionTitle>
         <ol>
           <li>
@@ -173,7 +173,7 @@ export default async function HomePage() {
         <LocationSubEvents data={subEventData} locationIds={[8]} />
       </section>
 
-      <section className="mb-16">
+      <section className="mb-12">
         <SectionTitle type="flag">7.水晶霊の河</SectionTitle>
         <ol>
           <li>
