@@ -17,12 +17,12 @@ export const storyLinks = {
     desc: "ストーリー開始から大晶霊ウンディーネのいる水晶霊の河までをガイド",
   },
   guide2: {
-    title: "いざないの密林〜火晶霊の谷",
+    title: "いざないの密林〜霊峰ファロース",
     path: "/stories/guide2",
     desc: "序盤の難所いざないの密林の攻略情報をチェック",
   },
   guide3: {
-    title: "ファロース〜チャットの小屋",
+    title: "アイメン〜チャットの小屋",
     path: "/stories/guide3",
     image: "/link-headers/stories-guide3.jpg",
     desc: "セレスティア突入後のストーリーガイド 難易度の高いチャットの小屋も解説",
