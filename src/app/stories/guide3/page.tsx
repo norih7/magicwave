@@ -38,7 +38,7 @@ export default async function HomePage() {
         <SectionTitle type="flag">1.アイメンの町〜アイメン駅</SectionTitle>
         <ol>
           <li>
-            アイメンの町に入るとイベント。
+            セレスティアでは「岬の砦」に到着している。フィールドに出て近くにあるアイメンの町に入るとイベント。
             <br />
             メルディの家で一泊後、戻ってきていないメルディとキールを探しに図書館へ向かう。
           </li>
@@ -64,10 +64,10 @@ export default async function HomePage() {
           </li>
           <li>ルイシカ駅をおりたら、ルイシカの町へ向かおう。</li>
         </ol>
-        <LocationItems data={itemsData} locationIds={[19, 20]} />
-        <LocationRecipes data={recipesData} locationIds={[19, 20]} />
-        <LocationLenses data={lensesData} locationIds={[19, 20]} />
-        <LocationSubEvents data={subEventData} locationIds={[19, 20]} />
+        <LocationItems data={itemsData} locationIds={[50, 19, 20]} />
+        <LocationRecipes data={recipesData} locationIds={[50, 19, 20]} />
+        <LocationLenses data={lensesData} locationIds={[50, 19, 20]} />
+        <LocationSubEvents data={subEventData} locationIds={[50, 19, 20]} />
       </section>
 
       <section className="mb-12">

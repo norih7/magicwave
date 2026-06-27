@@ -61,7 +61,7 @@
     "locationName": "バロール港",
     "recipeId": 8,
     "recipeName": "いかリング",
-    "remarks": "(バロール港) 船着き場階段下りた先の木箱"
+    "remarks": "バロール港 / 船着き場階段下りた先の木箱"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "locationName": "商業の町バロール",
     "recipeId": 9,
     "recipeName": "ステーキ",
-    "remarks": "(町)酒屋の2Fテラスにいる酔っぱらい"
+    "remarks": "バロールの町 / 酒屋の2Fテラスにいる酔っぱらい"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "locationName": "商業の町バロール",
     "recipeId": 10,
     "recipeName": "グラタン",
-    "remarks": "(町)宿屋の寝室にあるクローゼット"
+    "remarks": "バロールの町 / 宿屋の寝室にあるクローゼット"
   },
   {
     "id": 11,
@@ -144,84 +144,84 @@
     "remarks": "ホテルロビーのドラゴン像"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "recipeId": 19,
+    "recipeName": "ペスカトーレ",
+    "remarks": "ビストロシャンバール1F 左手側にあるワイン瓶"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 20,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "recipeId": 20,
+    "recipeName": "ふわふわケーキ",
+    "remarks": "王都インフェリア 国立劇場にある植木"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 21,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "recipeId": 21,
+    "recipeName": "クリームシチュー",
+    "remarks": "ホテル2階にある植木のとなりにある変な置物"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 22,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "recipeId": 22,
+    "recipeName": "ひやピリちゅうか",
+    "remarks": "解凍後の港にいる修行僧"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 23,
+    "locationId": 21,
+    "locationName": "ルイシカ",
+    "recipeId": 23,
+    "recipeName": "ホットボルシチ",
+    "remarks": "ルイシカ / 入ってから2つめのフロア左奥のがれき"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 24,
+    "locationId": 21,
+    "locationName": "ルイシカ",
+    "recipeId": 24,
+    "recipeName": "にがりマーボー",
+    "remarks": "ルイシカ / 奥の廃墟2階 階段手前にある置物"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 25,
+    "locationId": 45,
+    "locationName": "ジイニ",
+    "recipeId": 25,
+    "recipeName": "からおでん",
+    "remarks": "カジノにあるスロット"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 26,
+    "locationId": 45,
+    "locationName": "ジイニ",
+    "recipeId": 26,
+    "recipeName": "ぴりじゃが",
+    "remarks": "オークション会場左奥のカーテン"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 27,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "recipeId": 27,
+    "recipeName": "しぶずし",
+    "remarks": "宿屋2階にある雪だるま"
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "recipeId": "",
-    "recipeName": "",
-    "remarks": ""
+    "id": 28,
+    "locationId": 45,
+    "locationName": "ジイニ",
+    "recipeId": 28,
+    "recipeName": "しゃくねつカレー",
+    "remarks": "本屋にいるカエル"
   },
   {
     "id": "",

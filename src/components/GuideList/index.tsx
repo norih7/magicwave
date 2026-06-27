@@ -18,9 +18,9 @@ export const GuideList: React.FC<GuideListProps> = ({ items }) => {
         <li key={index} className="mb-2">
           <a
             href={item.href}
-            className="flex items-center px-2 py-2 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg transition-all duration-200 hover:bg-blue-100 hover:text-blue-700 hover:border-blue-300"
+            className="flex items-center px-2 py-2 text-gray-600 bg-gray-50 border border-gray-200 rounded-lg transition-all duration-200 hover:bg-blue-100 hover:text-blue-700 hover:border-blue-300"
           >
-            <MdKeyboardArrowRight />
+            <MdKeyboardArrowRight className="mr-1" />
             <span>{item.title}</span>
             {item.description && (
               <span className="text-sm text-gray-500 mt-1">

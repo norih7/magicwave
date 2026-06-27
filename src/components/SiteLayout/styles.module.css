@@ -60,7 +60,8 @@
 .main h3 {
   padding-bottom: 8px;
   font-weight: bold;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
+  color: #333;
 }
 .main h4 {
   font-weight: bold;

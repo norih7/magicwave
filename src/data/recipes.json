@@ -2,108 +2,259 @@
   {
     "id": 1,
     "name": "サンドイッチ",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 2,
     "name": "オムライス",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 3,
     "name": "にくなべ",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 4,
     "name": "ハンバーガー",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 5,
     "name": "フルーツジュース",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 6,
     "name": "やさいサラダ",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 7,
     "name": "さかななべ",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 8,
     "name": "いかリング",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 9,
     "name": "ステーキ",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 10,
     "name": "グラタン",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 11,
     "name": "カルボナーラ",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 12,
     "name": "ザラメライス",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 13,
     "name": "あまにんどうふ",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 14,
     "name": "にがりマーボ",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 15,
     "name": "ミツラーメン",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 16,
     "name": "エビチリリリ",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 17,
     "name": "おこげサンド",
+    "type": "",
     "world": "",
     "description": ""
   },
   {
     "id": 18,
     "name": "スイートパフェ",
+    "type": "",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 19,
+    "name": "ペスカトーレ",
+    "type": "",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 20,
+    "name": "ふわふわケーキ",
+    "type": "",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 21,
+    "name": "クリームシチュー",
+    "type": "",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 22,
+    "name": "ひやピリちゅうか",
+    "type": "",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 23,
+    "name": "ホットボルシチ",
+    "type": "",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 24,
+    "name": "にがりマーボー",
+    "type": "",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 25,
+    "name": "からおでん",
+    "type": "",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 26,
+    "name": "ぴりじゃが",
+    "type": "",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 27,
+    "name": "しぶずし",
+    "type": "",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 28,
+    "name": "しゃくねつカレー",
+    "type": "",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 29,
+    "name": "フルーツサンド",
+    "type": "master",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 30,
+    "name": "えいようドリンク",
+    "type": "master",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 31,
+    "name": "ちからにくうどん",
+    "type": "master",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 32,
+    "name": "おはこなべ",
+    "type": "master",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 33,
+    "name": "ポテトドリア",
+    "type": "master",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 34,
+    "name": "マーボーカレー",
+    "type": "master",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 35,
+    "name": "スープスパ",
+    "type": "master",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 36,
+    "name": "ツナパエリア",
+    "type": "master",
+    "world": "",
+    "description": ""
+  },
+  {
+    "id": 37,
+    "name": "やみなべ",
+    "type": "other",
     "world": "",
     "description": ""
   }

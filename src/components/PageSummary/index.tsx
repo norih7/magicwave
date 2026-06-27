@@ -15,7 +15,7 @@ const PageSummary = (props: Props) => {
       >
         <BiSolidInfoSquare
           className={`mr-1 ${styles["icon-green"]}`}
-          size={22}
+          size={28}
         />
         {title}
       </header>

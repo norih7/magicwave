@@ -28,9 +28,9 @@ export default function SiteLayout({
             <MenuButton />
           </div>
           <div className="">
-            <p className="relative text-xs text-gray-700">
+            <span className="relative text-xs text-gray-700">
               テイルズオブエターニアの攻略情報をお届けします
-            </p>
+            </span>
           </div>
         </div>
       </header>
