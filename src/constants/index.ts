@@ -123,17 +123,27 @@ export const subeventLinks = {
 
 export const systemLinks = {
   manual: {
-    title: "マニュアルのしょ",
+    title: "マニュアル操作/特殊操作",
     path: "/systems/manual",
     desc: "",
   },
+  titles: {
+    title: "エターニアの称号",
+    path: "/systems/titles",
+    desc: "",
+  },
+  // "join-chat-and-fog": {
+  //   title: "チャットとフォッグの加入",
+  //   path: "/systems/join-chat-and-fog",
+  //   desc: "",
+  // },
   skill: {
     title: "特技の習得",
     path: "/systems/skill",
     desc: "",
   },
   rune: {
-    title: "ルーンボトル",
+    title: "ルーンボトル/変化表",
     path: "/systems/rune",
     desc: "",
   },
@@ -147,6 +157,16 @@ export const systemLinks = {
     path: "/systems/master-recipe",
     desc: "",
   },
+  // "status-up": {
+  //   title: "特殊なステータスアップ",
+  //   path: "/systems/status-up",
+  //   desc: "",
+  // },
+  // "special-skill": {
+  //   title: "秘奥義/特殊技",
+  //   path: "/systems/special-skill",
+  //   desc: "",
+  // },
 };
 
 export const extraLinks = {

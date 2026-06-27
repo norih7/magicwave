@@ -3,6 +3,7 @@ import SetPageTitle from "@/components/SetPageTitle";
 import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
 import SectionTitle from "@/components/SectionTitle";
+import PageSummary from "@/components/PageSummary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -17,6 +18,11 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
+
+      <PageSummary>
+        <p>リッドの特技と奥義について解説！</p>
+      </PageSummary>
+
       <section className="mb-12">
         <SectionTitle type="data">おすすめの特技/奥義</SectionTitle>
         <div className="advice">

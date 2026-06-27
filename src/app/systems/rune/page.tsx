@@ -6,7 +6,7 @@ import EventCondition from "@/components/EventCondition";
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = " ルーンボトルの解説";
+const title = " ルーンボトルの解説と変化表";
 export const metadata = {
   title,
   description: "",

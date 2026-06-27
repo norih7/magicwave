@@ -9,13 +9,13 @@ type Props = {
 const PageSummary = (props: Props) => {
   const { children, title = "概要", color = "green" } = props;
   return (
-    <div className={`${styles.summary} mb-10 pb-3`}>
+    <div className={`${styles.summary} mb-10 pb-2`}>
       <header
-        className={`${styles[color]} font-bold mb-3 inline-flex items-center`}
+        className={`${styles[color]} font-bold mb-1 inline-flex items-center`}
       >
         <BiSolidInfoSquare
           className={`mr-1 ${styles["icon-green"]}`}
-          size={28}
+          size={24}
         />
         {title}
       </header>

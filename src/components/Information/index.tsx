@@ -1,0 +1,31 @@
+import React from "react";
+import { LuInfo, LuTriangleAlert } from "react-icons/lu";
+
+interface InformationProps {
+  type: "info" | "warning";
+  children: React.ReactNode;
+}
+
+export const Information: React.FC<InformationProps> = ({ type, children }) => {
+  const isWarning = type === "warning";
+
+  // 彩度を少し抑えた、読みやすいパステル調の配色
+  const styles = isWarning
+    ? "bg-amber-50 border-amber-200 text-amber-900"
+    : "bg-blue-50 border-blue-200 text-blue-900";
+
+  const icon = isWarning ? (
+    <LuTriangleAlert className="text-amber-600 shrink-0" size={20} />
+  ) : (
+    <LuInfo className="text-blue-600 shrink-0" size={20} />
+  );
+
+  return (
+    <div className={`flex gap-3 p-4 border rounded-lg ${styles} my-4`}>
+      {icon}
+      <div className="text-sm leading-relaxed opacity-95">{children}</div>
+    </div>
+  );
+};
+
+export default Information;

@@ -3,11 +3,12 @@ import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import EventCondition from "@/components/EventCondition";
 import SectionTitle from "@/components/SectionTitle";
+import Information from "@/components/Information";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = " マニュアルのしょ";
+const title = " マニュアル操作/特殊操作";
 export const metadata = {
   title,
   description: "",
@@ -19,12 +20,20 @@ export default async function HomePage() {
 
       <PageSummary>
         <p>
-          アイテム「マニュアルのしょ」を入手すると戦闘モードでマニュアル操作を選択でき、自由な戦闘を楽しめるようになります。エターニアはシリーズの比較的初期の作品だけあって、最初から自由に操作キャラクターを動かすことができません。自分で自由にダッシュしたい！などセミオート操作では物足りない場合はぜひマニュアルのしょを入手しておきましょう。
+          エターニアはシリーズの比較的初期の作品だけあって、最初から自由に操作キャラクターを動かすことができません。序盤のレグルス道場でアイテム「マニュアルのしょ」を入手すると戦闘モードでマニュアル操作を選択でき、自由な戦闘を楽しめるようになります。
+        </p>
+        <p>
+          また装備することでバックステップを取れるようになるなど戦闘中に特殊な効果があるアイテムも解説します。
         </p>
       </PageSummary>
 
-      <section>
-        <SectionTitle type="system">「マニュアルのしょ」の入手</SectionTitle>
+      <section className="mb-12">
+        <SectionTitle type="system">
+          マニュアル操作（マニュアルのしょ入手）
+        </SectionTitle>
+        <Information type="warning">
+          リマスター版では初期からマニュアル操作ができ、マニュアルのしょが無くなる可能性があります。発売後に検証してページを更新します。
+        </Information>
         <div className="mb-4">
           <h3>発生時期</h3>
           <p>いつでも</p>
@@ -35,13 +44,17 @@ export default async function HomePage() {
             レグルス道場の弟子に話かけ「マニュアル操作で激しく戦いたい」を選択すると入手できます。取得はいつでも可能ですが、ストーリー的にレグルス道場に訪れたときにやっておくのがオススメです。
           </p>
         </div>
-      </section>
-      <section>
-        <div className="mb-8">
-          <SectionTitle type="system">マニュアル操作への切替</SectionTitle>
+        <div className="mb-4">
+          <h3>マニュアル操作への切り替え</h3>
           <p>
             設定画面で「マニュアル」、あるいは戦闘中にSELECTボタンを押すことで切替可能。
           </p>
+        </div>
+      </section>
+      <section>
+        <div className="mb-8">
+          <SectionTitle type="system">特殊な装備品</SectionTitle>
+          <p>更新中</p>
         </div>
       </section>
     </article>
