@@ -27,12 +27,11 @@
     font-size: 0.9rem;
   }
   h2,
-  h3,
-  header {
+  h3 {
     font-size: 1.1rem;
   }
   p {
-    padding: 8px 0;
+    padding-bottom: 8px;
     line-height: 1.6;
   }
 }

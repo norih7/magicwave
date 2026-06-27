@@ -17,11 +17,6 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-
-      <PageSummary>
-        <p>エターニアのシステムを解説</p>
-      </PageSummary>
-
       <ContentLinks list={Object.values(systemLinks)} />
     </article>
   );

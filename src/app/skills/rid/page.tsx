@@ -30,8 +30,8 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <SectionTitle type="skill">リッドの特技一覧</SectionTitle>
-      <div className="advice">
+      <section className="mb-12">
+        <SectionTitle type="skill">リッドの特技一覧</SectionTitle>
         <h3>魔神剣 (まじんけん)</h3>
         <EventCondition category="skill">
           <Tag>斬Lv1</Tag>
@@ -548,7 +548,7 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </div>
+      </section>
     </article>
   );
 }

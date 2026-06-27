@@ -11,7 +11,7 @@ const PageSummary = (props: Props) => {
   return (
     <div className={`${styles.summary} mb-10 pb-2`}>
       <header
-        className={`${styles[color]} font-bold mb-1 inline-flex items-center`}
+        className={`${styles[color]} font-bold mb-3 inline-flex items-center`}
       >
         <BiSolidInfoSquare
           className={`mr-1 ${styles["icon-green"]}`}

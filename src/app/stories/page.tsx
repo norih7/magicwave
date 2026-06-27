@@ -18,11 +18,6 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-
-      <PageSummary>
-        <p>テイルズオブエターニアのストーリー攻略情報です</p>
-      </PageSummary>
-
       <ContentLinks list={Object.values(storyLinks)} />
     </article>
   );

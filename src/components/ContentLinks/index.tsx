@@ -31,7 +31,7 @@ const ContentLinks = (props: Props) => {
           <Link
             key={item.path}
             href={item.path}
-            className="block p-4 border border-gray-300 rounded-lg hover:shadow-lg transition-shadow bg-white"
+            className="block pt-3 pb-4 px-4 border border-gray-300 rounded-lg hover:shadow-lg transition-shadow bg-white"
           >
             <h3 className="mb-3 text-base">{item.title}</h3>
             {Logo}

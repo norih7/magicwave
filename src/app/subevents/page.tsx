@@ -17,11 +17,6 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-
-      <PageSummary>
-        <p>エターニアのサブイベントを紹介します</p>
-      </PageSummary>
-
       <ContentLinks list={Object.values(subeventLinks)} />
     </article>
   );
