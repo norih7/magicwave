@@ -4,6 +4,7 @@ import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
 import SectionTitle from "@/components/SectionTitle";
 import PageSummary from "@/components/PageSummary";
+import GuideList from "@/components/GuideList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -20,7 +21,12 @@ export default async function HomePage() {
       <SetPageTitle title={title} />
 
       <PageSummary>
-        <p>リッドの特技と奥義について解説！</p>
+        <p>
+          リッドの特技と奥義の一覧ページです。習得に必要な「斬レベル」などの説明、秘奥義の説明は別ページがありますので参照ください。
+        </p>
+        <GuideList
+          items={[{ title: "斬レベル/突レベルの説明", href: "/systems/skill" }]}
+        ></GuideList>
       </PageSummary>
 
       <section className="mb-12">
