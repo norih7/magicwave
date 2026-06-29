@@ -19,10 +19,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <meta
-        name="google-site-verification"
-        content="hx_S7uPi-OA7S1_BaL0QVcljWmU983y96p2Qfs8pVRs"
-      />
       <body>
         <TitleProvider>
           <SiteLayout>{children}</SiteLayout>
