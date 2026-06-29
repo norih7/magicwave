@@ -1,4 +1,11 @@
-import { LuTable, LuZap, LuTarget, LuAward, LuHexagon } from "react-icons/lu";
+import {
+  LuTable,
+  LuZap,
+  LuTarget,
+  LuAward,
+  LuHexagon,
+  LuBookType,
+} from "react-icons/lu";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { LiaComment } from "react-icons/lia";
 
@@ -7,9 +14,11 @@ interface Skill {
   ruby: string;
   description: string;
   requirement: string;
+  requirement2?: string;
   tp: number;
   hit: number;
   element: string;
+  type?: string;
 }
 
 // 修正点: PropertyListProps が Skill[] を受け取るように変更
@@ -29,10 +38,29 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
             label: (
               <>
                 <LuAward className="text-lime-600 mr-1" />
-                習得条件
+                習得条件1
               </>
             ),
             value: skill.requirement,
+          },
+          {
+            label: (
+              <>
+                <LuAward className="text-lime-600 mr-1" />
+                習得条件2
+              </>
+            ),
+            value:
+              skill.requirement2 === undefined ? "なし" : skill.requirement2,
+          },
+          {
+            label: (
+              <>
+                <LuBookType className="text-gray-600 mr-1" />
+                種別
+              </>
+            ),
+            value: skill.type,
           },
           {
             label: (
@@ -82,12 +110,12 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
                 {displayItems.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-slate-50 px-4 py-2 rounded-lg border border-slate-200"
+                    className="bg-slate-50 px-3 py-2 rounded-lg border border-slate-200"
                   >
                     <div className="mb-1 text-xs text-slate-500 font-bold uppercase tracking-wider flex items-center">
                       {item.label}
                     </div>
-                    <div className="text-slate-800 font-semibold">
+                    <div className="text-sm text-slate-800 font-semibold">
                       {item.value}
                     </div>
                   </div>
