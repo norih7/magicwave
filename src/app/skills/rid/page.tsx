@@ -5,6 +5,7 @@ import Tag from "@/components/Tag";
 import SectionTitle from "@/components/SectionTitle";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
+import SkillPropertyList from "@/components/SkillPropertyList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -16,6 +17,215 @@ export const metadata = {
 };
 
 export default async function HomePage() {
+  const skills = [
+    {
+      name: "魔神剣",
+      ruby: "まじんけん",
+      description:
+        "剣圧を放つ飛び攻撃。敵の詠唱を妨げたいときの飛び道具として結構使えます。",
+      requirement: "斬Lv1 / 突Lv1",
+      tp: 4,
+      hit: 1,
+      element: "武器の属性",
+    },
+    {
+      name: "雷神剣",
+      ruby: "らいじんけん",
+      description:
+        "雷属性の突き攻撃。突きがヒットすると追加で雷ダメージを与える。",
+      requirement: "斬Lv1 / 突Lv2",
+      tp: 4,
+      hit: 2,
+      element: "雷",
+    },
+    {
+      name: "虎牙破斬",
+      ruby: "こがはざん",
+      description:
+        "上下の2段斬りを行う。動作に無駄がなく終盤でも活躍する特技。",
+      requirement: "斬Lv5 / 突Lv2",
+      tp: 6,
+      hit: 2,
+      element: "武器の属性",
+    },
+    {
+      name: "散沙雨",
+      ruby: "ちりさだめ",
+      description:
+        "最大5HITの連続突きを行う。武器の命中率が低いとあまりHITしないので注意。",
+      requirement: "斬Lv2 / 突Lv5",
+      tp: 7,
+      hit: 5,
+      element: "武器の属性",
+    },
+    {
+      name: "裂空斬",
+      ruby: "れっくうざん",
+      description:
+        "円を描きながら回転斬りを行う。敵の背後に回り込むために使用するのも有効。使用回数が100を超えるとジャンプ中に発動可能になり、使い道が広がる。",
+      requirement: "斬Lv16 / 突Lv8",
+      tp: 7,
+      hit: 5,
+      element: "武器の属性",
+    },
+    {
+      name: "風雷神剣",
+      ruby: "ふうらいじんけん",
+      description:
+        "雷神剣を強化した攻撃。使い勝手的には雷神剣と大きな差はないが、のちに鳳凰天駆を習得するために多くの使用回数が必要となる。習得にはレベル以外に「雷神剣」の使用が50回以上必要。",
+      requirement: "斬Lv4 / 突Lv10 / 雷神剣50回以上",
+      tp: 8,
+      hit: 3,
+      element: "風、雷",
+    },
+    {
+      name: "魔神剣・双牙",
+      ruby: "まじんけんそうが",
+      description:
+        "魔神剣をテンポよく2回放つ。一定の距離の敵にしか届かないが、タイミングをずらした素早い2連撃は魅力的。習得にはレベル以外に「魔神剣」の使用が48回以上必要。",
+      requirement: "斬Lv10 / 突Lv3 / 魔神剣48回以上",
+      tp: 8,
+      hit: 3,
+      element: "武器の属性",
+    },
+    {
+      name: "虎牙連斬",
+      ruby: "こがれんざん",
+      description:
+        "虎牙破斬を強化した攻撃。虎牙破斬から乗り換える人が多数の特技でかなり使い勝手がいい。習得にはレベル以外に「虎牙破斬」の使用が150回以上必要。",
+      requirement: "斬Lv13 / 突Lv4 / 虎牙破斬150回以上",
+      tp: 10,
+      hit: 4,
+      element: "武器の属性",
+    },
+    {
+      name: "秋沙雨",
+      ruby: "あきさだめ",
+      description:
+        "最大11HITの連続突きを行う。最後には突き上げ斬りをするためコンボに使う場合は使い勝手が難しい。習得にはレベル以外に「散沙雨」の使用が130回以上必要。",
+      requirement: "斬Lv4 / 突Lv13 / 散沙雨130回以上",
+      tp: 12,
+      hit: 11,
+      element: "武器の属性",
+    },
+    {
+      name: "雷神双破斬",
+      ruby: "らいじんそうはざん",
+      description:
+        "雷神剣と虎牙破斬を組み合わせた奥義。習得にはレベル以外に「雷神剣」の使用が16回以上、「虎牙破斬」の使用が16回以上必要。",
+      requirement: "斬Lv7 / 突Lv5 / 雷神剣16回以上 / 虎牙破斬16回以上",
+      tp: 4,
+      hit: 4,
+      element: "雷、武器の属性",
+    },
+    {
+      name: "魔神千裂破",
+      ruby: "まじんせんれつは",
+      description:
+        "魔神剣と散沙雨を組み合わせた奥義。習得にはレベル以外に「魔神剣」の使用が24回以上、「散沙雨」の使用が24回以上必要。",
+      requirement: "斬Lv5 / 突Lv7 / 魔神剣24回以上 / 散沙雨24回以上",
+      tp: 10,
+      hit: 6,
+      element: "武器の属性",
+    },
+    {
+      name: "魔神連牙斬",
+      ruby: "まじんれんがざん",
+      description:
+        "魔神剣を4回連続で放つ。習得にはレベル以外に「魔神剣」の使用が60回以上、「魔神剣双牙」の使用が50回以上必要。",
+      requirement: "斬Lv13 / 突Lv1",
+      tp: 15,
+      hit: 4,
+      element: "武器の属性",
+    },
+    {
+      name: "空破絶掌撃",
+      ruby: "くうはぜっしょうげき",
+      description:
+        "強力な突き攻撃。巨大な敵も巻き込んでくれるので使い勝手がいい。習得にはレベル以外に「雷神剣」の使用が70回以上、「散沙雨」の使用が70回以上必要。",
+      requirement: "斬Lv1 / 突Lv14",
+      tp: 15,
+      hit: 2,
+      element: "武器の属性",
+    },
+    {
+      name: "閃空裂破",
+      ruby: "せんくうれっぱ",
+      description:
+        "敵を巻き込みながら攻撃。光属性の攻撃であり、命中率が高ければ中々使い勝手がいい。",
+      requirement: "斬Lv9 / 突Lv16",
+      tp: 10,
+      hit: 8,
+      element: "光",
+    },
+    {
+      name: "閃空双破斬",
+      ruby: "せんくうそうはざん",
+      description: "準備中",
+      requirement: "斬Lv19 / 突Lv14",
+      tp: 20,
+      hit: 8,
+      element: "光、武器の属性",
+    },
+    {
+      name: "翔雨裂空撃",
+      ruby: "しょううれっくうげき",
+      description:
+        "裂空斬と秋沙雨を組み合わせた奥義。最大HIT数は19ですが、これを出すのは難しい。習得にはレベル以外に「裂空斬破」の使用が120回以上、「秋沙雨」の使用が80回以上必要。",
+      requirement: "斬Lv14 / 突Lv19",
+      tp: 24,
+      hit: 10,
+      element: "武器の属性",
+    },
+    {
+      name: "閃空翔裂破",
+      ruby: "せんくうしょうれつは",
+      description: "閃空裂破を強化した攻撃。",
+      requirement: "斬Lv5 / 突Lv22",
+      tp: 14,
+      hit: 4,
+      element: "光",
+    },
+    {
+      name: "真空列斬",
+      ruby: "しんくうれつざん",
+      description:
+        "裂空斬を強化した攻撃。風属性の攻撃となり、モーションが早くなっている。",
+      requirement: "斬Lv23 / 突Lv4",
+      tp: 14,
+      hit: 5,
+      element: "風",
+    },
+    {
+      name: "鳳凰天駆",
+      ruby: "ほうおうてんく",
+      description:
+        "飛び上がって敵に突撃する。エターニアの中で一番使い勝手がいい特技。連携でも威力を発揮する。習得にはレベル以外に「風雷神剣」の使用が200回以上、「空破絶掌撃破」の使用が150回以上必要。",
+      requirement: "斬Lv22 / 突Lv24",
+      tp: 40,
+      hit: 9,
+      element: "火",
+    },
+    {
+      name: "猛虎連撃破",
+      ruby: "もうこれんげきは",
+      description:
+        "上下連続斬りを繰り返す。相手が固くないのであれば攻撃の隙を与えない戦い方ができる。習得にはレベル以外に「虎牙破斬」の使用が200回以上必要。",
+      requirement: "斬Lv24 / 突Lv20",
+      tp: 40,
+      hit: 8,
+      element: "武器の属性",
+    },
+    {
+      name: "風刃縛封",
+      ruby: "ふうじんばくふう",
+      description: "敵を空中に浮かす",
+      requirement: "斬Lv30 / 突Lv30",
+      tp: 40,
+      hit: 2,
+      element: "風",
+    },
+  ];
   return (
     <article>
       <SetPageTitle title={title} />
@@ -38,522 +248,7 @@ export default async function HomePage() {
 
       <section className="mb-12">
         <SectionTitle type="skill">リッドの特技一覧</SectionTitle>
-        <h3>魔神剣 (まじんけん)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv1</Tag>
-          <Tag>突Lv1</Tag>
-        </EventCondition>
-        <p>
-          剣圧を放つ飛び攻撃。敵の詠唱を妨げたいときの飛び道具として結構使えます。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>4</td>
-              <td>1</td>
-              <td>物理</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>雷神剣 (らいじんけん)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv1</Tag>
-          <Tag>突Lv2</Tag>
-        </EventCondition>
-        <p>雷属性の突き攻撃。突きがヒットすると追加で雷ダメージを与える。</p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>4</td>
-              <td>2</td>
-              <td>雷</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>虎牙破斬 (こがはざん)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv5</Tag>
-          <Tag>突Lv2</Tag>
-        </EventCondition>
-        <p>上下の2段斬りを行う。動作に無駄がなく終盤でも活躍する特技。</p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>6</td>
-              <td>2</td>
-              <td>武器の属性</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>散沙雨 (ちりさだめ)</h3>
-        <EventCondition category="skill">
-          <Tag>斬L2</Tag>
-          <Tag>突Lv5</Tag>
-        </EventCondition>
-        <p>
-          最大5HITの連続突きを行う。武器の命中率が低いとあまりHITしないので注意。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>7</td>
-              <td>5</td>
-              <td>武器の属性</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>裂空斬 (れっくうざん)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv16</Tag>
-          <Tag>突Lv8</Tag>
-        </EventCondition>
-        <p>
-          円を描きながら回転斬りを行う。敵の背後に回り込むために使用するのも有効。使用回数が100を超えるとジャンプ中に発動可能になり、使い道が広がる。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>9</td>
-              <td>5</td>
-              <td>武器の属性</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>風雷神剣 (ふうらいじんけん)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv4</Tag>
-          <Tag>突Lv10</Tag>
-        </EventCondition>
-        <p>
-          雷神剣を強化した攻撃。使い勝手的には雷神剣と大きな差はないが、のちに鳳凰天駆を習得するために多くの使用回数が必要となる。習得にはレベル以外に「雷神剣」の使用が50回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>8</td>
-              <td>3</td>
-              <td>風、雷</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>魔神剣・双牙 (まじんけんそうが)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv10</Tag>
-          <Tag>突Lv3</Tag>
-        </EventCondition>
-        <p>
-          魔神剣をテンポよく2回放つ。一定の距離の敵にしか届かないが、タイミングをずらした素早い2連撃は魅力的。習得にはレベル以外に「魔神剣」の使用が48回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>8</td>
-              <td>3</td>
-              <td>物理</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>虎牙連斬 (こがれんざん)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv13</Tag>
-          <Tag>突Lv4</Tag>
-        </EventCondition>
-        <p>
-          虎牙破斬を強化した攻撃。虎牙破斬から乗り換える人が多数の特技でかなり使い勝手がいい。習得にはレベル以外に「虎牙破斬」の使用が150回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>10</td>
-              <td>4</td>
-              <td>武器の属性</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>秋沙雨 (あきさだめ)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv4</Tag>
-          <Tag>突Lv13</Tag>
-        </EventCondition>
-        <p>
-          最大11HITの連続突きを行う。最後には突き上げ斬りをするためコンボに使う場合は使い勝手が難しい。習得にはレベル以外に「散沙雨」の使用が130回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12</td>
-              <td>11</td>
-              <td>武器の属性</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>雷神双破斬 (らいじんそうはざん)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv7</Tag>
-          <Tag>突Lv5</Tag>
-        </EventCondition>
-        <p>
-          雷神剣と虎牙破斬を組み合わせた奥義。習得にはレベル以外に「雷神剣」の使用が16回以上、「虎牙破斬」の使用が16回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>4</td>
-              <td>4</td>
-              <td>雷、武器の属性</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>魔神千裂破 (まじんせんれつは)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv5</Tag>
-          <Tag>突Lv7</Tag>
-        </EventCondition>
-        <p>
-          魔神剣と散沙雨を組み合わせた奥義。習得にはレベル以外に「雷神剣」の使用が24回以上、「散沙雨」の使用が24回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>10</td>
-              <td>6</td>
-              <td>武器の属性</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>魔神連牙斬 (まじんれんがざん)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv13</Tag>
-          <Tag>突Lv1</Tag>
-        </EventCondition>
-        <p>
-          魔神剣を4回連続で放つ。習得にはレベル以外に「魔神剣」の使用が60回以上、「魔神剣双牙」の使用が50回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>15</td>
-              <td>4</td>
-              <td>物理</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>空破絶掌撃 (くうはぜっしょうげき)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv1</Tag>
-          <Tag>突Lv14</Tag>
-        </EventCondition>
-        <p>
-          強力な突き攻撃。巨大な敵も巻き込んでくれるので使い勝手がいい。習得にはレベル以外に「雷神剣」の使用が70回以上、「散沙雨」の使用が70回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>15</td>
-              <td>2</td>
-              <td>武器の属性</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>閃空裂破 (せんくうれっぱ)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv9</Tag>
-          <Tag>突Lv16</Tag>
-        </EventCondition>
-        <p>
-          敵を巻き込みながら攻撃。光属性の攻撃であり、命中率が高ければ中々使い勝手がいい。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>10</td>
-              <td>8</td>
-              <td>光</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>閃空双破斬 (せんくうそうはざん)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv19</Tag>
-          <Tag>突Lv14</Tag>
-        </EventCondition>
-        <p>
-          閃空裂破と虎牙破斬を組み合わせた奥義。習得にはレベル以外に「閃空裂破」の使用が80回以上、「虎牙破斬」の使用が120回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>20</td>
-              <td>8</td>
-              <td>光、物理</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>翔雨裂空撃 (しょううれっくうげき)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv14</Tag>
-          <Tag>突Lv19</Tag>
-        </EventCondition>
-        <p>
-          裂空斬と秋沙雨を組み合わせた奥義。最大HIT数は19ですが、これを出すのは難しい。習得にはレベル以外に「裂空斬破」の使用が120回以上、「秋沙雨」の使用が80回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>24</td>
-              <td>19</td>
-              <td>武器の属性</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>閃空翔裂破 (せんくうしょうれつは)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv5</Tag>
-          <Tag>突Lv22</Tag>
-        </EventCondition>
-        <p>閃空裂破を強化した攻撃。</p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>14</td>
-              <td>4</td>
-              <td>光</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>真空列斬 (しんくうれつざん)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv23</Tag>
-          <Tag>突Lv4</Tag>
-        </EventCondition>
-        <p>
-          裂空斬を強化した攻撃。風属性の攻撃となり、モーションが早くなっている。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>14</td>
-              <td>5</td>
-              <td>風</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>鳳凰天駆 (ほうおうてんく)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv22</Tag>
-          <Tag>突Lv24</Tag>
-        </EventCondition>
-        <p>
-          飛び上がって敵に突撃する。エターニアの中で一番使い勝手がいい特技。連携でも威力を発揮する。習得にはレベル以外に「風雷神剣」の使用が200回以上、「空破絶掌撃破」の使用が150回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>40</td>
-              <td>9</td>
-              <td>火</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>猛虎連撃破 (もうこれんげきは)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv24</Tag>
-          <Tag>突Lv20</Tag>
-        </EventCondition>
-        <p>
-          上下連続きりを繰り返す。相手が固くないのであれば攻撃の隙を与えない戦い方ができる。習得にはレベル以外に「虎牙破斬」の使用が200回以上必要。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>40</td>
-              <td>8</td>
-              <td>武器の属性</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>風刃縛封 (ふうじんばくふう)</h3>
-        <EventCondition category="skill">
-          <Tag>斬Lv30</Tag>
-          <Tag>突Lv30</Tag>
-        </EventCondition>
-        <p>敵を空中に浮かす</p>
-        <table>
-          <thead>
-            <tr>
-              <th>消費TP</th>
-              <th>最大HIT数</th>
-              <th>属性</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>40</td>
-              <td>2</td>
-              <td>風</td>
-            </tr>
-          </tbody>
-        </table>
+        <SkillPropertyList skills={skills} />
       </section>
     </article>
   );
