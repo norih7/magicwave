@@ -1,3 +1,5 @@
+"use client";
+
 import {
   LuTable,
   LuZap,
@@ -6,18 +8,22 @@ import {
   LuHexagon,
   LuBookType,
 } from "react-icons/lu";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { useState } from "react";
+import { MdWaterDrop } from "react-icons/md";
 import { LiaComment } from "react-icons/lia";
+import { TbSquareChevronDownFilled } from "react-icons/tb";
+import { FaCircleDot } from "react-icons/fa6";
+import { elementMap } from "@/constants";
 
-interface Skill {
+export interface Skill {
   name: string;
-  ruby: string;
+  ruby?: string;
   description: string;
   requirement: string;
   requirement2?: string;
-  tp: number;
-  hit: number;
-  element: string;
+  tp?: number;
+  hit?: number;
+  element: keyof typeof elementMap;
   type?: string;
 }
 
@@ -29,10 +35,21 @@ interface SkillPropertyListProps {
 export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
   skills,
 }) => {
+  const [result, setResult] = useState(skills);
+  const click = () => {
+    setResult(
+      skills.filter(
+        (spell) =>
+          (spell.requirement && spell.requirement.includes("ノーム")) ||
+          (spell.requirement2 && spell.requirement2.includes("ノーム")),
+      ),
+    );
+  };
   // 配列をループして表示する設計にします
   return (
     <>
-      {skills.map((skill, index) => {
+      {result.map((skill, index) => {
+        const bg = elementMap[skill.element].color;
         const properties = [
           {
             label: (
@@ -41,7 +58,7 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
                 習得条件1
               </>
             ),
-            value: skill.requirement,
+            value: skill.requirement2 === undefined ? "-" : skill.requirement,
           },
           {
             label: (
@@ -50,8 +67,7 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
                 習得条件2
               </>
             ),
-            value:
-              skill.requirement2 === undefined ? "なし" : skill.requirement2,
+            value: skill.requirement2 === undefined ? "-" : skill.requirement2,
           },
           {
             label: (
@@ -69,7 +85,16 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
                 属性
               </>
             ),
-            value: skill.element,
+
+            value:
+              skill.element === "none" ? (
+                "-"
+              ) : (
+                <span className="flex items-center">
+                  <FaCircleDot className={`${bg} mr-1`} />
+                  {elementMap[skill.element].name}
+                </span>
+              ),
           },
           {
             label: (
@@ -78,7 +103,7 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
                 消費TP
               </>
             ),
-            value: skill.tp,
+            value: skill.tp === undefined ? "-" : skill.tp,
           },
           {
             label: (
@@ -87,21 +112,26 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
                 最大HIT数
               </>
             ),
-            value: skill.hit,
+            value: skill.hit === undefined ? "-" : skill.hit,
           },
         ];
 
         const displayItems = properties.filter(
-          (item) => item.value !== "" && item.value !== 0,
+          (item) =>
+            item.value !== "" && item.value !== 0 && item.value !== undefined,
         );
 
+        const ruby = skill.ruby === undefined ? "" : <>（{skill.ruby}）</>;
+        const skillName = (
+          <h3 className="flex items-center">
+            {skill.name}
+            <span className="text-xs">{ruby}</span>
+          </h3>
+        );
         return (
           <div key={index}>
-            <h3>
-              {skill.name}
-              <span className="text-xs">（{skill.ruby}）</span>
-            </h3>
-            <div className=" border-gray-300  rounded-lg mb-8">
+            {skillName}
+            <div className=" border-gray-300  rounded-lg mb-12">
               <h4 className="flex items-center text-basic font-bold text-gray-600 border-b border-gray-300 py-1 mb-3">
                 <LuTable className="mr-1" />
                 データ
@@ -125,7 +155,9 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
                 <LiaComment className="mr-1" />
                 説明
               </h4>
-              <p className="">{skill.description}</p>
+              <p className="bg-slate-50 px-3 py-2 rounded-lg border border-slate-200">
+                {skill.description}
+              </p>
             </div>
           </div>
         );

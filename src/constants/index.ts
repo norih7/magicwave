@@ -201,3 +201,54 @@ export const extraLinks = {
     desc: "",
   },
 };
+
+export const elementMap = {
+  water: {
+    name: "水",
+    color: "text-sky-500",
+  },
+  wind: {
+    name: "風",
+    color: "text-lime-500",
+  },
+  fire: {
+    name: "火",
+    color: "text-red-400",
+  },
+  earth: {
+    name: "土",
+    color: "text-yellow-800",
+  },
+  ice: {
+    name: "氷",
+    color: "text-gray-300",
+  },
+  light: {
+    name: "光",
+    color: "text-yellow-200",
+  },
+  thunder: {
+    name: "雷",
+    color: "text-amber-400",
+  },
+  dark: {
+    name: "闇",
+    color: "text-gray-800",
+  },
+  origin: {
+    name: "元",
+    color: "text-gray-800",
+  },
+  time: {
+    name: "時",
+    color: "text-gray-800",
+  },
+  normal: {
+    name: "武器属性",
+    color: "text-gray-500",
+  },
+  none: {
+    name: "-",
+    color: "text-gray-800",
+  },
+};
