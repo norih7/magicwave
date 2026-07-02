@@ -44,11 +44,13 @@ export const skillLinks = {
   rid: {
     title: "リッドの特技",
     path: "/skills/rid",
+    image: "/link-headers/skills-rid.jpg",
     desc: "",
   },
   farth: {
     title: "ファラの特技",
     path: "/skills/farth",
+    image: "/link-headers/skills-farth.jpg",
     desc: "",
   },
   chat: {
@@ -64,6 +66,7 @@ export const skillLinks = {
   magic: {
     title: "晶霊術（メルディ&キール）",
     path: "/skills/magic",
+    image: "/link-headers/skills-magic.jpg",
     desc: "",
   },
 };
@@ -92,10 +95,12 @@ export const subeventLinks = {
   "skill-chat": {
     title: "チャット特技習得",
     path: "/subevents/skill-chat",
+    image: "/link-headers/subevents-skill-chat.jpg",
     desc: "偶然辿り着くのが難しいチャットの特技習得場所をチェック",
   },
   "skill-fog": {
     title: "フォッグ特技習得",
+    image: "/link-headers/subevents-skill-fog.jpg",
     path: "/subevents/skill-fog",
     desc: "",
   },
